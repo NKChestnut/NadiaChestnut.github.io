@@ -1,8 +1,8 @@
 body {
+  background-color: whitesmoke;
+  font-family: "Courier New", monospace;
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #0e220a;
-  color: #fff;
+  padding: 0;
 }
 
 .room {
@@ -10,76 +10,74 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0;
+  transform: scale(0.9) translateY(-5%);
 }
 
 .room-image {
   width: 100%;
+  image-rendering: pixelated;
   display: block;
 }
 
-.sitemap-link {
+.rotate {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: transparent;
-}
-
-.hotspot {
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.hotspot a {
-  color: #fff;
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  text-decoration: none;
-  position: relative;
-}
-
-.hotspot span {
-  display: none;
-  font-size: 16px;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2px 6px;
-  margin-top: 4px;
-  border-radius: 4px;
-}
-
-.hotspot:hover span {
   display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }
 
-.about-box {
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  margin: 2rem;
-  border-left: 4px solid #9dd89d;
-  max-width: 600px;
+.rotate img {
+  transition: transform 0.2s ease;
 }
 
-.subtitle {
-  font-weight: 300;
-  color: #ccc;
-  margin-top: -10px;
+.rotate:hover img,
+.rotate:focus img {
+  transform: rotate(2deg);
+}
+
+.rotate span {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 99;
+  filter: drop-shadow(1px 1px 0 black)
+          drop-shadow(-1px 1px 0 black)
+          drop-shadow(1px -1px 0 black)
+          drop-shadow(-1px -1px 0 black);
+  pointer-events: none;
+}
+
+.rotate:hover span,
+.rotate:focus span {
+  opacity: 1;
+}
+
+header {
+  width: fit-content;
+  padding: 10px;
+  margin: 20px auto 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-family: monospace;
+  z-index: 100;
 }
 
 footer {
   text-align: center;
   font-size: 0.9rem;
   margin: 3rem auto;
-  color: #ccc;
+  color: #555;
+  font-family: monospace;
 }
 
 footer a {
-  color: #9dd89d;
+  color: teal;
   text-decoration: none;
 }
 
