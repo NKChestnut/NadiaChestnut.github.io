@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nadia Chestnut</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="https://touch.ninosaur.com/coloring/files/art-original/dinosaur-16x16.png?force=true" />
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Inter:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://touch.ninosaur.com/coloring/files/art-original/dinosaur-16x16.png?force=true">
 </head>
 <body>
+  <header>
+    <h1>You find yourself in a workspace...</h1>
+    Will you open the computer, read the journal, or check the drawers?
+  </header>
+
   <main class="room">
-    <a href="sitemap.html" class="sitemap-link" title="🗺 Full Sitemap"></a>
     <img src="landing-room-final.png" alt="Landing Room" class="room-image" />
 
-    <div class="hotspot" style="top: 345px; left: 625px;">
-      <a href="projects.html"><span>projects</span></a>
-    </div>
+    <!-- Computer - Projects -->
+    <a href="projects.html" class="rotate" style="top: 345px; left: 625px;">
+      <img src="images/image (2).png" style="width: 90px;">
+      <span>Projects</span>
+    </a>
 
-    <div class="hotspot" style="top: 380px; left: 505px;">
-      <a href="blog.html"><span>blog</span></a>
-    </div>
+    <!-- Journal - Blog -->
+    <a href="blog.html" class="rotate" style="top: 380px; left: 505px;">
+      <img src="images/image (4).png" style="width: 75px;">
+      <span>Blog</span>
+    </a>
 
-    <div class="hotspot" style="top: 175px; left: 450px;">
-      <a href="media.html"><span>media</span></a>
-    </div>
+    <!-- Radio - Media Recs -->
+    <a href="media.html" class="rotate" style="top: 175px; left: 450px;">
+      <img src="images/image (3).png" style="width: 75px;">
+      <span>Media</span>
+    </a>
 
-    <div class="hotspot" style="top: 200px; left: 880px;">
-      <a href="research.html"><span>research</span></a>
-    </div>
+    <!-- Blackboard - Research -->
+    <a href="research.html" class="rotate" style="top: 200px; left: 880px;">
+      <img src="images/image (1).png" style="width: 160px;">
+      <span>Research</span>
+    </a>
 
-    <div class="hotspot" style="top: 390px; left: 160px;">
-      <a href="#about"><span>about</span></a>
-    </div>
+    <!-- Chair - About -->
+    <a href="#about" class="rotate" style="top: 390px; left: 160px;">
+      <img src="images/image (6).png" style="width: 120px;">
+      <span>About</span>
+    </a>
 
-    <div class="hotspot" style="top: 100px; left: 90px;">
-      <a href="hobbies.html"><span>now/hobbies</span></a>
-    </div>
+    <!-- Clock - Now/Hobbies -->
+    <a href="hobbies.html" class="rotate" style="top: 100px; left: 90px;">
+      <img src="images/image (7).png" style="width: 70px;">
+      <span>Now</span>
+    </a>
 
-    <div class="hotspot" style="top: 210px; left: 530px;">
-      <a href="links.html"><span>links</span></a>
-    </div>
+    <!-- Cabinet - Links -->
+    <a href="links.html" class="rotate" style="top: 210px; left: 530px;">
+      <img src="images/image.png" style="width: 100px;">
+      <span>Links</span>
+    </a>
 
-    <section id="about" class="about-box">
-      <h1>Hi! I'm Nadia</h1>
-      <p class="subtitle">Data science student and researcher at Clemson University</p>
-      <p>I'm an undergraduate at Clemson University studying data science with a concentration in economics and minors in AI and philosophy. My research interests are in math/stats, AI governance/fairness, epistemology, and anything I can get my hands on.</p>
-    </section>
-
-    <footer>
-      <p>© 2025 Nadia Chestnut · <a href="mailto:nchestn@clemson.edu">contact</a> · <a href="sitemap.html">sitemap</a></p>
-    </footer>
+    <!-- Map Area - Sitemap -->
+    <a href="sitemap.html" class="rotate" style="top: 190px; left: 510px;">
+      <img src="images/image (5).png" style="width: 120px;">
+      <span>Map</span>
+    </a>
   </main>
+
+  <footer>
+    <p>© 2025 Nadia Chestnut · <a href="mailto:nchestn@clemson.edu">contact</a> · <a href="sitemap.html">sitemap</a></p>
+  </footer>
 </body>
 </html>
