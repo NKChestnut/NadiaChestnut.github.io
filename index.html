@@ -1,178 +1,94 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-  
-<title>Nadia Chestnut</title>
+<html>
+<head>
+	<title> * Your Site Here * </title>
+	<link href="cyanobacteria.css" rel="stylesheet" type="text/css" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+</head>
+<body>
 
-	<meta name="description" content="Nadia’s workspace...">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="UTF-8">
-	<link rel="icon" type="images/png" href="https://touch.ninosaur.com/coloring/files/art-original/dinosaur-16x16.png?force=true" sizes="16x16">
-	<link href="style.css" rel="stylesheet" type="text/css" media="all">
-	
-  <style>
-	body {
-		min-height: calc(100vh - 10px);
-		overflow-x: hidden;
-		background-color: whitesmoke;
-	}
-	.room {
-		width: 100%;
-		height: 300px;
-		position: relative;
-		transform: scale(0.70) translateY(-25%);
-	}
-	span {
-		opacity: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		font-size: calc(1em + 1.75vw);
-		color: #FFF;
-		line-height: 1;
-		filter: drop-shadow(1px 1px 0 black)
-			drop-shadow(-1px 1px 0 black) 
-			drop-shadow(1px -1px 0 black) 
-			drop-shadow(-1px -1px 0 black);
-		text-transform: uppercase;
-		z-index: 99;
-	}
-	.rotate {
-		width: fit-content;
-		height: fit-content;
-		display: inline-block;
-		position: absolute;
-	}
-	.rotate:hover img, .rotate:focus img {
-		transform: rotate(3deg);
-	}
-	.rotate:hover span, a:focus span {
-		opacity: 1;
-	}
-	.appear {
-		width: fit-content;
-		height: fit-content;
-		display: inline-block;
-		position: absolute;
-	}
-	.appear img {
-		opacity: 0;
-	}
-	.appear:hover img, .appear:hover span, a:focus img {
-		opacity: 1;
-	}
-	header {
-		width: fit-content;
-		padding: 10px;
-		margin: 10px auto 0 auto;
-		text-wrap: balance;
-		position: relative;
-		z-index: 100;
-		font-size: 18px;
-		text-align: right;
-	}
-	h1 { font-size: 26px; line-height: 26px; color: #000;
-		text-shadow: none; margin: 0; text-align:left; }
-	a, a:hover, a:focus { color: transparent; background:transparent; }
-	.link { color: teal; }
-	.link:hover, .link:focus { background-color: teal;	color: white; }
+	<div class="container">
 
-	@media screen and (max-device-width : 800px){
-		.room { transform: scale(0.95);	}
-		span { font-size: calc(0.5em + 1.7vw); }
-		header { margin: 10px auto; }
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		body { background: #1d2330; }
-		header, h1 { color: white; }
-		.link { color: #b2d7c1; }
-		.link:hover, .link:focus { background-color: #b2d7c1; color: darkslategrey; }
-	}
-
-  </style>
-  </head>
-	<body>
-	
-	<header>
-		<h1>Snoop through my wookspace</h1>
-		Or take the <a href="map.html" class="link">sitemap</a>?
-	</header>
-	
-	<main class="room">
-
-	
-	<div style="background: url(images/desk.png);
-		position: absolute; background-size: 100%;
-		top: 29.688vw; left: 15.625vw;
-		width: 61.188vw; height: 30.375vw;">
-	</div>
-	
-	
-	<a href="about.html"
-	class="rotate"
-	style=top: 25.613vw; left: 6.525vw;
-	<img src="images/chair.png" style="position: absolute;
-	style=width: 12.907vw;"
-	alt="">
-<span style="top: 28%;">About</span>
-</a>
-	
-	<a href="hobbies/index.html"
-		class="rotate"
-		style="top: 4.063vw; left: 29.688vw;">
-		<img src="images/clock.png"
-		style="width: 9.375vw;"
-		alt="">
-		<span>Hobbies</span>
-	</a>
+		<header>
+			<span>site name here</span>
+		</header>
 		
-	<a href="blog/index.html"
-		class="rotate"
-		style="top: 15.2vw; left: 21.4vw;">
-		<img src="images/journal.png"
-		style="width: 21.688vw;"
-		alt="">
-		<span>Blog</span>
-	</a>
-	
-	<a href="https://www.linkedin.com/in/nadiachestnut"
-		class="appear"
-		style="top: 43.250vw; left: 17.5vw;">
-		<img src="images/drawerL2.png"
-		style="width: 15.736vw"
-		alt="">
-		<span style="left:47.5%;">
-		Blog</span>
-	</a>
-	
-	
-<a href="mailto:nchestn@clemson.edu"
-		style="top: 43.05vw; left: 58.9vw;">
-		<img src="images/drawerR2.png"
-		style="width: 16.3vw"
-		alt="">
-		<span style="left:53%;">
-		Contact</span>
-	</a>
-	
+		<div class="small">
+			<nav>
+				<div>navigation</div>
+				<a href="">link</a>
+				<a>link</a>
+				<a>link</a>
+				<a>link</a>
+				<a>link</a>
+				<a>link</a>
+				<a>link</a>
+				<a>longer link</a>
+				<a>an even longer link</a>
+				<a>last link</a>
+			</nav>
+			<!-- optional spot for styled button outside the navigation box -->
+			<img src="">
+		</div>
+		
+		<section class="half">
+			<h1>welcome to my homepage!</h1>
+			<h2>Heading 2</h2>
+			<h3>Heading 3</h3>
+			<h4>Heading 4</h4>
+			<p>
+				<strong>This is strong,</strong>
+				this is normal, and
+				<em>this is emphasized!</em>
+				<a href="#">This is a link.</a>
+				<sup>This is superscript;</sup>
+				<sub>this is subscript.</sub>
+				<code>This is code.</code>
+				<s>This is strikethrough.</s>
+			</p>
+			<ul>
+				<li>Unordered list item 1</li>
+				<li>Unordered list item 2
+					<ul>
+						<li>Nested list</li>
+					</ul>
+				</li>
+				<li>Unordered list item 3</li>
+			</ul>
+			<ol>
+				<li>Unordered list item 1</li>
+				<li>Unordered list item 2
+					<ul>
+						<li>Nested list</li>
+					</ul>
+				</li>
+				<li>Unordered list item 3</li>
+			</ol>
+		</section>
+				
+		<section class="small">
+			<h2>another section</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis orci at sodales convallis. Proin luctus vehicula dolor, id ultrices diam eleifend eu. Donec tincidunt tellus tellus, in maximus lorem fermentum ac. Phasellus sagittis nisi in ante pretium, eget molestie est pellentesque. Ut tincidunt ultricies porta.</p>
+		</section>
+		
+		<section class="full">
+			<h2>full width section</h2>
+		</section>
+		
+		<section class="half">
+			<h2>half width section</h2>
+		</section>
+		
+		<section class="half">
+			<h2>half width section</h2>
+		</section>
+		
+	</div>
 
+	<footer>
+		<span>cyanobacteria.css by <a href="https://ribo.zone/free/layouts/">ribo.zone</a></span>
+	</footer>
 
-	<a href="research/index.html"
-		class="rotate"
-		style="top: 22.15vw; left: 78.35vw;">
-		<img src="images/blackboard.png"
-		style="width: 11.5625vw;"
-		alt="">
-		<span>Research</span>
-	</a>
-	
-
-	</main>
-	  
-	</body>
+</body>
 </html>
-
