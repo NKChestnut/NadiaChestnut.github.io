@@ -1,80 +1,178 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nadia Chestnut</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://touch.ninosaur.com/coloring/files/art-original/dinosaur-16x16.png?force=true">
-</head>
-<body>
-  <header>
-    <h1>Snoop around my workspace...</h1>
-    <p>></p>
-  </header>
+  <head>
+  
+<title>Nadia Chestnut</title>
 
- <main class="room">
-  <!-- Clock -->
-  <a href="hobbies.html" class="rotate" style="top: 50px; left: 100px;">
-    <img src="images/image (7).png" style="width: 70px;">
-    <span>Now</span>
-  </a>
+	<meta name="description" content="Nadia’s workspace...">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<link rel="icon" type="img/png" href="https://touch.ninosaur.com/coloring/files/art-original/dinosaur-16x16.png?force=true" sizes="16x16">
+	<link href="style.css" rel="stylesheet" type="text/css" media="all">
+	
+  <style>
+	body {
+		min-height: calc(100vh - 10px);
+		overflow-x: hidden;
+		background-color: whitesmoke;
+	}
+	.room {
+		width: 100%;
+		height: 300px;
+		position: relative;
+		transform: scale(0.70) translateY(-25%);
+	}
+	span {
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: calc(1em + 1.75vw);
+		color: #FFF;
+		line-height: 1;
+		filter: drop-shadow(1px 1px 0 black)
+			drop-shadow(-1px 1px 0 black) 
+			drop-shadow(1px -1px 0 black) 
+			drop-shadow(-1px -1px 0 black);
+		text-transform: uppercase;
+		z-index: 99;
+	}
+	.rotate {
+		width: fit-content;
+		height: fit-content;
+		display: inline-block;
+		position: absolute;
+	}
+	.rotate:hover img, .rotate:focus img {
+		transform: rotate(3deg);
+	}
+	.rotate:hover span, a:focus span {
+		opacity: 1;
+	}
+	.appear {
+		width: fit-content;
+		height: fit-content;
+		display: inline-block;
+		position: absolute;
+	}
+	.appear img {
+		opacity: 0;
+	}
+	.appear:hover img, .appear:hover span, a:focus img {
+		opacity: 1;
+	}
+	header {
+		width: fit-content;
+		padding: 10px;
+		margin: 10px auto 0 auto;
+		text-wrap: balance;
+		position: relative;
+		z-index: 100;
+		font-size: 18px;
+		text-align: right;
+	}
+	h1 { font-size: 26px; line-height: 26px; color: #000;
+		text-shadow: none; margin: 0; text-align:left; }
+	a, a:hover, a:focus { color: transparent; background:transparent; }
+	.link { color: teal; }
+	.link:hover, .link:focus { background-color: teal;	color: white; }
 
-  <!-- Chair -->
-  <a href="#about" class="rotate" style="top: 400px; left: 150px;">
-    <img src="images/image (6).png" style="width: 120px;">
-    <span>About</span>
-  </a>
+	@media screen and (max-device-width : 800px){
+		.room { transform: scale(0.95);	}
+		span { font-size: calc(0.5em + 1.7vw); }
+		header { margin: 10px auto; }
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		body { background: #1d2330; }
+		header, h1 { color: white; }
+		.link { color: #b2d7c1; }
+		.link:hover, .link:focus { background-color: #b2d7c1; color: darkslategrey; }
+	}
 
-  <!-- Radio -->
-  <a href="media.html" class="rotate" style="top: 100px; left: 460px;">
-    <img src="images/image (3).png" style="width: 75px;">
-    <span>Media</span>
-  </a>
+  </style>
+  </head>
+	<body>
+	
+	<header>
+		<h1>Snoop through my wookspace</h1>
+		Or take the <a href="map.html" class="link">sitemap</a>?
+	</header>
+	
+	<main class="room">
 
-  <!-- Map -->
-  <a href="sitemap.html" class="rotate" style="top: 120px; left: 510px;">
-    <img src="images/image (5).png" style="width: 120px;">
-    <span>Map</span>
-  </a>
+	
+	<div style="background: url(img/home/desk.png);
+		position: absolute; background-size: 100%;
+		top: 29.688vw; left: 15.625vw;
+		width: 61.188vw; height: 30.375vw;">
+	</div>
+	
+	
+	<a href="about.html"
+	class="rotate"
+	style=top: 25.613vw; left: 6.525vw;
+	<img src="img/home/chair.png" style="position: absolute;
+	style=width: 12.907vw;"
+	alt="">
+<span style="top: 28%;">About</span>
+</a>
+	
+	<a href="hobbies/index.html"
+		class="rotate"
+		style="top: 4.063vw; left: 29.688vw;">
+		<img src="img/home/clock.png"
+		style="width: 9.375vw;"
+		alt="">
+		<span>Hobbies</span>
+	</a>
+		
+	<a href="blog/index.html"
+		class="rotate"
+		style="top: 15.2vw; left: 21.4vw;">
+		<img src="img/home/journal.png"
+		style="width: 21.688vw;"
+		alt="">
+		<span>Blog</span>
+	</a>
+	
+	<a href="https://www.linkedin.com/in/nadiachestnut"
+		class="appear"
+		style="top: 43.250vw; left: 17.5vw;">
+		<img src="img/home/drawerL2.png"
+		style="width: 15.736vw"
+		alt="">
+		<span style="left:47.5%;">
+		Blog</span>
+	</a>
+	
+	
+<a href="mailto:nchestn@clemson.edu"
+		style="top: 43.05vw; left: 58.9vw;">
+		<img src="img/home/drawerR2.png"
+		style="width: 16.3vw"
+		alt="">
+		<span style="left:53%;">
+		Contact</span>
+	</a>
+	
 
-  <!-- Desk -->
-  <a href="links.html" class="rotate" style="top: 200px; left: 500px;">
-    <img src="images/image.png" style="width: 200px;">
-  </a>
 
-  <!-- Drawers -->
-  <a href="https://www.linkedin.com/in/your-profile" class="rotate" style="top: 240px; left: 510px;">
-    <span>LinkedIn</span>
-  </a>
-  <a href="cv.pdf" class="rotate" style="top: 265px; left: 510px;">
-    <span>CV</span>
-  </a>
-  <a href="mailto:nchestn@clemson.edu" class="rotate" style="top: 290px; left: 510px;">
-    <span>Contact</span>
-  </a>
+	<a href="research/index.html"
+		class="rotate"
+		style="top: 22.15vw; left: 78.35vw;">
+		<img src="img/home/blackboard.png"
+		style="width: 11.5625vw;"
+		alt="">
+		<span>Research</span>
+	</a>
+	
 
-  <!-- Journal -->
-  <a href="blog.html" class="rotate" style="top: 360px; left: 490px;">
-    <img src="images/image (4).png" style="width: 75px;">
-    <span>Blog</span>
-  </a>
-
-  <!-- Computer -->
-  <a href="projects.html" class="rotate" style="top: 360px; left: 610px;">
-    <img src="images/image (2).png" style="width: 90px;">
-    <span>Projects</span>
-  </a>
-
-  <!-- Blackboard -->
-  <a href="research.html" class="rotate" style="top: 100px; left: 800px;">
-    <img src="images/image (1).png" style="width: 160px;">
-    <span>Research</span>
-  </a>
-</main>
-
-  <footer>
-    <p>© 2025 Nadia Chestnut · <a href="mailto:nchestn@clemson.edu">contact</a> · <a href="sitemap.html">sitemap</a></p>
-  </footer>
-</body>
+	</main>
+	  
+	</body>
 </html>
+
