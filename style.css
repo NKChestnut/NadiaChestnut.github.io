@@ -8,7 +8,7 @@
 		--gradientBottom: rgb(240, 248, 255, .8);
 	}
 	header {
-		background: url('***light mode banner image***');
+		background: url('../../../microscopy/arthrospira.png');
 	}
 /* end light mode styling */
 
@@ -25,7 +25,7 @@
 			a:link { color: lightblue; }
 		}
 		header {
-			background: url('***dark mode banner image***');
+			background: url('../../../microscopy/dolichospermum.png');
 		}
 	}
 /* end dark mode styling */
