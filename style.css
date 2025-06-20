@@ -1,101 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>✧ My Digital Shrine ✧</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+<div class="background"></div>
 
-body {
-  font-family: 'Space Mono', monospace;
-  background-color: #e8f2ff;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
+<div class="grid-container">
+  <!-- Left Column -->
+  <aside class="column left">
+    <div class="window">
+      <div class="toolbar"><span>NAVI</span></div>
+      <div class="inner">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#info">info</a></li>
+          <li><a href="#research">research</a></li>
+          <li><a href="#blog">blog</a></li>
+          <li><a href="#links">links</a></li>
+        </ul>
+      </div>
+    </div>
 
-.container {
-  display: flex;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    <div class="window">
+      <div class="toolbar"><span>MOOD</span></div>
+      <div class="inner">
+        <p>feeling: 🌸 calm</p>
+        <p>status: coding this site!</p>
+      </div>
+    </div>
 
-.left-column,
-.middle-column,
-.right-column {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 15px;
-  box-shadow: 2px 2px 8px #ccc;
-}
+    <div class="window">
+      <div class="toolbar"><span>BUTTON</span></div>
+      <div class="inner">
+        <p>(your web button or gif goes here)</p>
+      </div>
+    </div>
+  </aside>
 
-.left-column {
-  flex: 1;
-  max-width: 200px;
-}
+  <!-- Middle Column -->
+  <main class="column middle">
+    <div class="window">
+      <div class="toolbar"><span>WELCOME</span></div>
+      <div class="inner">
+        <h2>Where am I?</h2>
+        <p>This site is my resting place in the web — a mixture of code, thoughts, and soft aesthetics. Feel free to explore.</p>
 
-.middle-column {
-  flex: 2;
-  min-width: 500px;
-}
+        <h2>What lies here?</h2>
+        <p>You'll find posts about my interests, projects, and digital curios. A cozy place for calm reflection in a busy internet.</p>
+      </div>
+    </div>
+  </main>
 
-.right-column {
-  flex: 1;
-  max-width: 200px;
-}
+  <!-- Right Column -->
+  <aside class="column right">
+    <div class="window">
+      <div class="toolbar"><span>UPDATES</span></div>
+      <div class="inner">
+        <p><strong>06.20.25</strong>: Site layout added ✧</p>
+      </div>
+    </div>
 
-h2, h3 {
-  font-size: 1.1rem;
-  color: #445b76;
-  margin-bottom: 10px;
-  text-transform: lowercase;
-}
+    <div class="window">
+      <div class="toolbar"><span>GALLERY</span></div>
+      <div class="inner">
+        <p>Latest blog post:<br>“Fourier Dreams”</p>
+      </div>
+    </div>
 
-.nav {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px;
-}
+    <div class="window">
+      <div class="toolbar"><span>STATS</span></div>
+      <div class="inner">
+        <p>visitor #: 0017<br>last updated: today</p>
+      </div>
+    </div>
+  </aside>
+</div>
 
-.nav li {
-  margin-bottom: 8px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: #4a7ab9;
-}
-
-.nav a:hover {
-  color: #2c3e50;
-}
-
-.widget {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f9fbfd;
-  border: 1px dashed #bbcde3;
-  border-radius: 8px;
-  font-size: 0.9rem;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-section ul {
-  padding-left: 20px;
-}
-
-footer {
-  margin-top: 50px;
-  text-align: center;
-  font-size: 0.8rem;
-  color: #999;
-}
-
-footer span {
-  color: #c0d1e4;
-}
+</body>
+</html>
