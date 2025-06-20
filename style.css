@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,97 +7,95 @@
 }
 
 body {
-  background-color: #f4faff;
-  color: #333;
   font-family: 'Space Mono', monospace;
+  background-color: #e8f2ff;
+  color: #333;
   line-height: 1.6;
   padding: 20px;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-header h1 {
-  font-family: 'Major Mono Display', monospace;
-  font-size: 2.5rem;
-  color: #2c3e50;
-}
-
-.tagline {
-  font-size: 0.9rem;
-  color: #6c7a89;
-  margin-top: 0.5rem;
-}
-
-nav {
-  background-color: #e1eaf0;
-  border: 1px solid #c0ccd9;
-  padding: 10px;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-nav ul {
-  list-style: none;
+.container {
   display: flex;
-  justify-content: center;
   gap: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #4b6eaf;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #2c3e50;
-}
-
-main {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-section {
-  margin-bottom: 40px;
-  background: white;
-  border: 1px solid #dfe6ec;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 2px 2px 5px #d0dce5;
+.left-column,
+.middle-column,
+.right-column {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 8px #ccc;
 }
 
-section h2 {
-  font-size: 1.3rem;
-  color: #4a637d;
+.left-column {
+  flex: 1;
+  max-width: 200px;
+}
+
+.middle-column {
+  flex: 2;
+  min-width: 500px;
+}
+
+.right-column {
+  flex: 1;
+  max-width: 200px;
+}
+
+h2, h3 {
+  font-size: 1.1rem;
+  color: #445b76;
   margin-bottom: 10px;
   text-transform: lowercase;
 }
 
-section p, section ul {
-  font-size: 0.95rem;
-  color: #444;
+.nav {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.nav li {
+  margin-bottom: 8px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #4a7ab9;
+}
+
+.nav a:hover {
+  color: #2c3e50;
+}
+
+.widget {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9fbfd;
+  border: 1px dashed #bbcde3;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-bottom: 30px;
 }
 
 section ul {
   padding-left: 20px;
 }
 
-section ul li {
-  margin-bottom: 8px;
-}
-
 footer {
-  text-align: center;
   margin-top: 50px;
+  text-align: center;
   font-size: 0.8rem;
   color: #999;
 }
 
 footer span {
-  color: #bccbe3;
+  color: #c0d1e4;
 }
