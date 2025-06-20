@@ -8,7 +8,7 @@
 		--gradientBottom: rgb(240, 248, 255, .8);
 	}
 	header {
-		background: url(/images/desk.png);
+		background: url(images/desk.png);
 	}
 /* end light mode styling */
 
@@ -25,7 +25,7 @@
 			a:link { color: lightblue; }
 		}
 		header {
-			background: url(/images/desk.png);
+			background: url(images/desk.png);
 		}
 	}
 /* end dark mode styling */
