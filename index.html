@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nadia Chestnut</title>
+    <title>My Digital Haven</title>
     <!-- Link to Google Fonts for Aldrich and Source Code Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
@@ -16,24 +16,25 @@
             <!-- Navigation Window -->
             <div class="navbar">
                 <!-- Loader Circle (placeholder image) -->
-                <div class="navbar-title">NAV</div>
+                <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/loadercircle.png" id="loadercircle" style="height:25px; margin-top:12px; margin-left:12px;">
+                <div class="navbar-title">nAVI</div>
                 <div class="navbar-title-2">my<text>web</text></div>
                 <table id="navtable" style="overflow:auto; width:100%; background:transparent;">
                     <tbody>
                         <tr>
-                            <td><a href="index.html">HOME</a></td>
+                            <td><a href="#home">HOME</a></td>
                         </tr>
                         <tr>
-                            <td><a href="info.html">INFO</a></td>
+                            <td><a href="#info">INFO</a></td>
                         </tr>
                         <tr>
-                            <td><a href="research.html">RESEARCH</a></td>
+                            <td><a href="#research">RESEARCH</a></td>
                         </tr>
                         <tr>
-                            <td><a href="blog.html">BLOG</a></td>
+                            <td><a href="#blog">BLOG</a></td>
                         </tr>
                         <tr>
-                            <td><a href="links.html">LINKS</a></td>
+                            <td><a href="#links">LINKS</a></td>
                         </tr>
                         <tr>
                             <td><a href="#"><!-- Empty --></a></td>
@@ -42,34 +43,40 @@
                 </table>
             </div>
 
-            <!-- Mood Window - Placeholder -->
+            <!-- Mood Window - Placeholder (Retained as is, no change requested) -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">MOOD</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
                 <div class="small-content-inner" style="height: 100px; padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px;">
                     <span style="top:-22px; left:0px; font-family: 'Aldrich', sans-serif;">
-                        feeling: <span style="font-size:16px; color:#74a4db;">Inspired</span>
+                        feeling: <span style="font-size:16px; color:#87CEFA;">Inspired</span>
                     </span>
                     <span style="margin-top:10px;">
-                        Status: <span style="font-size:16px; color:#74a4db;">Building digital realms...</span>
+                        Status: <span style="font-size:16px; color:#87CEFA;">Building digital realms...</span>
                     </span>
                 </div>
             </div>
 
-            <!-- My Button Window - Placeholder -->
+            <!-- Music Player Section (formerly "BUTTON") -->
             <div class="small-content">
                 <div class="small-content-toolbar">
-                    <span data-text="toolbar text">BUTTON</span>
+                    <span data-text="toolbar text">MUSIC</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
-                <div class="small-content-inner" style="height: 150px; padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px;">
+                <div class="small-content-inner" style="padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px;">
                     <span style="top:-22px; left:0px; font-family: 'Aldrich', sans-serif;">
-                        My Creations
+                        Now Playing:
                     </span>
                     <div style="text-align: center; margin-top: 15px;">
-                        <img src="https://placehold.co/88x31/8bb4ff/ffffff?text=My+Button" alt="My Button" style="opacity:0.7; border-radius:5px;">
+                        <!-- Placeholder for your music player. Replace with your embed code.
+                             For example, from Spotify, SoundCloud, etc.
+                             Remember that autoplay might be blocked by browsers. -->
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2OjQYqWk1k93oI7E6sD0hS?utm_source=generator&autoplay=1"
+                                width="100%" height="152" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
-                    <textarea class="noscrollbar" style="display: block; width:95%; height:48px; border:1px solid #c4c4c4; border-radius:10px; padding:5px; font-family:'Aldrich', sans-serif; font-size:12px; color:#9da7b3; resize:none; margin-top:10px;">&lt;a href="#"&gt;&lt;img src="my-button.gif"&gt;&lt;/a&gt;</textarea>
                 </div>
             </div>
         </div>
@@ -79,12 +86,13 @@
             <div class="content">
                 <div class="content-toolbar">
                     <span data-text="welcome">WELCOME</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="xbutton">
                 </div>
                 <div class="content-inner">
                     <div id="page1">
                         <h1>Where Am I?</h1>
                         <p>Welcome to my website! This space is both a passion project and portfolio. I wanted to make a clean looking website for professional/academic purposes but also something fun and aesthetically pleasing.</p>
-                        <p style="color: #93bdec; font-family: 'Aldrich', sans-serif;">
+                        <p style="color: #4A4A4A; font-family: 'Aldrich', sans-serif;">
                             This website is designed for an optimal desktop experience. Always a work in progress.
                         </p>
 
@@ -104,22 +112,25 @@
         </div>
 
         <div class="column right">
-            <!-- Updates Window -->
+            <!-- ME! Section (formerly "UPDATES") -->
             <div class="small-content">
                 <div class="small-content-toolbar">
-                    <span data-text="toolbar text">UPDATES</span>
+                    <span data-text="toolbar text">ME!</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
-                <div id="small-content-pictochat" style="padding: 18px; margin-top:25px; margin-bottom:7px;">
-                    <p style="color:#9da7b3; font-family: 'Aldrich', sans-serif; font-size:14px; margin-bottom:10px;">
-                        <strong style="color:#74a4db;">2025-06-20:</strong> Launched new website design!
+                <div class="small-content-inner" style="padding: 18px; margin-top:25px; margin-bottom:7px; text-align: center;">
+                    <img src="https://placehold.co/100x100/ADD8E6/FFFFFF?text=Your+Headshot" alt="Your Headshot" style="border-radius: 50%; width: 100px; height: 100px; object-fit: cover; margin-bottom: 15px; border: 2px solid #D3D3D3;">
+                    <p style="color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px; margin-bottom:10px;">
+                        Hi there! I'm **[Your Name/Alias]**. I'm passionate about **[Your Interests]** and love exploring **[Your Hobbies]**. This site is a peek into my digital world!
                     </p>
                 </div>
             </div>
 
-            <!-- Gallery/Latest Post Window -->
+            <!-- Gallery/Latest Post Window (Retained as is, no change requested) -->
             <div class="small-content" style="margin-bottom: 25px;">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">GALLERY</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
                 <div class="small-content-inner" style="padding:15px; margin-top:25px;">
                     <div id="latestpost">
@@ -127,43 +138,31 @@
                             <b>Latest projects/research</b>
                         </div>
                     </div>
-                    <p style="font-family: 'Aldrich', sans-serif; font-size:14px; color:#9da7b3; margin-top: 50px;">
-                        Check out the <a href="#" style="color: #93bdec;">Gallery</a> for a fun display of my presentations, projects, and publications!
+                    <p style="font-family: 'Aldrich', sans-serif; font-size:14px; color:#4A4A4A; margin-top: 50px;">
+                        Check out the <a href="#" style="color: #87CEFA;">Gallery</a> for a fun display of my presentations, projects, and publications!
                     </p>
                 </div>
             </div>
 
-            <!-- Stats Window -->
+            <!-- CURRENTLY Section (formerly "STATS") -->
             <div class="small-content">
                 <div class="small-content-toolbar">
-                    <span data-text="toolbar text">STATS</span>
+                    <span data-text="toolbar text">CURRENTLY</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
-                <div class="small-content-inner" style="height: 100px; padding:3px; margin-top:40px;">
-                    <span style="top:-22px; left:10px; font-family: 'Aldrich', sans-serif;">
-                        your digital ID number<br>
-                    </span>
-                    <span style="height:25px; margin-left:auto; margin-right:auto; margin-top:-8px; margin-bottom:5px; text-align: center; color:#9da7b3; font-family: 'Aldrich', sans-serif; font-size:24px;">
-                        1076/hit
-                    </span>
-                    <div style="padding:3px; margin-top:35px; height:58px !important;">
-                        <span style="top:-25px; left:7px; font-family: 'Aldrich', sans-serif;">
-                            timecode infos
-                        </span>
-                        <span id="timecode">
-                            <table>
-                                <tbody>
-                                    <tr>
-                                        <td style="text-align: left;">Created on :</td>
-                                        <td style="text-align: right;">[July] 31, 2024</td>
-                                    </tr>
-                                    <tr>
-                                        <td style="text-align: left;">Last updated :</td>
-                                        <td id="lastUpdated" style="text-align: right;">[Mar] 27, 2025</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </span>
-                    </div>
+                <div class="small-content-inner" style="height: auto; padding:15px; margin-top:40px;">
+                    <p style="margin-bottom: 10px; color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Reading:</strong> [Book Title or Article]
+                    </p>
+                    <p style="margin-bottom: 10px; color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Watching:</strong> [Show/Movie Title]
+                    </p>
+                    <p style="margin-bottom: 10px; color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Listening to:</strong> [Song/Artist/Podcast]
+                    </p>
+                    <p style="color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Working on:</strong> [Project/Task]
+                    </p>
                 </div>
             </div>
         </div>
@@ -182,14 +181,9 @@
             });
         });
 
-        // Update Last Updated Date dynamically
-        const lastUpdatedElement = document.getElementById('lastUpdated');
-        if (lastUpdatedElement) {
-            const currentDate = new Date();
-            const options = { month: 'short', day: 'numeric', year: 'numeric' };
-            lastUpdatedElement.textContent = currentDate.toLocaleDateString('en-US', options);
-        }
-
+        // Update Last Updated Date dynamically (Removed from 'CURRENTLY' section as per new request)
+        // No longer needed as 'CURRENTLY' content is custom now.
+        // If you want to keep a dynamic date somewhere, you'll need a new spot for it.
     </script>
 </body>
 </html>
