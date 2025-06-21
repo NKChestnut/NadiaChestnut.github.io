@@ -35,14 +35,14 @@ fieldset, img {
 }
 
 a {
-    color: #DA70D6; /* Orchid - A soft pinkish-purple for primary links */
+    color: #87CEFA; /* Light Sky Blue - for primary links, a soft techy blue */
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover */
 }
 
 a:hover {
-    color: #FF69B4; /* Hot Pink - Brighter, more vibrant hover for contrast and cuteness */
-    text-shadow: 0 0 10px rgba(255, 105, 180, 0.9); /* Stronger pink glow on hover */
+    color: #FFDAB9; /* Peach Puff - a very subtle, soft pink/peach for contrast */
+    text-shadow: 0 0 8px rgba(255, 218, 185, 0.7); /* Subtle glow on hover */
 }
 
 html {
@@ -58,9 +58,9 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh; /* Ensure body takes full viewport height */
-    background-color: #FFF0F5; /* LavenderBlush - very soft, pale pink background */
-    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23FFC0CB" fill-opacity="0.2"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle pink geometric pattern */
-    color: #4B0082; /* Indigo - dark text for readability, with a purple tint */
+    background-color: #F8F8F8; /* Very light grey/off-white background */
+    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23E0E6F0" fill-opacity="0.3"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle, very light blue/grey geometric pattern */
+    color: #4A4A4A; /* Dark grey text for readability */
     font-family: Verdana, sans-serif;
     position: relative;
 }
@@ -137,11 +137,11 @@ body {
     font-family: Verdana, sans-serif;
     z-index: 0;
     position: relative;
-    border: 2px solid #FFC0CB; /* Pink border */
+    border: 2px solid #E0E0E0; /* Light grey border */
     border-radius: 18px; /* More rounded corners */
-    box-shadow: 0 0 15px rgba(255, 192, 203, 0.7), inset 0 0 8px rgba(255, 192, 203, 0.5); /* Stronger, more pervasive pink glow */
+    box-shadow: 0 0 12px rgba(220, 220, 220, 0.7), inset 0 0 6px rgba(220, 220, 220, 0.5); /* Soft, subtle light glow */
     background-color: rgba(255, 255, 255, 0.98); /* Nearly opaque white background */
-    backdrop-filter: blur(4px); /* Slightly stronger blur for more ethereal feel */
+    backdrop-filter: blur(4px); /* Stronger blur for more ethereal feel */
 }
 
 .navbar-title {
@@ -151,7 +151,7 @@ body {
     top: 0px;
     padding-left: 55px;
     font-family: "Space Age", sans-serif;
-    background: linear-gradient(0deg, #ADD8E6 0%, #FFC0CB 55%); /* Light Blue to Pink gradient for title */
+    background: linear-gradient(0deg, #ADD8E6 0%, #FFDAB9 55%); /* Light Blue to Peach Puff gradient for title */
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
@@ -163,7 +163,7 @@ body {
     -moz-transform: scale(1, 0.8);
     -ms-transform: scale(1, 0.8);
     -o-transform: scale(1, 0.8);
-    text-shadow: 0 0 15px rgba(255, 192, 203, 0.8); /* More prominent pink glow for title */
+    text-shadow: 0 0 12px rgba(173, 216, 230, 0.6); /* Prominent blue glow for title */
 }
 
 .navbar-title-2 {
@@ -171,7 +171,7 @@ body {
     padding-left: 54px;
     line-height: 30px;
     font-family: "Braille", sans-serif;
-    color: #87CEEB; /* Sky Blue */
+    color: #B0E0E6; /* Powder Blue - very light, subtle blue */
     font-size: 24px;
     letter-spacing: 1px;
 }
@@ -205,14 +205,14 @@ body {
     content: '';
     width: 125px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(255, 192, 203, 0.4) 0%, rgba(135, 206, 235, 0.9) 25%, rgba(135, 206, 235, 0.9) 50%, rgba(135, 206, 235, 0.9) 75%, rgba(255, 192, 203, 0.4) 100%); /* Pink to Blue gradient for lines */
-    box-shadow: 0px 0px 5px 1px rgba(135, 206, 235, 0.6); /* More prominent blue glow for lines */
+    background: linear-gradient(90deg, rgba(220, 220, 220, 0.3) 0%, rgba(176, 224, 230, 0.7) 25%, rgba(176, 224, 230, 0.7) 50%, rgba(176, 224, 230, 0.7) 75%, rgba(220, 220, 220, 0.3) 100%); /* Light grey to soft blue gradient for lines */
+    box-shadow: 0px 0px 4px 1px rgba(176, 224, 230, 0.5); /* Soft blue glow for lines */
 }
 
 .navbar a {
     position: relative;
     font-family: "Forced Square", sans-serif;
-    color: #4682B4; /* Steel Blue links */
+    color: #696969; /* Dim Gray - dark grey for links */
     text-decoration: none;
     text-align: right;
     display: block;
@@ -223,8 +223,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #FF69B4; /* Hot Pink on hover */
-    text-shadow: 0 0 7px rgba(255, 105, 180, 0.9); /* Stronger pink glow on hover */
+    color: #87CEFA; /* Light Sky Blue on hover */
+    text-shadow: 0 0 7px rgba(135, 206, 250, 0.8); /* Stronger blue glow on hover */
 }
 
 /* Main Content Window */
@@ -235,11 +235,11 @@ body {
     width: 100%;
     height: auto;
     background-image: linear-gradient(90deg, #FFFFFF 0%, #FAFAFA 50%, #FFFFFF 100%); /* Pure white, soft gradient */
-    border: 2px solid #FFC0CB; /* Pink border */
+    border: 2px solid #E0E0E0; /* Light grey border */
     border-radius: 18px;
     z-index: 1;
-    box-shadow: 0 0 18px rgba(255, 192, 203, 0.8), inset 0px -5px 12px -5px rgba(255, 192, 203, 0.5); /* Even stronger pink glow and inset */
-    backdrop-filter: blur(4px); /* Slightly stronger blur */
+    box-shadow: 0 0 15px rgba(220, 220, 220, 0.8), inset 0px -5px 10px -5px rgba(220, 220, 220, 0.5); /* Stronger soft light glow and inset */
+    backdrop-filter: blur(4px); /* Stronger blur */
 }
 
 .content-toolbar {
@@ -251,9 +251,9 @@ body {
     margin-right: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #E0FFFF; /* Light Cyan toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.95), transparent), radial-gradient(75% 50% at 50% 70%, rgba(224, 255, 255, 0.95), transparent); /* Stronger white/cyan gradient */
-    box-shadow: inset 0 -2px 6px 0px rgba(173, 216, 230, 0.5); /* More prominent inset shadow */
+    background-color: #F0F8FF; /* AliceBlue toolbar */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(240, 248, 255, 0.9), transparent); /* White/AliceBlue gradient */
+    box-shadow: inset 0 -2px 5px 0px rgba(176, 224, 230, 0.4); /* Softer blue inset shadow */
 }
 
 .content-toolbar::after {
@@ -265,7 +265,7 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(239, 242, 245, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More prominent reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(239, 242, 245, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
     z-index: 1 !important;
@@ -273,7 +273,7 @@ body {
 
 .content-toolbar span {
     position: relative;
-    background: linear-gradient(0deg, #ADD8E6 0%, #FFC0CB 55%); /* Light Blue to Pink gradient for title */
+    background: linear-gradient(0deg, #ADD8E6 0%, #FFDAB9 55%); /* Light Blue to Peach Puff gradient for title */
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
@@ -282,7 +282,7 @@ body {
     top: -10.5px;
     padding-left: 10px;
     z-index: 10 !important;
-    text-shadow: 0 0 10px rgba(255, 192, 203, 0.7); /* More prominent pink glow for toolbar title */
+    text-shadow: 0 0 10px rgba(173, 216, 230, 0.7); /* Prominent blue glow for toolbar title */
 }
 
 #xbutton {
@@ -292,7 +292,7 @@ body {
     float: right;
     height: 25px;
     z-index: 100 !important;
-    filter: drop-shadow(0 0 7px #FF69B4); /* Even stronger hot pink glow to x button */
+    filter: drop-shadow(0 0 6px #FFDAB9); /* Soft peach/pink glow to x button */
 }
 
 .content-inner {
@@ -300,21 +300,21 @@ body {
     height: auto;
     padding: 8px 20px 15px 20px;
     margin: 13px 7px 10px 7px;
-    border: 1.5px solid #B0C4DE; /* Light Steel Blue inner border */
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 255, 0.99) 5%, rgba(250, 250, 255, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%); /* Almost opaque white inner background */
+    border: 1.5px solid #D3D3D3; /* Light Grey inner border */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 250, 0.99) 5%, rgba(250, 250, 250, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%); /* Almost opaque white inner background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 9px 0px rgba(176, 196, 222, 0.5), 0px -4px 8px -3px rgba(176, 196, 222, 0.4), 0px 5px 3px -3px rgba(255,255,255,0.15); /* More prominent inner shadows/highlights */
+    box-shadow: inset 0px 0px 8px 0px rgba(220, 220, 220, 0.5), 0px -4px 7px -3px rgba(220, 220, 220, 0.4), 0px 5px 2px -3px rgba(255,255,255,0.15); /* More prominent inner shadows/highlights */
     z-index: 1;
 }
 
 .content-inner h1 {
     position: relative;
-    color: #4682B4; /* Steel Blue H1 text */
+    color: #5A5A5A; /* Gray H1 text */
     font-size: 18px;
     font-family: "Aldrich", sans-serif; /* Using Aldrich for h1 within content */
     font-weight: 500;
     padding-left: 20px;
-    text-shadow: 0 0 6px rgba(70, 130, 180, 0.5); /* Stronger blue glow for H1 */
+    text-shadow: 0 0 5px rgba(90, 90, 90, 0.4); /* Subtle grey glow for H1 */
 }
 
 .content-inner h1::after {
@@ -324,12 +324,12 @@ body {
     width: 100%;
     left: -20px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(255, 192, 203, 0.3) 0%, rgba(135, 206, 235, 0.7) 25%, rgba(135, 206, 235, 0.7) 50%, rgba(135, 206, 235, 0.7) 75%, rgba(255, 192, 203, 0.3) 100%); /* Stronger, pink to blue line */
-    box-shadow: 0px 0px 6px 1px rgba(135, 206, 235, 0.4); /* More prominent blue glow for line */
+    background: linear-gradient(90deg, rgba(220, 220, 220, 0.3) 0%, rgba(176, 224, 230, 0.6) 25%, rgba(176, 224, 230, 0.6) 50%, rgba(176, 224, 230, 0.6) 75%, rgba(220, 220, 220, 0.3) 100%); /* Soft grey to blue line */
+    box-shadow: 0px 0px 5px 1px rgba(176, 224, 230, 0.4); /* Subtle blue glow for line */
 }
 
 .content-inner p {
-    color: #483D8B; /* Dark Slate Blue text color */
+    color: #4A4A4A; /* Dark grey text color */
     font-size: 14px;
     font-family: "Aldrich", sans-serif; /* Using Aldrich for paragraphs within content */
     font-weight: 400;
@@ -342,15 +342,15 @@ body {
     position: relative;
     height: 25px;
     margin: 10px 7px 7px 7px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 245, 255, 0.95) 5%, rgba(245, 245, 255, 0.95) 95%, rgba(255, 255, 255, 0.95) 100%); /* Nearly opaque white footer background */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(250, 250, 250, 0.95) 5%, rgba(250, 250, 250, 0.95) 95%, rgba(255, 255, 255, 0.95) 100%); /* Nearly opaque white footer background */
     border-radius: 18px;
-    box-shadow: inset 0px 3px 5px -1px rgba(173, 216, 230, 0.3), 0px -4px 5px -3px rgba(173, 216, 230, 0.2), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
+    box-shadow: inset 0px 3px 5px -1px rgba(220, 220, 220, 0.3), 0px -4px 5px -3px rgba(220, 220, 220, 0.2), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
     z-index: 1;
 }
 
 .content-footer span {
     position: absolute;
-    color: #DA70D6; /* Orchid for footer text */
+    color: #87CEFA; /* Light Sky Blue for footer text */
     font-family: "Forced Square", sans-serif;
     font-size: 13px;
     vertical-align: middle;
@@ -365,12 +365,12 @@ body {
     width: 100%; /* Make them flexible */
     height: auto;
     background-image: linear-gradient(90deg, #FFFFFF 0%, #FAFAFA 50%, #FFFFFF 100%); /* Pure white, soft gradient */
-    border: 2px solid #FFC0CB; /* Pink border */
+    border: 2px solid #E0E0E0; /* Light grey border */
     border-radius: 22px;
     z-index: 1;
-    box-shadow: 0 0 18px rgba(255, 192, 203, 0.8), inset 0px -5px 12px -5px rgba(255, 192, 203, 0.5); /* Even stronger pink glow and inset */
+    box-shadow: 0 0 15px rgba(220, 220, 220, 0.8), inset 0px -5px 10px -5px rgba(220, 220, 220, 0.5); /* Stronger soft light glow and inset */
     margin-bottom: 20px; /* Add some space below each */
-    backdrop-filter: blur(4px); /* Slightly stronger blur */
+    backdrop-filter: blur(4px); /* Stronger blur */
 }
 
 .small-content-toolbar {
@@ -379,9 +379,9 @@ body {
     margin: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #E0FFFF; /* Light Cyan toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.95), transparent), radial-gradient(75% 50% at 50% 70%, rgba(224, 255, 255, 0.95), transparent);
-    box-shadow: inset 0 -2px 6px 0px rgba(173, 216, 230, 0.5); /* More prominent inset shadow */
+    background-color: #F0F8FF; /* AliceBlue toolbar */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(240, 248, 255, 0.9), transparent);
+    box-shadow: inset 0 -2px 5px 0px rgba(176, 224, 230, 0.4); /* Softer blue inset shadow */
 }
 
 .small-content-toolbar::after {
@@ -393,14 +393,14 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(239, 242, 245, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More prominent reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(239, 242, 245, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
 }
 
 .small-content-toolbar span {
     position: relative;
-    color: #4682B4; /* Steel Blue header text */
+    color: #5A5A5A; /* Gray header text */
     font-family: "SF Telegraphic Light", sans-serif; /* Using SF Telegraphic Light for small content headers */
     font-size: 24px;
     letter-spacing: 1px;
@@ -408,7 +408,7 @@ body {
     margin-top: -4px;
     float: right;
     z-index: 100 !important;
-    text-shadow: 0 0 8px rgba(70, 130, 180, 0.5); /* Stronger blue glow for title */
+    text-shadow: 0 0 6px rgba(90, 90, 90, 0.5); /* Subtle grey glow for title */
 }
 
 #small-xbutton-right {
@@ -418,7 +418,7 @@ body {
     float: left;
     height: 24px;
     z-index: 100 !important;
-    filter: drop-shadow(0 0 7px #FF69B4); /* Even stronger hot pink glow to x button */
+    filter: drop-shadow(0 0 6px #FFDAB9); /* Soft peach/pink glow to x button */
 }
 
 .small-content-inner {
@@ -426,17 +426,17 @@ body {
     height: auto !important;
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 8px 7px;
-    border: 1.5px solid #B0C4DE; /* Light Steel Blue inner border */
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 255, 0.99) 5%, rgba(250, 250, 255, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%); /* Almost opaque white inner background */
+    border: 1.5px solid #D3D3D3; /* Light Grey inner border */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 250, 0.99) 5%, rgba(250, 250, 250, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%); /* Almost opaque white inner background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 9px 0px rgba(176, 196, 222, 0.5), 0px -4px 8px -3px rgba(176, 196, 222, 0.4), 0px 5px 3px -3px rgba(255,255,255,0.15); /* More prominent inner shadows/highlights */
+    box-shadow: inset 0px 0px 8px 0px rgba(220, 220, 220, 0.5), 0px -4px 7px -3px rgba(220, 220, 220, 0.4), 0px 5px 2px -3px rgba(255,255,255,0.15); /* More prominent inner shadows/highlights */
     z-index: 1;
 }
 
 .small-content-inner span {
     position: relative;
     display: block;
-    color: #483D8B; /* Dark Slate Blue text color */
+    color: #4A4A4A; /* Dark grey text color */
     font-size: 12px;
     font-family: "Aldrich", sans-serif; /* Consistent font for small content text */
 }
@@ -447,10 +447,10 @@ body {
     height: 345px !important;
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 7px 7px;
-    border: 1.5px solid #B0C4DE; /* Light Steel Blue border */
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 255, 0.99) 5%, rgba(250, 250, 255, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%); /* Almost opaque white background */
+    border: 1.5px solid #D3D3D3; /* Light Grey border */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 250, 0.99) 5%, rgba(250, 250, 250, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%); /* Almost opaque white background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 9px 0px rgba(176, 196, 222, 0.5), 0px -4px 8px -3px rgba(176, 196, 222, 0.4), 0px 5px 3px -3px rgba(255,255,255,0.15); /* Adjusted shadows */
+    box-shadow: inset 0px 0px 8px 0px rgba(220, 220, 220, 0.5), 0px -4px 7px -3px rgba(220, 220, 220, 0.4), 0px 5px 2px -3px rgba(255,255,255,0.15); /* Adjusted shadows */
     z-index: 1;
 }
 
@@ -473,7 +473,7 @@ body {
     letter-spacing: 1px;
     margin-bottom: 5.5px;
     background: linear-gradient(to right, #ADD8E6 0%, #E0FFFF 80%, rgba(220, 252, 252, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box; /* Light blue to very light cyan gradient */
-    color: #2F4F4F; /* Dark Slate Gray text */
+    color: #4A4A4A; /* Dark grey text */
     padding-left: 10px;
     text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
     z-index: 100;
@@ -494,7 +494,7 @@ body {
     left: 0px;
     font-size: 13px;
     font-family: "Source Code Pro", sans-serif;
-    color: #483D8B; /* Dark Slate Blue text for blog post name */
+    color: #4A4A4A; /* Dark grey text for blog post name */
     padding-left: 10px;
     white-space: nowrap;
     animation: scroll-left 10s linear infinite;
@@ -508,12 +508,12 @@ body {
 }
 
 #latestpostname > a {
-    color: #DA70D6; /* Orchid for link */
+    color: #87CEFA; /* Light Sky Blue for link */
     text-decoration: none;
 }
 
 #latestpostname > a:hover {
-    color: #FF69B4; /* Hot Pink on hover */
+    color: #FFDAB9; /* Peach Puff on hover */
     text-decoration: none;
 }
 
@@ -542,5 +542,5 @@ body {
 }
 
 #timecode td {
-    color: #483D8B; /* Dark Slate Blue text color for timecode */
+    color: #4A4A4A; /* Dark grey text color for timecode */
 }
