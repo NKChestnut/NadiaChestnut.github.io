@@ -35,12 +35,13 @@ fieldset, img {
 }
 
 a {
-    color: #74a4db;
+    color: #a0c2e9; /* Adjusted link color for new palette */
     text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
 a:hover {
-    color: #a9c6f0;
+    color: #e6e6fa; /* Lighter hover for contrast */
 }
 
 html {
@@ -56,8 +57,9 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh; /* Ensure body takes full viewport height */
-    background-color: rgb(218, 236, 255);
-    color: black;
+    background-color: #1a1a2e; /* Darker, more ethereal background */
+    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%232c2c4d" fill-opacity="0.4"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle geometric pattern */
+    color: #e6e6fa; /* Lighter text for dark background */
     font-family: Verdana, sans-serif;
     position: relative;
 }
@@ -134,6 +136,10 @@ body {
     font-family: Verdana, sans-serif;
     z-index: 0;
     position: relative;
+    border: 2px solid #5a5a7f; /* Stronger, darker border */
+    border-radius: 15px; /* Slightly more rounded */
+    box-shadow: 0 0 15px rgba(100, 100, 200, 0.5), inset 0 0 8px rgba(50, 50, 100, 0.7); /* Subtle glow and inset */
+    background-color: rgba(30, 30, 50, 0.8); /* Darker background with transparency */
 }
 
 .navbar-title {
@@ -143,7 +149,7 @@ body {
     top: 0px;
     padding-left: 55px;
     font-family: "Space Age", sans-serif;
-    background: linear-gradient(0deg, rgba(129, 161, 200, 1) 0%, rgba(167, 213, 255, 1) 55%);
+    background: linear-gradient(0deg, #a0c2e9 0%, #e6e6fa 55%); /* Brighter gradient */
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
@@ -155,6 +161,7 @@ body {
     -moz-transform: scale(1, 0.8);
     -ms-transform: scale(1, 0.8);
     -o-transform: scale(1, 0.8);
+    text-shadow: 0 0 8px rgba(230, 230, 250, 0.7); /* Subtle glow for title */
 }
 
 .navbar-title-2 {
@@ -162,7 +169,7 @@ body {
     padding-left: 54px;
     line-height: 30px;
     font-family: "Braille", sans-serif;
-    color: #c9cfd6;
+    color: #b0c4de; /* Adjusted color */
     font-size: 24px;
     letter-spacing: 1px;
 }
@@ -196,14 +203,14 @@ body {
     content: '';
     width: 125px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(189, 199, 211, 1) 25%, rgba(189, 199, 211, 1) 50%, rgba(189, 199, 211, 1) 75%, rgba(255, 255, 255, 0.4) 100%);
-    box-shadow: 0px 0px 4px 1px #ffffff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0%, rgba(189, 199, 211, 0.7) 25%, rgba(189, 199, 211, 0.7) 50%, rgba(189, 199, 211, 0.7) 75%, rgba(255, 255, 255, 0.2) 100%); /* Softer gradient for lines */
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.3); /* Subtle glow for lines */
 }
 
 .navbar a {
     position: relative;
     font-family: "Forced Square", sans-serif;
-    color: #9da7b3;
+    color: #e6e6fa; /* Lighter links */
     text-decoration: none;
     text-align: right;
     display: block;
@@ -214,7 +221,8 @@ body {
 }
 
 .navbar a:hover {
-    color: #81a1c8;
+    color: #a0c2e9; /* Deeper blue on hover */
+    text-shadow: 0 0 5px rgba(160, 194, 233, 0.8); /* Glow on hover */
 }
 
 /* Main Content Window */
@@ -224,11 +232,11 @@ body {
     left: 0;
     width: 100%;
     height: auto;
-    background-image: linear-gradient(90deg, #fafbfb 0%, #f7f7f7 50%, #fafbfb 100%);
-    border: 1.5px solid #c9c9c9;
+    background-image: linear-gradient(90deg, #2a2a4f 0%, #3a3a6a 50%, #2a2a4f 100%); /* Darker, richer gradient */
+    border: 2px solid #5a5a7f; /* Consistent dark border */
     border-radius: 18px;
     z-index: 1;
-    box-shadow: inset 0px -5px 5px -5px #dadada, 0px 0px 5px 0px #dadada;
+    box-shadow: inset 0px -5px 10px -5px rgba(0,0,0,0.5), 0px 0px 15px rgba(100, 100, 200, 0.5); /* Stronger shadow/glow */
 }
 
 .content-toolbar {
@@ -240,9 +248,9 @@ body {
     margin-right: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #f0f0f0;
-    background-image: radial-gradient(75% 50% at 50% 0%, rgb(244, 248, 255), transparent), radial-gradient(75% 50% at 50% 70%, #ffffff, transparent);
-    box-shadow: inset 0 -2px 4px 0px #b0b3b8;
+    background-color: #3f3f6f; /* Darker toolbar color */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(80, 80, 120, 0.8), transparent), radial-gradient(75% 50% at 50% 70%, rgba(50, 50, 90, 0.8), transparent);
+    box-shadow: inset 0 -2px 4px 0px rgba(0,0,0,0.3); /* Softer inset shadow */
 }
 
 .content-toolbar::after {
@@ -254,7 +262,7 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgb(255, 255, 255) 5%, rgb(237, 241, 245) 20%, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 5%, rgba(239, 242, 245, 0.05) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More subtle reflective highlight */
     background-clip: border-box;
     opacity: 1;
     z-index: 1 !important;
@@ -262,7 +270,7 @@ body {
 
 .content-toolbar span {
     position: relative;
-    background: linear-gradient(0deg, rgba(129, 161, 200, 1) 0%, #a7d5ff 55%);
+    background: linear-gradient(0deg, #a0c2e9 0%, #e6e6fa 55%); /* Brighter gradient for title */
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
@@ -271,6 +279,7 @@ body {
     top: -10.5px;
     padding-left: 10px;
     z-index: 10 !important;
+    text-shadow: 0 0 5px rgba(230, 230, 250, 0.7); /* Subtle glow for toolbar title */
 }
 
 #xbutton {
@@ -280,6 +289,7 @@ body {
     float: right;
     height: 25px;
     z-index: 100 !important;
+    filter: drop-shadow(0 0 3px #a0c2e9); /* Add subtle glow to x button */
 }
 
 .content-inner {
@@ -287,20 +297,21 @@ body {
     height: auto;
     padding: 8px 20px 15px 20px;
     margin: 13px 7px 10px 7px;
-    border: 1.5px solid #c9c9c9;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(250, 250, 251) 5%, rgba(250, 251, 251, 1) 95%, rgba(255, 255, 255, 1) 100%);
+    border: 1.5px solid #5a5a7f; /* Darker inner border */
+    background-image: linear-gradient(90deg, rgba(35, 35, 60, 0.9) 0%, rgba(45, 45, 80, 0.9) 5%, rgba(45, 45, 80, 0.9) 95%, rgba(35, 35, 60, 0.9) 100%); /* Darker, slightly transparent inner background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 5px 0px rgb(202, 202, 202), 0px -4px 5px -3px #bbbbbb, 0px 5px 1px -3px #ffffff;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px -4px 5px -3px rgba(0,0,0,0.3), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
     z-index: 1;
 }
 
 .content-inner h1 {
     position: relative;
-    color: #9da7b3;
+    color: #e6e6fa; /* Lighter H1 text */
     font-size: 18px;
     font-family: "Aldrich", sans-serif; /* Using Aldrich for h1 within content */
     font-weight: 500;
     padding-left: 20px;
+    text-shadow: 0 0 3px rgba(230, 230, 250, 0.5); /* Subtle glow for H1 */
 }
 
 .content-inner h1::after {
@@ -311,12 +322,12 @@ body {
     left: -20px;
     height: 1px;
     margin-top: 3px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, rgba(189, 199, 211, 1) 25%, rgba(189, 199, 211, 1) 50%, rgba(189, 199, 211, 1) 75%, rgba(255, 255, 255, 0.4) 100%);
-    box-shadow: 0px 0px 4px 1px #ffffff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(189, 199, 211, 0.5) 25%, rgba(189, 199, 211, 0.5) 50%, rgba(189, 199, 211, 0.5) 75%, rgba(255, 255, 255, 0.1) 100%); /* Softer, transparent line */
+    box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.2); /* Subtle glow for line */
 }
 
 .content-inner p {
-    color: #9da7b3;
+    color: #d0d0f0; /* Softer text color */
     font-size: 14px;
     font-family: "Aldrich", sans-serif; /* Using Aldrich for paragraphs within content */
     font-weight: 400;
@@ -329,15 +340,15 @@ body {
     position: relative;
     height: 25px;
     margin: 10px 7px 7px 7px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(250, 250, 251) 5%, rgba(250, 251, 251, 1) 95%, rgba(255, 255, 255, 1) 100%);
+    background-image: linear-gradient(90deg, rgba(35, 35, 60, 0.9) 0%, rgba(45, 45, 80, 0.9) 5%, rgba(45, 45, 80, 0.9) 95%, rgba(35, 35, 60, 0.9) 100%); /* Darker footer background */
     border-radius: 18px;
-    box-shadow: inset 0px 3px 5px -1px rgb(202, 202, 202), 0px -4px 5px -3px #bbbbbb, 0px 5px 1px -3px #ffffff;
+    box-shadow: inset 0px 3px 5px -1px rgba(0,0,0,0.5), 0px -4px 5px -3px rgba(0,0,0,0.3), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
     z-index: 1;
 }
 
 .content-footer span {
     position: absolute;
-    color: #9da7b3;
+    color: #b0c4de; /* Adjusted footer text color */
     font-family: "Forced Square", sans-serif;
     font-size: 13px;
     vertical-align: middle;
@@ -351,11 +362,11 @@ body {
     margin-top: 10px;
     width: 100%; /* Make them flexible */
     height: auto;
-    background-image: linear-gradient(90deg, #fafbfb 0%, #f7f7f7 50%, #fafbfb 100%);
-    border: 1.5px solid #c9c9c9;
+    background-image: linear-gradient(90deg, #2a2a4f 0%, #3a3a6a 50%, #2a2a4f 100%); /* Darker, richer gradient */
+    border: 2px solid #5a5a7f; /* Consistent dark border */
     border-radius: 22px;
     z-index: 1;
-    box-shadow: inset 0px -5px 5px -4px #dadada, 0px 0px 5px 0px #dadada;
+    box-shadow: inset 0px -5px 10px -5px rgba(0,0,0,0.5), 0px 0px 15px rgba(100, 100, 200, 0.5); /* Stronger shadow/glow */
     margin-bottom: 20px; /* Add some space below each */
 }
 
@@ -365,8 +376,9 @@ body {
     margin: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #f0f0f0;
-    background-image: radial-gradient(75% 50% at 50% 0%, rgb(244, 248, 255), transparent), radial-gradient(75% 50% at 50% 70%, #ffffff, transparent);
+    background-color: #3f3f6f; /* Darker toolbar color */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(80, 80, 120, 0.8), transparent), radial-gradient(75% 50% at 50% 70%, rgba(50, 50, 90, 0.8), transparent);
+    box-shadow: inset 0 -2px 4px 0px rgba(0,0,0,0.3); /* Softer inset shadow */
 }
 
 .small-content-toolbar::after {
@@ -378,14 +390,14 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgb(255, 255, 255) 5%, rgb(239, 242, 245) 20%, rgb(255, 255, 255) 80%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 5%, rgba(239, 242, 245, 0.05) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More subtle reflective highlight */
     background-clip: border-box;
     opacity: 1;
 }
 
 .small-content-toolbar span {
     position: relative;
-    color: #555a61;
+    color: #e6e6fa; /* Lighter header text */
     font-family: "SF Telegraphic Light", sans-serif; /* Using SF Telegraphic Light for small content headers */
     font-size: 24px;
     letter-spacing: 1px;
@@ -393,6 +405,7 @@ body {
     margin-top: -4px;
     float: right;
     z-index: 100 !important;
+    text-shadow: 0 0 5px rgba(230, 230, 250, 0.7); /* Subtle glow for title */
 }
 
 #small-xbutton-right {
@@ -402,6 +415,7 @@ body {
     float: left;
     height: 24px;
     z-index: 100 !important;
+    filter: drop-shadow(0 0 3px #a0c2e9); /* Add subtle glow to x button */
 }
 
 .small-content-inner {
@@ -409,17 +423,17 @@ body {
     height: auto !important;
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 8px 7px;
-    border: 1.5px solid #c9c9c9;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(250, 250, 251) 5%, rgba(250, 251, 251, 1) 95%, rgba(255, 255, 255, 1) 100%);
+    border: 1.5px solid #5a5a7f; /* Darker inner border */
+    background-image: linear-gradient(90deg, rgba(35, 35, 60, 0.9) 0%, rgba(45, 45, 80, 0.9) 5%, rgba(45, 45, 80, 0.9) 95%, rgba(35, 35, 60, 0.9) 100%); /* Darker, slightly transparent inner background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 5px 0px rgb(202, 202, 202), 0px -4px 5px -3px #bbbbbb, 0px 5px 1px -3px #ffffff;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px -4px 5px -3px rgba(0,0,0,0.3), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
     z-index: 1;
 }
 
 .small-content-inner span {
     position: relative;
     display: block;
-    color: #9da7b3;
+    color: #d0d0f0; /* Softer text color */
     font-size: 12px;
     font-family: "Aldrich", sans-serif; /* Consistent font for small content text */
 }
@@ -430,10 +444,10 @@ body {
     height: 345px !important;
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 7px 7px;
-    border: 1.5px solid #c9c9c9;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgb(250, 250, 251) 5%, rgba(250, 251, 251, 1) 95%, rgba(255, 255, 255, 1) 100%);
+    border: 1.5px solid #5a5a7f; /* Darker border */
+    background-image: linear-gradient(90deg, rgba(35, 35, 60, 0.9) 0%, rgba(45, 45, 80, 0.9) 5%, rgba(45, 45, 80, 0.9) 95%, rgba(35, 35, 60, 0.9) 100%); /* Darker, transparent background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 5px 0px rgb(202, 202, 202), 0px -4px 5px -3px #bbbbbb, 0px 5px 1px -3px #ffffff;
+    box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5), 0px -4px 5px -3px rgba(0,0,0,0.3), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
     z-index: 1;
 }
 
@@ -477,7 +491,7 @@ body {
     left: 0px;
     font-size: 13px;
     font-family: "Source Code Pro", sans-serif;
-    color: #7b828b;
+    color: #e6e6fa; /* Lighter text for blog post name */
     padding-left: 10px;
     white-space: nowrap;
     animation: scroll-left 10s linear infinite;
@@ -491,12 +505,12 @@ body {
 }
 
 #latestpostname > a {
-    color: #74a4db;
+    color: #a0c2e9; /* Adjusted link color */
     text-decoration: none;
 }
 
 #latestpostname > a:hover {
-    color: #a9c6f0;
+    color: #e6e6fa; /* Lighter hover color */
     text-decoration: none;
 }
 
@@ -525,5 +539,5 @@ body {
 }
 
 #timecode td {
-    color: #9da7b3; /* Apply color to text within table cells */
+    color: #d0d0f0; /* Adjusted text color for timecode */
 }
