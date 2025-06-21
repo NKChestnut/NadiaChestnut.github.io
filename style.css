@@ -35,14 +35,14 @@ fieldset, img {
 }
 
 a {
-    color: #6A5ACD; /* Medium Purple - for primary links */
+    color: #DA70D6; /* Orchid - A soft pinkish-purple for primary links */
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover */
 }
 
 a:hover {
-    color: #FFC0CB; /* Pink - brighter hover for contrast */
-    text-shadow: 0 0 5px rgba(255, 192, 203, 0.7); /* Subtle pink glow on hover */
+    color: #FFB6C1; /* LightPink - Brighter hover for contrast and cuteness */
+    text-shadow: 0 0 7px rgba(255, 182, 193, 0.8); /* Subtle pink glow on hover */
 }
 
 html {
@@ -58,9 +58,9 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh; /* Ensure body takes full viewport height */
-    background-color: #F0F8FF; /* AliceBlue - very light, soft blue */
-    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23E6E6FA" fill-opacity="0.6"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle light purple-blue geometric pattern */
-    color: #2F4F4F; /* Dark Slate Gray - dark text for readability */
+    background-color: #F8F8FF; /* GhostWhite - very light and clean */
+    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23E6E6FA" fill-opacity="0.5"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Softer, light purple-blue geometric pattern */
+    color: #483D8B; /* Dark Slate Blue - dark text for readability */
     font-family: Verdana, sans-serif;
     position: relative;
 }
@@ -139,9 +139,9 @@ body {
     position: relative;
     border: 2px solid #ADD8E6; /* Light Blue border */
     border-radius: 15px; /* Slightly more rounded */
-    box-shadow: 0 0 10px rgba(173, 216, 230, 0.5), inset 0 0 5px rgba(173, 216, 230, 0.3); /* Soft blue glow and inset */
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.5), inset 0 0 5px rgba(220, 230, 240, 0.3); /* Soft blue glow and inset, a bit more ethereal */
     background-color: rgba(255, 255, 255, 0.95); /* Nearly opaque white background */
-    backdrop-filter: blur(2px); /* Subtle blur for modern touch */
+    backdrop-filter: blur(3px); /* Slightly stronger blur for modern touch */
 }
 
 .navbar-title {
@@ -163,7 +163,7 @@ body {
     -moz-transform: scale(1, 0.8);
     -ms-transform: scale(1, 0.8);
     -o-transform: scale(1, 0.8);
-    text-shadow: 0 0 8px rgba(173, 216, 230, 0.4); /* Subtle blue glow for title */
+    text-shadow: 0 0 10px rgba(255, 192, 203, 0.6); /* More prominent pink glow for title */
 }
 
 .navbar-title-2 {
@@ -205,8 +205,8 @@ body {
     content: '';
     width: 125px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(173, 216, 230, 0.2) 0%, rgba(135, 206, 235, 0.7) 25%, rgba(135, 206, 235, 0.7) 50%, rgba(135, 206, 235, 0.7) 75%, rgba(173, 216, 230, 0.2) 100%); /* Light blue gradient for lines */
-    box-shadow: 0px 0px 4px 1px rgba(135, 206, 235, 0.3); /* Subtle blue glow for lines */
+    background: linear-gradient(90deg, rgba(173, 216, 230, 0.3) 0%, rgba(135, 206, 235, 0.8) 25%, rgba(135, 206, 235, 0.8) 50%, rgba(135, 206, 235, 0.8) 75%, rgba(173, 216, 230, 0.3) 100%); /* Stronger light blue gradient for lines */
+    box-shadow: 0px 0px 4px 1px rgba(135, 206, 235, 0.5); /* More prominent blue glow for lines */
 }
 
 .navbar a {
@@ -238,8 +238,8 @@ body {
     border: 2px solid #ADD8E6; /* Light Blue border */
     border-radius: 18px;
     z-index: 1;
-    box-shadow: inset 0px -5px 8px -5px rgba(173, 216, 230, 0.3), 0px 0px 12px rgba(173, 216, 230, 0.5); /* Soft blue glow and inset */
-    backdrop-filter: blur(2px); /* Subtle blur for modern touch */
+    box-shadow: 0 0 15px rgba(173, 216, 230, 0.6), inset 0px -5px 10px -5px rgba(173, 216, 230, 0.4); /* Stronger soft blue glow and inset */
+    backdrop-filter: blur(3px); /* Slightly stronger blur */
 }
 
 .content-toolbar {
@@ -252,8 +252,8 @@ body {
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
     background-color: #E0FFFF; /* Light Cyan toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.8), transparent), radial-gradient(75% 50% at 50% 70%, rgba(224, 255, 255, 0.8), transparent);
-    box-shadow: inset 0 -2px 4px 0px rgba(173, 216, 230, 0.3); /* Softer inset shadow */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(224, 255, 255, 0.9), transparent); /* Stronger white/cyan gradient */
+    box-shadow: inset 0 -2px 5px 0px rgba(173, 216, 230, 0.4); /* More prominent inset shadow */
 }
 
 .content-toolbar::after {
@@ -265,7 +265,7 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 5%, rgba(239, 242, 245, 0.2) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More subtle reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 5%, rgba(239, 242, 245, 0.3) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
     z-index: 1 !important;
@@ -282,7 +282,7 @@ body {
     top: -10.5px;
     padding-left: 10px;
     z-index: 10 !important;
-    text-shadow: 0 0 5px rgba(173, 216, 230, 0.5); /* Subtle blue glow for toolbar title */
+    text-shadow: 0 0 8px rgba(255, 192, 203, 0.6); /* More prominent pink glow for toolbar title */
 }
 
 #xbutton {
@@ -292,7 +292,7 @@ body {
     float: right;
     height: 25px;
     z-index: 100 !important;
-    filter: drop-shadow(0 0 3px #FFC0CB); /* Pink glow to x button */
+    filter: drop-shadow(0 0 5px #FFB6C1); /* Stronger pink glow to x button */
 }
 
 .content-inner {
@@ -301,9 +301,9 @@ body {
     padding: 8px 20px 15px 20px;
     margin: 13px 7px 10px 7px;
     border: 1.5px solid #B0C4DE; /* Light Steel Blue inner border */
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 245, 255, 0.95) 5%, rgba(245, 245, 255, 0.95) 95%, rgba(255, 255, 255, 0.95) 100%); /* Nearly opaque white inner background */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 255, 0.98) 5%, rgba(245, 245, 255, 0.98) 95%, rgba(255, 255, 255, 0.98) 100%); /* Nearly opaque white inner background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 5px 0px rgba(176, 196, 222, 0.3), 0px -4px 5px -3px rgba(176, 196, 222, 0.2), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
+    box-shadow: inset 0px 0px 7px 0px rgba(176, 196, 222, 0.4), 0px -4px 6px -3px rgba(176, 196, 222, 0.3), 0px 5px 2px -3px rgba(255,255,255,0.1); /* More prominent inner shadows/highlights */
     z-index: 1;
 }
 
@@ -314,7 +314,7 @@ body {
     font-family: "Aldrich", sans-serif; /* Using Aldrich for h1 within content */
     font-weight: 500;
     padding-left: 20px;
-    text-shadow: 0 0 3px rgba(70, 130, 180, 0.3); /* Subtle blue glow for H1 */
+    text-shadow: 0 0 4px rgba(70, 130, 180, 0.4); /* Stronger blue glow for H1 */
 }
 
 .content-inner h1::after {
@@ -324,8 +324,8 @@ body {
     width: 100%;
     left: -20px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(173, 216, 230, 0.2) 0%, rgba(135, 206, 235, 0.5) 25%, rgba(135, 206, 235, 0.5) 50%, rgba(135, 206, 235, 0.5) 75%, rgba(173, 216, 230, 0.2) 100%); /* Soft, light blue line */
-    box-shadow: 0px 0px 4px 1px rgba(135, 206, 235, 0.2); /* Subtle blue glow for line */
+    background: linear-gradient(90deg, rgba(173, 216, 230, 0.3) 0%, rgba(135, 206, 235, 0.6) 25%, rgba(135, 206, 235, 0.6) 50%, rgba(135, 206, 235, 0.6) 75%, rgba(173, 216, 230, 0.3) 100%); /* Stronger, light blue line */
+    box-shadow: 0px 0px 5px 1px rgba(135, 206, 235, 0.3); /* More prominent blue glow for line */
 }
 
 .content-inner p {
@@ -368,9 +368,9 @@ body {
     border: 2px solid #ADD8E6; /* Light Blue border */
     border-radius: 22px;
     z-index: 1;
-    box-shadow: inset 0px -5px 8px -5px rgba(173, 216, 230, 0.3), 0px 0px 12px rgba(173, 216, 230, 0.5); /* Soft blue glow and inset */
+    box-shadow: 0 0 15px rgba(173, 216, 230, 0.6), inset 0px -5px 8px -5px rgba(173, 216, 230, 0.4); /* Stronger soft blue glow and inset */
     margin-bottom: 20px; /* Add some space below each */
-    backdrop-filter: blur(2px); /* Subtle blur for modern touch */
+    backdrop-filter: blur(3px); /* Slightly stronger blur */
 }
 
 .small-content-toolbar {
@@ -380,8 +380,8 @@ body {
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
     background-color: #E0FFFF; /* Light Cyan toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.8), transparent), radial-gradient(75% 50% at 50% 70%, rgba(224, 255, 255, 0.8), transparent);
-    box-shadow: inset 0 -2px 4px 0px rgba(173, 216, 230, 0.3); /* Softer inset shadow */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(224, 255, 255, 0.9), transparent);
+    box-shadow: inset 0 -2px 5px 0px rgba(173, 216, 230, 0.4); /* More prominent inset shadow */
 }
 
 .small-content-toolbar::after {
@@ -393,7 +393,7 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 5%, rgba(239, 242, 245, 0.2) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More subtle reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 5%, rgba(239, 242, 245, 0.3) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* More prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
 }
@@ -418,7 +418,7 @@ body {
     float: left;
     height: 24px;
     z-index: 100 !important;
-    filter: drop-shadow(0 0 3px #FFC0CB); /* Pink glow to x button */
+    filter: drop-shadow(0 0 5px #FFB6C1); /* Stronger pink glow to x button */
 }
 
 .small-content-inner {
@@ -427,9 +427,9 @@ body {
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 8px 7px;
     border: 1.5px solid #B0C4DE; /* Light Steel Blue inner border */
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 245, 255, 0.95) 5%, rgba(245, 245, 255, 0.95) 95%, rgba(245, 245, 255, 0.95) 100%); /* Nearly opaque white inner background */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 255, 0.98) 5%, rgba(245, 245, 255, 0.98) 95%, rgba(245, 245, 255, 0.98) 100%); /* Nearly opaque white inner background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 5px 0px rgba(176, 196, 222, 0.3), 0px -4px 5px -3px rgba(176, 196, 222, 0.2), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
+    box-shadow: inset 0px 0px 7px 0px rgba(176, 196, 222, 0.4), 0px -4px 6px -3px rgba(176, 196, 222, 0.3), 0px 5px 2px -3px rgba(255,255,255,0.1); /* More prominent inner shadows/highlights */
     z-index: 1;
 }
 
@@ -448,9 +448,9 @@ body {
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 7px 7px;
     border: 1.5px solid #B0C4DE; /* Light Steel Blue border */
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.95) 0%, rgba(245, 245, 255, 0.95) 5%, rgba(245, 245, 255, 0.95) 95%, rgba(245, 245, 255, 0.95) 100%); /* Nearly opaque white background */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 245, 255, 0.98) 5%, rgba(245, 245, 255, 0.98) 95%, rgba(245, 245, 255, 0.98) 100%); /* Nearly opaque white background */
     border-radius: 18px;
-    box-shadow: inset 0px 0px 5px 0px rgba(176, 196, 222, 0.3), 0px -4px 5px -3px rgba(176, 196, 222, 0.2), 0px 5px 1px -3px rgba(255,255,255,0.05); /* Adjusted shadows */
+    box-shadow: inset 0px 0px 7px 0px rgba(176, 196, 222, 0.4), 0px -4px 6px -3px rgba(176, 196, 222, 0.3), 0px 5px 2px -3px rgba(255,255,255,0.1); /* Adjusted shadows */
     z-index: 1;
 }
 
