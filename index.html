@@ -1,85 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>✧ My Digital Shrine ✧</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Haven</title>
+    <!-- Link to Google Fonts for Aldrich and Source Code Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="row">
+        <div class="column left">
+            <!-- Navigation Window -->
+            <div class="navbar">
+                <!-- Loader Circle (placeholder image) -->
+                <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/loadercircle.png" id="loadercircle" style="height:25px; margin-top:12px; margin-left:12px;">
+                <div class="navbar-title">nAVI</div>
+                <div class="navbar-title-2">my<text>web</text></div>
+                <table id="navtable" style="overflow:auto; width:100%; background:transparent;">
+                    <tbody>
+                        <tr>
+                            <td><a href="#home">HOME</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#info">INFO</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#research">RESEARCH</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#blog">BLOG</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#links">LINKS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><!-- Empty --></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-<div class="background"></div>
+            <!-- Mood Window - Placeholder -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">MOOD</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+                <div class="small-content-inner" style="height: 100px; padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px;">
+                    <span style="top:-22px; left:0px; font-family: 'Aldrich', sans-serif;">
+                        feeling: <span style="font-size:16px; color:#74a4db;">Inspired</span>
+                    </span>
+                    <span style="margin-top:10px;">
+                        Status: <span style="font-size:16px; color:#74a4db;">Building digital realms...</span>
+                    </span>
+                </div>
+            </div>
 
-<div class="layout">
-  <!-- LEFT COLUMN -->
-  <aside class="column left">
-    <div class="window">
-      <div class="toolbar"><span>NAVI</span></div>
-      <div class="inner">
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#info">info</a></li>
-          <li><a href="#research">research</a></li>
-          <li><a href="#blog">blog</a></li>
-          <li><a href="#links">links</a></li>
-        </ul>
-      </div>
+            <!-- My Button Window - Placeholder -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">BUTTON</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+                <div class="small-content-inner" style="height: 150px; padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px;">
+                    <span style="top:-22px; left:0px; font-family: 'Aldrich', sans-serif;">
+                        My Creations
+                    </span>
+                    <div style="text-align: center; margin-top: 15px;">
+                        <img src="https://placehold.co/88x31/8bb4ff/ffffff?text=My+Button" alt="My Button" style="opacity:0.7; border-radius:5px;">
+                    </div>
+                    <textarea class="noscrollbar" style="display: block; width:95%; height:48px; border:1px solid #c4c4c4; border-radius:10px; padding:5px; font-family:'Aldrich', sans-serif; font-size:12px; color:#9da7b3; resize:none; margin-top:10px;">&lt;a href="#"&gt;&lt;img src="my-button.gif"&gt;&lt;/a&gt;</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="column middle">
+            <!-- Main Content Window -->
+            <div class="content">
+                <div class="content-toolbar">
+                    <span data-text="welcome">WELCOME</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="xbutton">
+                </div>
+                <div class="content-inner">
+                    <div id="page1">
+                        <h1>Where Am I?</h1>
+                        <p>Welcome to my digital haven. This space is a fusion of classic web aesthetics and modern functionality, inspired by the nostalgic charm of early internet designs. Here, I share my journey, thoughts, and creations.</p>
+                        <p style="color: #93bdec; font-family: 'Aldrich', sans-serif;">
+                            This website is designed for an optimal desktop experience; mobile viewing might have some quirks. Still under construction – thank you for your patience.
+                        </p>
+
+                        <h1 style="margin-top:15px;">What Lies Here?</h1>
+                        <p>
+                            Explore my digital archives filled with articles, research insights, blog posts documenting my creative process, and a curated collection of links to other inspiring corners of the web. It's a personal hub where digital hoarding meets intentional sharing.
+                        </p>
+
+                        <h1 style="margin-top:15px;">Why "My Digital Haven"?</h1>
+                        <p>
+                            In an increasingly complex digital world, this site serves as a peaceful, organized retreat—a haven where information and creativity can thrive. It's a testament to the enduring appeal of personalized web spaces.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-footer"><span id="factDisplay">Embark on your digital journey...</span></div>
+            </div>
+        </div>
+
+        <div class="column right">
+            <!-- Updates Window -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">UPDATES</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+                <div id="small-content-pictochat" style="padding: 18px; margin-top:25px; margin-bottom:7px;">
+                    <p style="color:#9da7b3; font-family: 'Aldrich', sans-serif; font-size:14px; margin-bottom:10px;">
+                        <strong style="color:#74a4db;">2025-06-20:</strong> Launched new website design!
+                    </p>
+                    <p style="color:#9da7b3; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#74a4db;">2025-06-15:</strong> Added "Research" section.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gallery/Latest Post Window -->
+            <div class="small-content" style="margin-bottom: 25px;">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">GALLERY</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+                <div class="small-content-inner" style="padding:15px; margin-top:25px;">
+                    <div id="latestpost">
+                        <div id="latestposttitle">
+                            <b>Latest blog post</b>
+                        </div>
+                        <div id="latestpostnamebox">
+                            <p id="latestpostname"><a href="#">2025-06-18: //My_First_Post::</a></p>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Aldrich', sans-serif; font-size:14px; color:#9da7b3; margin-top: 50px;">
+                        Check out the <a href="#" style="color: #93bdec;">Gallery</a> for visual delights!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Stats Window -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">STATS</span>
+                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
+                </div>
+                <div class="small-content-inner" style="height: 100px; padding:3px; margin-top:40px;">
+                    <span style="top:-22px; left:10px; font-family: 'Aldrich', sans-serif;">
+                        your digital ID number<br>
+                    </span>
+                    <span style="height:25px; margin-left:auto; margin-right:auto; margin-top:-8px; margin-bottom:5px; text-align: center; color:#9da7b3; font-family: 'Aldrich', sans-serif; font-size:24px;">
+                        1076/hit
+                    </span>
+                    <div style="padding:3px; margin-top:35px; height:58px !important;">
+                        <span style="top:-25px; left:7px; font-family: 'Aldrich', sans-serif;">
+                            timecode infos
+                        </span>
+                        <span id="timecode">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: left;">Created on :</td>
+                                        <td style="text-align: right;">[July] 31, 2024</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: left;">Last updated :</td>
+                                        <td id="lastUpdated" style="text-align: right;">[Mar] 27, 2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="window">
-      <div class="toolbar"><span>MOOD</span></div>
-      <div class="inner">
-        <p>feeling: 🌸 calm</p>
-        <p>status: coding this site!</p>
-      </div>
-    </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
 
-    <div class="window">
-      <div class="toolbar"><span>BUTTON</span></div>
-      <div class="inner">
-        <p>[ your web button or gif goes here ]</p>
-      </div>
-    </div>
-  </aside>
+        // Update Last Updated Date dynamically
+        const lastUpdatedElement = document.getElementById('lastUpdated');
+        if (lastUpdatedElement) {
+            const currentDate = new Date();
+            const options = { month: 'short', day: 'numeric', year: 'numeric' };
+            lastUpdatedElement.textContent = currentDate.toLocaleDateString('en-US', options);
+        }
 
-  <!-- MIDDLE COLUMN -->
-  <main class="column middle">
-    <div class="window">
-      <div class="toolbar"><span>WELCOME</span></div>
-      <div class="inner">
-        <h2>Where am I?</h2>
-        <p>This site is my resting place in the web — a mixture of code, thoughts, and soft aesthetics. Feel free to explore.</p>
-
-        <h2>What lies here?</h2>
-        <p>You'll find posts about my interests, projects, and digital curios. A cozy place for calm reflection in a busy internet.</p>
-      </div>
-    </div>
-  </main>
-
-  <!-- RIGHT COLUMN -->
-  <aside class="column right">
-    <div class="window">
-      <div class="toolbar"><span>UPDATES</span></div>
-      <div class="inner">
-        <p><strong>06.20.25</strong>: Site layout added ✧</p>
-      </div>
-    </div>
-
-    <div class="window">
-      <div class="toolbar"><span>GALLERY</span></div>
-      <div class="inner">
-        <p>Latest blog post:<br>“Fourier Dreams”</p>
-      </div>
-    </div>
-
-    <div class="window">
-      <div class="toolbar"><span>STATS</span></div>
-      <div class="inner">
-        <p>visitor #: 0017<br>last updated: today</p>
-      </div>
-    </div>
-  </aside>
-</div>
-
+    </script>
 </body>
 </html>
