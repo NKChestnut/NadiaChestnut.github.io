@@ -139,7 +139,7 @@ body {
     position: relative;
     border: 2px solid #E0E0E0; /* Light grey border */
     border-radius: 18px; /* More rounded corners */
-    box-shadow: 0 0 12px rgba(220, 220, 220, 0.7), inset 0 0 6px rgba(220, 220, 220, 0.5); /* Soft, subtle light glow */
+    box-shadow: 0 0 15px rgba(220, 220, 220, 0.8), inset 0px -5px 10px -5px rgba(220, 220, 220, 0.5); /* Soft, subtle light glow - now matches other sections */
     background-color: rgba(255, 255, 255, 0.98); /* Nearly opaque white background */
     backdrop-filter: blur(4px); /* Stronger blur for more ethereal feel */
 }
