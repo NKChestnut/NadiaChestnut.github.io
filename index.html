@@ -42,11 +42,10 @@
                 </table>
             </div>
 
-            <!-- About You (Qualtrics Survey) Section (formerly "MOOD") -->
+            <!-- About You (Qualtrics Survey) Section -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">ABOUT YOU</span>
-                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
                 <div class="small-content-inner" style="height: 100px; padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <span style="font-family: 'Aldrich', sans-serif; text-align: center;">
@@ -58,21 +57,25 @@
                 </div>
             </div>
 
-            <!-- Visitor Counter Section (formerly "MUSIC") -->
+            <!-- Visitor Counter Section -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">VISITORS</span>
-                    <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" id="small-xbutton-right">
                 </div>
                 <div class="small-content-inner" style="padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <span style="top:-22px; left:0px; font-family: 'Aldrich', sans-serif;">
+                    <span style="font-family: 'Aldrich', sans-serif;">
                         You are visitor number:
                     </span>
-                    <span id="visitorCount" style="margin-top: 10px; font-size:48px; color:#87CEFA; font-family:'Space Age', sans-serif; text-shadow: 0 0 10px rgba(135, 206, 250, 0.6);">
-                        9876
-                    </span>
+                    <!-- FC2 Counter Embed Code -->
+                    <div style="margin-top: 10px;">
+                        <!-- REPLACE [YOUR_FC2_ID] WITH YOUR ACTUAL FC2 COUNTER ID -->
+                        <a href="https://bf.fc2.com/site_ranking/count_rank/index.html" target="_blank" title="Free Counter from FC2">
+                            <img src="https://counter.fc2.com/counter_img.php?id=[YOUR_FC2_ID]&main=1&count=0" border="0" alt="FC2 Counter">
+                        </a>
+                        <!-- End FC2 Counter Embed Code -->
+                    </div>
                     <p style="font-size:12px; color:#696969; font-family: 'Aldrich', sans-serif; margin-top: 5px;">
-                        (This is a placeholder number for now.)
+                        (Get your FC2 ID for a live counter!)
                     </p>
                 </div>
             </div>
@@ -105,10 +108,65 @@
                 </div>
                 <div class="content-footer"><span id="factDisplay">Biggest inspos for this site are unicodeangel, ribozone, sweetfish, and philia995. Credits to them!</span></div>
             </div>
+
+            <!-- New Section: Music Player & Explore (Jellyfish + Social Links) -->
+            <div class="center-lower-section-container">
+                <!-- Music Player Section -->
+                <div class="small-content music-player-container">
+                    <div class="small-content-toolbar">
+                        <span data-text="toolbar text">MUSIC</span>
+                    </div>
+                    <div class="small-content-inner player">
+                        <div class="tophalf">
+                            <!-- Icon next to track number, like the ghost in the image -->
+                            <img src="https://phosphoricons.com/assets/core-24/ghost.svg" alt="Ghost Icon" class="now-playing-icon" style="height:20px; width:20px; margin-right:5px; filter: drop-shadow(0 0 3px rgba(135, 206, 250, 0.6));">
+                            <!-- Track art will be updated by JavaScript -->
+                            <div class="track-art" style="background-image: url('https://cdns-images.dzcdn.net/images/cover/1f20d443aacaa7a004d6e8f81a8a1a43/0x1900-000000-80-0-0.jpg');"></div>
+                            <div class="details">
+                                <div class="topdetails">
+                                    <div class="now-playing">PLAYING 1 OF 4</div>
+                                    <div class="track-name">LOVE DOLL</div>
+                                    <div class="track-artist">DECO*27</div>
+                                </div>
+                                <div class="buttons">
+                                    <div class="prev-track" onclick="prevTrack()"><img src="https://img.icons8.com/ios-glyphs/30/000000/rewind.png" alt="Previous" style="width:20px; height:20px;"></div>
+                                    <div class="playpause-track" onclick="playpauseTrack()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Font_Awesome_5_solid_play-circle.svg/1200px-Font_Awesome_5_solid_play-circle.svg.png" alt="Play/Pause" style="width:20px; height:20px;"></div>
+                                    <div class="next-track" onclick="nextTrack()"><img src="https://img.icons8.com/ios-glyphs/30/000000/fast-forward.png" alt="Next" style="width:20px; height:20px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomhalf">
+                            <div class="slider_container">
+                                <div class="current-time">0:00</div>
+                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                <div class="total-duration">0:00</div>
+                            </div>
+                            <div class="slider_container">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/volume--v1.png" alt="Volume Icon" style="width:15px; height:15px; margin-right:5px;">
+                                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/high-volume--v1.png" alt="High Volume Icon" style="width:15px; height:15px; margin-left:5px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Explore Section (Jellyfish GIF and Social Links) -->
+                <div class="small-content explore-section">
+                    <div class="small-content-toolbar">
+                        <span data-text="toolbar text">EXPLORE</span>
+                    </div>
+                    <div class="small-content-inner" style="padding:15px; margin-top:25px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 180px;">
+                        <!-- Placeholder Jellyfish GIF. Replace with your actual GIF URL -->
+                        <img src="https://oceanfront.neocities.org/jellyfish.gif" alt="Jellyfish GIF" class="jellyfish-gif" style="margin-bottom: 20px; border-radius: 10px; border: 1px solid #D3D3D3; box-shadow: 0 0 8px rgba(176, 224, 230, 0.5);">
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link" style="margin-bottom: 10px;">LinkedIn Profile</a>
+                        <a href="https://github.com/yourusername" target="_blank" class="social-link">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="column right">
-            <!-- ME! Section (formerly "UPDATES") -->
+            <!-- ME! Section -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">ME!</span>
@@ -121,7 +179,7 @@
                 </div>
             </div>
 
-            <!-- Gallery/Latest Post Window (Retained as is, no change requested) -->
+            <!-- GALLERY Section -->
             <div class="small-content" style="margin-bottom: 25px;">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">GALLERY</span>
@@ -138,7 +196,7 @@
                 </div>
             </div>
 
-            <!-- CURRENTLY Section (formerly "STATS") -->
+            <!-- CURRENTLY Section -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">CURRENTLY</span>
@@ -161,22 +219,149 @@
         </div>
     </div>
 
+    <!-- Music Player JS from oceanfront.neocities.org/scripts/main.js, adapted -->
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('.navbar a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                const targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+        let now_playing = document.querySelector(".now-playing");
+        let track_art = document.querySelector(".track-art");
+        let track_name = document.querySelector(".track-name");
+        let track_artist = document.querySelector(".track-artist");
 
-        // Update Last Updated Date dynamically (Removed from 'CURRENTLY' section as per new request)
-        // No longer needed as 'CURRENTLY' content is custom now.
-        // If you want to keep a dynamic date somewhere, you'll need a new spot for it.
+        let playpause_btn = document.querySelector(".playpause-track");
+        let next_btn = document.querySelector(".next-track");
+        let prev_btn = document.querySelector(".prev-track");
+
+        let seek_slider = document.querySelector(".seek_slider");
+        let volume_slider = document.querySelector(".volume_slider");
+        let curr_time = document.querySelector(".current-time");
+        let total_duration = document.querySelector(".total-duration");
+
+        let track_index = 0;
+        let isPlaying = false;
+        let updateTimer;
+
+        // Create new audio element
+        let curr_track = document.createElement('audio');
+
+        // Define the tracks that have to be played
+        let track_list = [
+            {
+                name: "LOVE DOLL",
+                artist: "DECO*27",
+                image: "https://cdns-images.dzcdn.net/images/cover/1f20d443aacaa7a004d6e8f81a8a1a43/0x1900-000000-80-0-0.jpg",
+                path:"https://dl.dropbox.com/scl/fi/wuvf2xf7id43sa6ompji3/LOVEDOLL.mp3?rlkey=uqi6synqecwgxz2u1x8awtl9m&st=d1fbmgs3&dl=0"
+            },
+            {
+                name: "360",
+                artist: "charli xcx",
+                image: "https://i.ibb.co/p25yJcP/172688890271200983.png",
+                path: "https://dl.dropbox.com/scl/fi/ikjuzx7qr7vknqhq0y846/360.mp3?rlkey=g5ubrp98aof14jm32y1md2iaq&st=md9of75o&dl=0"
+            },
+            {
+                name: "sugarless girl",
+                artist: "CAPSULE",
+                image: "https://i.ibb.co/FmSvCSk/imageedit-5-6356474494.jpg",
+                path: "https://dl.dropbox.com/scl/fi/sba461fzyrb9ue6qtrkif/Sugarless-GiRL.mp4?rlkey=ue1uc1uqwoho36pf71yagtkkd&st=n1309uz1&dl=0"
+            },
+            {
+                name: "no new world",
+                artist: "mass of the...",
+                image: "https://i.ibb.co/zhj2t8V/imageedit-1-9982882570.jpg",
+                path: "https://dl.dropbox.com/scl/fi/8446y76hh5ak9pgkhzsos/No-New-World.mp3?rlkey=5bexrj99nnjzmto4b5n7hg00e&st=qgt92vg0&dl=0"
+            },
+        ];
+
+        function loadTrack(track_index) {
+            clearInterval(updateTimer);
+            resetValues();
+            curr_track.src = track_list[track_index].path;
+            curr_track.load();
+
+            track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+            track_name.textContent = track_list[track_index].name;
+            track_artist.textContent = track_list[track_index].artist;
+            now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+
+            updateTimer = setInterval(seekUpdate, 1000);
+            curr_track.addEventListener("ended", nextTrack);
+            // random_bg_color(); // Removed as it affects overall page background
+        }
+
+        function resetValues() {
+            curr_time.textContent = "0:00";
+            total_duration.textContent = "0:00"; // Initialize to 0:00
+            seek_slider.value = 0;
+        }
+
+        // Load the first track in the tracklist on window load
+        window.onload = function() {
+            loadTrack(track_index);
+            // Optionally, play on load. Browsers might block autoplay without user interaction.
+            // playTrack();
+        };
+
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            playpause_btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Font_Awesome_5_regular_pause-circle.svg/1200px-Font_Awesome_5_regular_pause-circle.svg.png" alt="Pause" style= width="20px" height="20px">';
+        }
+
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            playpause_btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Font_Awesome_5_solid_play-circle.svg/1200px-Font_Awesome_5_solid_play-circle.svg.png" alt="Play" style= width="20px" height="20px">';
+        }
+
+        function nextTrack() {
+            if (track_index < track_list.length - 1)
+                track_index += 1;
+            else track_index = 0;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function prevTrack() {
+            if (track_index > 0)
+                track_index -= 1;
+            else track_index = track_list.length - 1; // Corrected to loop to the last track
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function seekTo() {
+            let seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+
+        function setVolume() {
+            curr_track.volume = volume_slider.value / 100;
+        }
+
+        function seekUpdate() {
+            let seekPosition = 0;
+
+            if (!isNaN(curr_track.duration)) {
+                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+
+                let currentMinutes = Math.floor(curr_track.currentTime / 60);
+                let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+                let durationMinutes = Math.floor(curr_track.duration / 60);
+                let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+                if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+                if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+                if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+                if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+
+                curr_time.textContent = currentMinutes + ":" + currentSeconds;
+                total_duration.textContent = durationMinutes + ":" + durationSeconds;
+            }
+        }
     </script>
 </body>
 </html>
