@@ -42,7 +42,7 @@
                 </table>
             </div>
 
-            <!-- About You (Qualtrics Survey) Section -->
+            <!-- About You (Qualtrics Survey) Section (formerly "MOOD") -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">ABOUT YOU</span>
@@ -58,15 +58,6 @@
             </div>
 
             <!-- Visitor Counter Section -->
-            <div class="small-content">
-                <div class="small-content-toolbar">
-                    <span data-text="toolbar text">VISITORS</span>
-                </div>
-                <div class="small-content-inner" style="padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-                    <span style="font-family: 'Aldrich', sans-serif;">
-                        You are visitor number:
-                    </span>
-            <!-- Visitor Counter Section (formerly "MUSIC") -->
             <div class="small-content">
                 <div class="small-content-toolbar">
                     <span data-text="toolbar text">VISITORS</span>
@@ -355,17 +346,4 @@
                 let currentMinutes = Math.floor(curr_track.currentTime / 60);
                 let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
                 let durationMinutes = Math.floor(curr_track.duration / 60);
-                let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
-
-                if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
-                if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-                if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
-                if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
-
-                curr_time.textContent = currentMinutes + ":" + currentSeconds;
-                total_duration.textContent = durationMinutes + ":" + durationSeconds;
-            }
-        }
-    </script>
-</body>
-</html>
+                let durationSeconds = Math.floor(curr_track.duration - durat
