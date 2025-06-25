@@ -23,15 +23,14 @@
 }
 
 
-/* Custom fonts from oceanfront.neocities.org - You will need to host these files or find CDN links */
 @font-face {
-  src: url("fonts/MSGothic.ttf"); /* Placeholder URL - provide your own hosted font path */
+  src: url("fonts/MSGothic.ttf"); 
   font-family: "MSGothic";
 }
 
 
 @font-face {
-  src: url("fonts/BlueScreen.ttf"); /* Placeholder URL - provide your own hosted font path */
+  src: url("fonts/BlueScreen.ttf"); 
   font-family: "bluescreen";
 }
 
@@ -66,7 +65,6 @@ a {
 a:hover {
     color: #FFDAB9; /* Peach Puff - a very subtle, soft pink/peach for contrast */
     text-shadow: 0 0 8px rgba(255, 218, 185, 0.7); /* Subtle glow on hover */
-    /* Custom hover cursor from your request */
     cursor: url("http://www.rw-designer.com/cursor-download.php?id=35806"), auto;
 }
 
@@ -80,7 +78,7 @@ html {
 }
 
 
-/* Custom Scrollbar - Inspired by oceanfront.neocities.org */
+/* Custom Scrollbar */
 *::-webkit-scrollbar {
   width: 8px; /* Slightly wider for visibility */
 }
@@ -104,7 +102,6 @@ body {
     color: #4A4A4A; /* Dark grey text for readability */
     font-family: Verdana, sans-serif;
     position: relative;
-    /* Custom default cursor from your request */
     cursor: url(http://www.rw-designer.com/cursor-download.php?id=35800), auto;
 }
 
