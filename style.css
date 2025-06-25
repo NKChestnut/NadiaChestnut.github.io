@@ -55,7 +55,6 @@ a {
 a:hover {
     color: #FFDAB9; /* Peach Puff - a very subtle, soft pink/peach for contrast */
     text-shadow: 0 0 8px rgba(255, 218, 185, 0.7); /* Subtle glow on hover */
-    cursor: url(https://i.ibb.co/6JL8wR4/download-2.gif), auto; /* Custom hover cursor from oceanfront */
 }
 
 html {
