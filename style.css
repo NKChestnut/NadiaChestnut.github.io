@@ -4,20 +4,24 @@
     src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/FORCEDSQUARE.ttf') format('truetype');
 }
 
+
 @font-face {
     font-family: 'Space Age';
     src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/spaceage.ttf') format('truetype');
 }
+
 
 @font-face {
     font-family: 'Braille';
     src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/BRAILLE1.ttf') format('truetype');
 }
 
+
 @font-face {
     font-family: 'SF Telegraphic Light';
     src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/SFTelegraphicLight.ttf') format('truetype');
 }
+
 
 /* Custom fonts from oceanfront.neocities.org - You will need to host these files or find CDN links */
 @font-face {
@@ -25,10 +29,13 @@
   font-family: "MSGothic";
 }
 
+
 @font-face {
   src: url("fonts/BlueScreen.ttf"); /* Placeholder URL - provide your own hosted font path */
   font-family: "bluescreen";
 }
+
+
 
 
 /* Basic CSS Reset */
@@ -37,14 +44,17 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     padding: 0;
 }
 
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
+
 fieldset, img {
     border: 0;
 }
+
 
 a {
     color: #87CEFA; /* Light Sky Blue - for primary links, a soft techy blue */
@@ -52,10 +62,14 @@ a {
     transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover */
 }
 
+
 a:hover {
     color: #FFDAB9; /* Peach Puff - a very subtle, soft pink/peach for contrast */
     text-shadow: 0 0 8px rgba(255, 218, 185, 0.7); /* Subtle glow on hover */
+    /* Custom hover cursor from your request */
+    cursor: url("http://www.rw-designer.com/cursor-download.php?id=35806"), auto;
 }
+
 
 html {
     width: 100%;
@@ -64,6 +78,7 @@ html {
     padding: 0;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
 
 /* Custom Scrollbar - Inspired by oceanfront.neocities.org */
 *::-webkit-scrollbar {
@@ -78,6 +93,7 @@ html {
   background: #F0F8FF; /* AliceBlue track, matches overall light theme */
 }
 
+
 body {
     top: 0;
     left: 0;
@@ -88,8 +104,10 @@ body {
     color: #4A4A4A; /* Dark grey text for readability */
     font-family: Verdana, sans-serif;
     position: relative;
+    /* Custom default cursor from your request */
     cursor: url(http://www.rw-designer.com/cursor-download.php?id=35800), auto;
 }
+
 
 /* Main Column Structure using Flexbox */
 .row {
@@ -103,6 +121,7 @@ body {
     z-index: 10; /* Ensure content is above any potential future backgrounds */
 }
 
+
 .column {
     padding: 10px;
     box-sizing: border-box;
@@ -110,11 +129,13 @@ body {
     flex-shrink: 0; /* Prevent columns from shrinking too much */
 }
 
+
 .left {
     flex-basis: 220px; /* Preferred width for left column */
     min-width: 220px;
     max-width: 100%; /* Ensure it doesn't overflow */
 }
+
 
 .middle {
     flex-basis: 500px; /* Preferred width for middle column */
@@ -122,11 +143,13 @@ body {
     max-width: 100%; /* Ensure it doesn't overflow */
 }
 
+
 .right {
     flex-basis: 300px; /* Preferred width for right column */
     min-width: 285px; /* Minimum width based on original content */
     max-width: 100%; /* Ensure it doesn't overflow */
 }
+
 
 /* Responsive adjustments for stacking columns */
 @media (max-width: 1024px) {
@@ -136,12 +159,14 @@ body {
         margin: 10px auto; /* Adjust margin for smaller screens */
     }
 
+
     .left, .middle, .right {
         width: 95%; /* Full width for stacked columns, with some margin */
         min-width: unset; /* Allow them to shrink as needed */
         max-width: 500px; /* Constrain max width for readability */
     }
 }
+
 
 @media (max-width: 768px) {
     .row {
@@ -151,6 +176,7 @@ body {
         width: 100%; /* Full width on very small screens */
     }
 }
+
 
 /* Navigation Window */
 .navbar {
@@ -170,6 +196,7 @@ body {
     background-color: rgba(255, 255, 255, 0.98); /* Nearly opaque white background */
     backdrop-filter: blur(4px); /* Stronger blur for more ethereal feel */
 }
+
 
 .navbar-title {
     margin-top: 13px;
@@ -193,6 +220,7 @@ body {
     text-shadow: 0 0 12px rgba(173, 216, 230, 0.6); /* Prominent blue glow for title */
 }
 
+
 .navbar-title-2 {
     margin-top: -6px;
     padding-left: 54px;
@@ -203,6 +231,7 @@ body {
     letter-spacing: 1px;
 }
 
+
 .navbar table {
     margin-left: 50px;
     margin-top: 1px;
@@ -210,6 +239,7 @@ body {
     border-collapse: collapse;
     line-height: 20px;
 }
+
 
 .navbar td {
     height: 10px;
@@ -227,6 +257,7 @@ body {
     vertical-align: middle;
 }
 
+
 .navbar tr:before {
     position: absolute;
     content: '';
@@ -235,6 +266,7 @@ body {
     background: linear-gradient(90deg, rgba(220, 220, 220, 0.3) 0%, rgba(176, 224, 230, 0.7) 25%, rgba(176, 224, 230, 0.7) 50%, rgba(176, 224, 230, 0.7) 75%, rgba(220, 220, 220, 0.3) 100%); /* Light grey to soft blue gradient for lines */
     box-shadow: 0px 0px 4px 1px rgba(176, 224, 230, 0.5); /* Soft blue glow for lines */
 }
+
 
 .navbar a {
     position: relative;
@@ -249,12 +281,12 @@ body {
     padding-bottom: 5px;
 }
 
+
 .navbar a:hover {
     color: #87CEFA; /* Light Sky Blue on hover */
     text-shadow: 0 0 7px rgba(135, 206, 250, 0.8); /* Stronger blue glow on hover */
-    cursor: url("http://www.rw-designer.com/cursor-download.php?id=35806"), auto;
-
 }
+
 
 /* Main Content Window */
 .content {
@@ -271,6 +303,7 @@ body {
     backdrop-filter: blur(4px); /* Stronger blur */
 }
 
+
 .content-toolbar {
     z-index: 1 !important;
     position: relative;
@@ -284,6 +317,7 @@ body {
     background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(240, 248, 255, 0.9), transparent);
     box-shadow: inset 0 -2px 5px 0px rgba(176, 224, 230, 0.4); /* Softer blue inset shadow */
 }
+
 
 .content-toolbar::after {
     content: '';
@@ -300,6 +334,7 @@ body {
     z-index: 1 !important;
 }
 
+
 .content-toolbar span {
     position: relative;
     background: linear-gradient(0deg, #ADD8E6 0%, #FFDAB9 55%); /* Light Blue to Peach Puff gradient for title */
@@ -314,7 +349,9 @@ body {
     text-shadow: 0 0 10px rgba(173, 216, 230, 0.7); /* Prominent blue glow for toolbar title */
 }
 
+
 /* Removed #xbutton styling as it's no longer present in HTML */
+
 
 .content-inner {
     position: relative;
@@ -328,6 +365,7 @@ body {
     z-index: 1;
 }
 
+
 .content-inner h1 {
     position: relative;
     color: #5A5A5A; /* Gray H1 text */
@@ -337,6 +375,7 @@ body {
     padding-left: 20px;
     text-shadow: 0 0 5px rgba(90, 90, 90, 0.4); /* Subtle grey glow for H1 */
 }
+
 
 .content-inner h1::after {
     position: relative;
@@ -349,6 +388,7 @@ body {
     box-shadow: 0px 0px 5px 1px rgba(176, 224, 230, 0.4); /* Subtle blue glow for line */
 }
 
+
 .content-inner p {
     color: #4A4A4A; /* Dark grey text color */
     font-size: 14px;
@@ -358,6 +398,7 @@ body {
     text-justify: inherit;
     padding: 5px 10px 10px 10px;
 }
+
 
 .content-footer {
     position: relative;
@@ -369,6 +410,7 @@ body {
     z-index: 1;
 }
 
+
 .content-footer span {
     position: absolute;
     color: #87CEFA; /* Light Sky Blue for footer text */
@@ -378,6 +420,7 @@ body {
     top: 8px;
     padding-left: 25px;
 }
+
 
 /* Small Content Windows (Updates, Mood, Button, Stats, Gallery) */
 .small-content {
@@ -394,6 +437,7 @@ body {
     backdrop-filter: blur(4px); /* Stronger blur */
 }
 
+
 .small-content-toolbar {
     position: relative;
     height: 15px;
@@ -404,6 +448,7 @@ body {
     background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(240, 248, 255, 0.9), transparent);
     box-shadow: inset 0 -2px 5px 0px rgba(176, 224, 230, 0.4); /* Softer blue inset shadow */
 }
+
 
 .small-content-toolbar::after {
     content: '';
@@ -419,6 +464,7 @@ body {
     opacity: 1;
 }
 
+
 .small-content-toolbar span {
     position: relative;
     color: #5A5A5A; /* Gray header text */
@@ -432,7 +478,9 @@ body {
     text-shadow: 0 0 6px rgba(90, 90, 90, 0.5); /* Subtle grey glow for title */
 }
 
+
 /* Removed #small-xbutton-right styling as it's no longer present in HTML */
+
 
 .small-content-inner {
     position: relative;
@@ -446,6 +494,7 @@ body {
     z-index: 1;
 }
 
+
 .small-content-inner span {
     position: relative;
     display: block;
@@ -453,6 +502,7 @@ body {
     font-size: 12px;
     font-family: "Aldrich", sans-serif; /* Consistent font for small content text */
 }
+
 
 /* Updates Specific Styles */
 #small-content-pictochat {
@@ -467,6 +517,7 @@ body {
     z-index: 1;
 }
 
+
 /* Gallery/Latest Post Window */
 #latestpost {
     position: relative;
@@ -476,6 +527,7 @@ body {
     left: 0;
     width: 100%;
 }
+
 
 #latestposttitle {
     position: absolute;
@@ -491,6 +543,7 @@ body {
     z-index: 100;
 }
 
+
 #latestpostnamebox {
     overflow: hidden;
     position: relative;
@@ -498,6 +551,7 @@ body {
     width: 100%;
     z-index: 10;
 }
+
 
 #latestpostname {
     position: relative;
@@ -514,20 +568,24 @@ body {
     -webkit-animation: scroll-left 10s linear infinite;
 }
 
+
 @keyframes scroll-left {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
 }
+
 
 #latestpostname > a {
     color: #87CEFA; /* Light Sky Blue for link */
     text-decoration: none;
 }
 
+
 #latestpostname > a:hover {
     color: #FFDAB9; /* Peach Puff on hover */
     text-decoration: none;
 }
+
 
 /* Stats Window */
 #timecode {
@@ -539,12 +597,14 @@ body {
     font-size: 14px;
 }
 
+
 #timecode table {
     top: 0px;
     margin: 0px;
     padding: 0px;
     width: 100%;
 }
+
 
 #timecode tbody {
     top: 0px;
@@ -553,9 +613,11 @@ body {
     width: 100%;
 }
 
+
 #timecode td {
     color: #4A4A4A; /* Dark grey text color for timecode */
 }
+
 
 /* New: Container for Music Player and Explore Section in Middle Column */
 .center-lower-section-container {
@@ -568,6 +630,7 @@ body {
     width: 100%;
     box-sizing: border-box; /* Include padding/border in width */
 }
+
 
 /* Music Player specific styles (adapted from style1.css) */
 .music-player-container {
@@ -582,6 +645,7 @@ body {
     backdrop-filter: none;
     margin-bottom: 0; /* No extra margin here as it's in a flex container */
 }
+
 
 .player {
     width: 100%; /* Take full width of its container */
@@ -599,6 +663,7 @@ body {
     margin: 0 auto; /* Center the player within its inner content box if container allows */
 }
 
+
 .tophalf {
     width: 100%;
     display: flex;
@@ -608,12 +673,14 @@ body {
     justify-content: center; /* Center items within tophalf */
 }
 
+
 .now-playing-icon {
     height:20px;
     width:20px;
     margin-right:5px;
     filter: drop-shadow(0 0 3px rgba(135, 206, 250, 0.6)); /* Blue glow for icon */
 }
+
 
 .track-art {
     height: 60px; /* Smaller art */
@@ -625,6 +692,7 @@ body {
     border: 1px solid #D3D3D3; /* Light grey border */
 }
 
+
 .details {
     flex-grow: 1; /* Allow details to take remaining space */
     text-align: center;
@@ -634,12 +702,14 @@ body {
     padding-left: 10px;
 }
 
+
 .now-playing {
     font-size: 0.8em;
     color: #696969; /* Dim Gray */
     font-family: "Aldrich", sans-serif;
     margin-bottom: 3px;
 }
+
 
 .track-name {
     font-size: 1.1em;
@@ -649,6 +719,7 @@ body {
     text-shadow: 0 0 2px rgba(173, 216, 230, 0.3); /* Subtle blue glow */
 }
 
+
 .track-artist {
     font-size: 0.9em;
     color: #696969; /* Dim Gray */
@@ -657,6 +728,7 @@ body {
     margin-top: 2px;
 }
 
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -664,19 +736,23 @@ body {
     margin-top: 10px;
 }
 
+
 .playpause-track img, .prev-track img, .next-track img {
     filter: drop-shadow(0 0 3px rgba(135, 206, 250, 0.6)); /* Blue glow for icons */
     transition: filter 0.2s ease;
 }
 
+
 .playpause-track:hover img, .prev-track:hover img, .next-track:hover img {
     filter: drop-shadow(0 0 5px rgba(135, 206, 250, 0.9)); /* Stronger blue glow on hover */
 }
+
 
 .bottomhalf {
     width: 100%;
     margin-top: 10px;
 }
+
 
 .slider_container {
     width: 100%;
@@ -685,6 +761,7 @@ body {
     align-items: center;
     margin-bottom: 8px;
 }
+
 
 .seek_slider, .volume_slider {
     -webkit-appearance: none;
@@ -700,6 +777,7 @@ body {
     filter: drop-shadow(0 0 2px rgba(176, 224, 230, 0.5)); /* Subtle blue shadow */
 }
 
+
 .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -712,6 +790,7 @@ body {
     box-shadow: 0 0 3px rgba(135, 206, 250, 0.8);
 }
 
+
 .current-time, .total-duration {
     color: #696969; /* Dim Gray */
     font-size: 0.75em;
@@ -719,6 +798,7 @@ body {
     width: 30px; /* Fixed width for alignment */
     text-align: center;
 }
+
 
 /* Explore Section Styling */
 .explore-section {
@@ -734,11 +814,13 @@ body {
     margin-bottom: 0; /* No extra margin here as it's in a flex container */
 }
 
+
 .explore-section .small-content-inner {
     height: auto; /* Let content define height */
     padding-top: 15px; /* Adjust padding if needed */
     padding-bottom: 15px; /* Adjust padding if needed */
 }
+
 
 .jellyfish-gif {
     width: 120px; /* Fixed width for the GIF based on the image */
@@ -748,6 +830,7 @@ body {
     border: 1px solid #D3D3D3;
     box-shadow: 0 0 8px rgba(176, 224, 230, 0.5);
 }
+
 
 .social-link {
     font-family: "Forced Square", sans-serif;
@@ -759,17 +842,258 @@ body {
     text-shadow: 0 0 3px rgba(135, 206, 250, 0.4);
 }
 
+
 .social-link:hover {
     color: #FFDAB9; /* Peach Puff on hover */
     text-shadow: 0 0 6px rgba(255, 218, 185, 0.8);
 }
+
 
 /* Specific adjustments for the ABOUT YOU and VISITORS sections in the left column */
 .column.left .small-content {
     height: auto; /* Let content define height */
 }
 
+
 .column.left .small-content-inner {
     height: 100px; /* Maintain fixed height for these specific sections */
     justify-content: center;
 }
+
+
+/* New Modal Styles (for the Info Pop-up) */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2000; /* Sit on top (higher than other elements) */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(248, 248, 248, 0.8); /* Light semi-transparent background */
+    backdrop-filter: blur(5px); /* Stronger blur for the overlay */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+
+.modal-content {
+    position: relative;
+    background-image: linear-gradient(90deg, #FFFFFF 0%, #FAFAFA 50%, #FFFFFF 100%); /* Pure white, soft gradient */
+    border: 2px solid #E0E0E0; /* Light grey border */
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(176, 224, 230, 0.9), inset 0px -8px 15px -8px rgba(176, 224, 230, 0.6); /* More prominent, ethereal glow */
+    max-width: 500px; /* Max width for the modal */
+    width: 90%; /* Responsive width */
+    padding-bottom: 10px; /* Space at the bottom */
+    box-sizing: border-box; /* Include padding/border in width */
+    animation: fadeInScale 0.3s ease-out; /* Pop-up animation */
+}
+
+
+.modal-toolbar {
+    position: relative;
+    height: 40px;
+    line-height: 35px;
+    margin: 3px;
+    border-radius: 25px 25px 15px 15px;
+    padding: 12px 16px;
+    background-color: #F0F8FF; /* AliceBlue toolbar */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(240, 248, 255, 0.9), transparent);
+    box-shadow: inset 0 -2px 5px 0px rgba(176, 224, 230, 0.4); /* Softer blue inset shadow */
+}
+
+
+.modal-toolbar::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100px;
+    width: 101%;
+    height: 40px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(239, 242, 245, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
+    background-clip: border-box;
+    opacity: 1;
+    z-index: 1 !important;
+}
+
+
+.modal-toolbar span {
+    position: relative;
+    background: linear-gradient(0deg, #ADD8E6 0%, #FFDAB9 55%); /* Light Blue to Peach Puff gradient for title */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: "Space Age", sans-serif;
+    font-size: 32px;
+    top: -10.5px;
+    padding-left: 10px;
+    z-index: 10 !important;
+    text-shadow: 0 0 10px rgba(173, 216, 230, 0.7);
+}
+
+
+.modal-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(135, 206, 250, 0.6)); /* Blue glow for icon */
+    transition: filter 0.2s ease, transform 0.2s ease;
+    z-index: 101; /* Ensure it's above other toolbar elements */
+}
+
+
+.modal-close-button:hover {
+    filter: drop-shadow(0 0 8px rgba(135, 206, 250, 0.9)); /* Stronger blue glow on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+
+.modal-inner-content {
+    padding: 15px 25px; /* Adjust padding for inner content */
+    margin: 10px 7px;
+    border: 1.5px solid #D3D3D3; /* Light Grey inner border */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.99) 0%, rgba(250, 250, 250, 0.99) 5%, rgba(250, 250, 250, 0.99) 95%, rgba(255, 255, 255, 0.99) 100%);
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 8px 0px rgba(220, 220, 220, 0.5), 0px -4px 7px -3px rgba(220, 220, 220, 0.4), 0px 5px 2px -3px rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally for header/body */
+}
+
+
+.modal-header {
+    display: flex;
+    flex-direction: column; /* Stack avatar and text vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.modal-avatar {
+    width: 120px; /* Slightly larger avatar */
+    height: 120px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover;
+    border: 3px solid #ADD8E6; /* Light blue border */
+    box-shadow: 0 0 10px rgba(173, 216, 230, 0.7); /* Matching glow */
+    margin-bottom: 15px; /* Space between avatar and text */
+}
+
+
+.modal-text-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.modal-name {
+    font-family: "Space Age", sans-serif;
+    font-size: 28px; /* Larger name */
+    color: #4A4A4A;
+    text-shadow: 0 0 5px rgba(90, 90, 90, 0.4);
+    margin-bottom: 5px;
+}
+
+
+.modal-tagline {
+    font-family: "Aldrich", sans-serif;
+    font-size: 16px;
+    color: #696969;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+
+.modal-body {
+    width: 100%;
+    max-width: 400px; /* Constrain text width for readability */
+    text-align: justify;
+    font-family: "Aldrich", sans-serif;
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+
+.modal-interests-list {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 0;
+    margin-top: 15px;
+    text-align: left; /* Align list items to the left */
+    width: 100%; /* Take full width for list alignment */
+}
+
+
+.modal-interests-list li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 20px; /* Space for custom bullet */
+    font-family: "Source Code Pro", monospace; /* Techy font for list */
+    font-size: 13px;
+    color: #4A4A4A;
+}
+
+
+.modal-interests-list li::before {
+    content: '▸'; /* Custom bullet point (black triangle) */
+    color: #87CEFA; /* Light Sky Blue color for bullet */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+
+/* Keyframe for pop-up animation */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+
+/* Responsive adjustments for modal */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        margin: 10px; /* Smaller margin on very small screens */
+    }
+
+
+    .modal-toolbar span {
+        font-size: 28px; /* Smaller title on mobile */
+    }
+
+
+    .modal-name {
+        font-size: 24px; /* Smaller name on mobile */
+    }
+
+
+    .modal-tagline, .modal-body, .modal-interests-list li {
+        font-size: 13px; /* Smaller text on mobile */
+    }
+
+
+    .modal-inner-content {
+        padding: 10px 15px;
+    }
+}
+
+
+
