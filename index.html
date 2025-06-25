@@ -24,7 +24,7 @@
                             <td><a href="index.html">HOME</a></td>
                         </tr>
                         <tr>
-                            <td><a href="info.html">INFO</a></td>
+                            <td><a href="#" id="infoNavLink">INFO</a></td> <!-- Added ID for JS -->
                         </tr>
                         <tr>
                             <td><a href="cv.html">CV</a></td>
@@ -208,7 +208,36 @@
             </div>
         </div>
     </div>
-
+    <!-- Info Modal Overlay -->
+    <div id="infoModalOverlay" class="modal-overlay">
+        <!-- Info Modal Content -->
+        <div id="infoModalContent" class="modal-content">
+            <div class="modal-toolbar">
+                <span data-text="info-title">INFO</span>
+                <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" alt="Close Button" class="modal-close-button">
+            </div>
+            <div class="modal-inner-content">
+                <div class="modal-header">
+                    <img src="https://placehold.co/100x100/ADD8E6/4A4A4A?text=Your+Avatar" alt="Your Avatar" class="modal-avatar">
+                    <div class="modal-text-header">
+                        <h2 class="modal-name">Nadia Chestnut</h2>
+                        <p class="modal-tagline">Data Science Student | AI Business Analyst Intern</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Hi! I'm Nadia Chestnut. I'm pursing a BS in Data Science with an application in Economics and minors in AI and Philosophy.</p>
+                    <ul class="modal-interests-list">
+                        <li>Creating impactful data visualizations</li>
+                        <li>Building predictive models</li>
+                        <li>Exploring ethical AI implications</li>
+                        <li>Developing user-friendly web interfaces</li>
+                        <li>Learning new programming languages (Python, R, SQL)</li>
+                        <li>Enjoying retro aesthetics and digital art</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
       <!-- Music Player JS from oceanfront.neocities.org/scripts/main.js, adapted -->
     <script>
         let now_playing = document.querySelector(".now-playing");
