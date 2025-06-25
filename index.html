@@ -27,7 +27,7 @@
                             <td><a href="#" id="infoNavLink">INFO</a></td> <!-- Added ID for JS -->
                         </tr>
                         <tr>
-                            <td><a href="cv.html">CV</a></td>
+                            <td><a href="cv.html">CV</a></td> <!-- Changed from RESEARCH to CV -->
                         </tr>
                         <tr>
                             <td><a href="blog.html">BLOG</a></td>
@@ -101,7 +101,7 @@
                 <div class="content-footer"><span id="factDisplay">Biggest inspos for this site are unicodeangel, ribozone, sweetfish, and philia995. Credits to them!</span></div>
             </div>
 
-           <!-- New Section: Music Player & Explore (Jellyfish + Social Links) -->
+            <!-- New Section: Music Player & Explore (Jellyfish + Social Links) -->
             <div class="center-lower-section-container">
                 <!-- Music Player Section -->
                 <div class="small-content music-player-container">
@@ -110,13 +110,15 @@
                     </div>
                     <div class="small-content-inner player">
                         <div class="tophalf">
+                            <!-- Icon next to track number, like the ghost in the image -->
+                            <img src="https://phosphoricons.com/assets/core-24/ghost.svg" alt="Ghost Icon" style="height:20px; width:20px; margin-right:5px; filter: drop-shadow(0 0 3px rgba(135, 206, 250, 0.6));">
                             <!-- Track art will be updated by JavaScript -->
                             <div class="track-art" style="background-image: url('https://i.ytimg.com/vi/m8fKw0QMXug/sddefault.jpg');"></div>
                             <div class="details">
                                 <div class="topdetails">
                                     <div class="now-playing">PLAYING 1 OF 4</div>
-                                    <div class="track-name">LOVE DOLL</div>
-                                    <div class="track-artist">DECO*27</div>
+                                    <div class="track-name">June 2011</div>
+                                    <div class="track-artist">Nintendo</div>
                                 </div>
                                 <div class="buttons">
                                     <div class="prev-track" onclick="prevTrack()"><img src="https://img.icons8.com/ios-glyphs/30/000000/rewind.png" alt="Previous" style="width:20px; height:20px;"></div>
@@ -208,6 +210,7 @@
             </div>
         </div>
     </div>
+
     <!-- Info Modal Overlay -->
     <div id="infoModalOverlay" class="modal-overlay">
         <!-- Info Modal Content -->
@@ -225,7 +228,8 @@
                     </div>
                 </div>
                 <div class="modal-body">
-                    <p>Hi! I'm Nadia Chestnut. I'm pursing a BS in Data Science with an application in Economics and minors in AI and Philosophy.</p>
+                    <p>Hi! I'm Nadia Chestnut.</p>
+                    <p>I'm pursing a BS in Data Science with an application in Economics and minors in AI and Philosophy @ Clemson University</p>
                     <ul class="modal-interests-list">
                         <li>Creating impactful data visualizations</li>
                         <li>Building predictive models</li>
@@ -238,7 +242,8 @@
             </div>
         </div>
     </div>
-      <!-- Music Player JS from oceanfront.neocities.org/scripts/main.js, adapted -->
+
+    <!-- Music Player JS from oceanfront.neocities.org/scripts/main.js, adapted -->
     <script>
         let now_playing = document.querySelector(".now-playing");
         let track_art = document.querySelector(".track-art");
@@ -381,6 +386,34 @@
                 total_duration.textContent = durationMinutes + ":" + durationSeconds;
             }
         }
+
+        // JavaScript for the Info Modal Pop-up
+        const infoNavLink = document.getElementById('infoNavLink');
+        const infoModalOverlay = document.getElementById('infoModalOverlay');
+        const infoModalCloseButton = document.querySelector('#infoModalContent .modal-close-button');
+
+        infoNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            infoModalOverlay.style.display = 'flex'; // Use flex to center
+        });
+
+        infoModalCloseButton.addEventListener('click', () => {
+            infoModalOverlay.style.display = 'none';
+        });
+
+        // Close modal if clicking outside the content
+        infoModalOverlay.addEventListener('click', (e) => {
+            if (e.target === infoModalOverlay) {
+                infoModalOverlay.style.display = 'none';
+            }
+        });
+
+        // Optional: Close with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && infoModalOverlay.style.display === 'flex') {
+                infoModalOverlay.style.display = 'none';
+            }
+        });
     </script>
 </body>
 </html>
