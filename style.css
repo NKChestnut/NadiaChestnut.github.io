@@ -19,6 +19,18 @@
     src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/SFTelegraphicLight.ttf') format('truetype');
 }
 
+/* Custom fonts from oceanfront.neocities.org - You will need to host these files or find CDN links */
+@font-face {
+  src: url("fonts/MSGothic.ttf"); /* Placeholder URL - provide your own hosted font path */
+  font-family: "MSGothic";
+}
+
+@font-face {
+  src: url("fonts/BlueScreen.ttf"); /* Placeholder URL - provide your own hosted font path */
+  font-family: "bluescreen";
+}
+
+
 /* Basic CSS Reset */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
     margin: 0;
@@ -542,4 +554,221 @@ body {
 
 #timecode td {
     color: #4A4A4A; /* Dark grey text color for timecode */
+}
+
+/* New: Container for Music Player and Explore Section in Middle Column */
+.center-lower-section-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Space between the two sections */
+    margin-top: 20px; /* Space below the WELCOME section */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the top of the container */
+    width: 100%;
+    box-sizing: border-box; /* Include padding/border in width */
+}
+
+/* Music Player specific styles (adapted from style1.css) */
+.music-player-container {
+    flex: 1; /* Allow it to grow and shrink */
+    min-width: 280px; /* Minimum width to prevent squishing */
+    max-width: 320px; /* Max width to keep it compact */
+    height: auto; /* Let content define height */
+    /* Remove redundant styling from .small-content, keep unique player styling here */
+    background-color: transparent; /* Inherit background from inner */
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    margin-bottom: 0; /* No extra margin here as it's in a flex container */
+}
+
+.player {
+    width: 100%; /* Take full width of its container */
+    height: 250px; /* Fixed height for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Adjusted padding */
+    border: 2px solid #E0E0E0; /* Matches main border theme */
+    border-radius: 12px; /* Slightly more rounded */
+    box-shadow: inset 0 0 8px rgba(176, 224, 230, 0.4), 0 0 10px rgba(220, 220, 220, 0.6); /* Soft blue/grey glow */
+    background-color: rgba(255, 255, 255, 0.95); /* White background */
+    box-sizing: border-box; /* Include padding/border in width */
+    margin: 0 auto; /* Center the player within its inner content box if container allows */
+}
+
+.tophalf {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: center; /* Center items within tophalf */
+}
+
+.now-playing-icon {
+    height:20px;
+    width:20px;
+    margin-right:5px;
+    filter: drop-shadow(0 0 3px rgba(135, 206, 250, 0.6)); /* Blue glow for icon */
+}
+
+.track-art {
+    height: 60px; /* Smaller art */
+    width: 60px; /* Smaller art */
+    background-size: cover;
+    border-radius: 8px; /* Slightly rounded corners for art */
+    flex-shrink: 0; /* Prevent shrinking */
+    box-shadow: 0 0 5px rgba(173, 216, 230, 0.5); /* Subtle shadow for art */
+    border: 1px solid #D3D3D3; /* Light grey border */
+}
+
+.details {
+    flex-grow: 1; /* Allow details to take remaining space */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.now-playing {
+    font-size: 0.8em;
+    color: #696969; /* Dim Gray */
+    font-family: "Aldrich", sans-serif;
+    margin-bottom: 3px;
+}
+
+.track-name {
+    font-size: 1.1em;
+    color: #4A4A4A; /* Dark grey */
+    font-family: "Space Age", sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px rgba(173, 216, 230, 0.3); /* Subtle blue glow */
+}
+
+.track-artist {
+    font-size: 0.9em;
+    color: #696969; /* Dim Gray */
+    font-family: "Aldrich", sans-serif;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.playpause-track img, .prev-track img, .next-track img {
+    filter: drop-shadow(0 0 3px rgba(135, 206, 250, 0.6)); /* Blue glow for icons */
+    transition: filter 0.2s ease;
+}
+
+.playpause-track:hover img, .prev-track:hover img, .next-track:hover img {
+    filter: drop-shadow(0 0 5px rgba(135, 206, 250, 0.9)); /* Stronger blue glow on hover */
+}
+
+.bottomhalf {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.slider_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: calc(100% - 60px); /* Adjust width for time/volume labels */
+    height: 4px;
+    background: #E0E0E0; /* Light grey track */
+    outline: none;
+    opacity: 0.9;
+    transition: opacity .2s;
+    border-radius: 2px;
+    filter: drop-shadow(0 0 2px rgba(176, 224, 230, 0.5)); /* Subtle blue shadow */
+}
+
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #87CEFA; /* Light Sky Blue thumb */
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(135, 206, 250, 0.8);
+}
+
+.current-time, .total-duration {
+    color: #696969; /* Dim Gray */
+    font-size: 0.75em;
+    font-family: 'Source Code Pro', monospace;
+    width: 30px; /* Fixed width for alignment */
+    text-align: center;
+}
+
+/* Explore Section Styling */
+.explore-section {
+    flex: 1; /* Allows it to grow and shrink alongside music player */
+    min-width: 180px; /* Adjusted minimum width */
+    max-width: 250px; /* Max width to keep it compact */
+    height: auto;
+    /* Remove redundant styling from .small-content, keep unique styling here */
+    background-color: transparent; /* Inherit background from inner */
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+    margin-bottom: 0; /* No extra margin here as it's in a flex container */
+}
+
+.explore-section .small-content-inner {
+    height: auto; /* Let content define height */
+    padding-top: 15px; /* Adjust padding if needed */
+    padding-bottom: 15px; /* Adjust padding if needed */
+}
+
+.jellyfish-gif {
+    width: 120px; /* Fixed width for the GIF based on the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px; /* Space between GIF and links */
+    border-radius: 10px;
+    border: 1px solid #D3D3D3;
+    box-shadow: 0 0 8px rgba(176, 224, 230, 0.5);
+}
+
+.social-link {
+    font-family: "Forced Square", sans-serif;
+    font-size: 16px;
+    color: #87CEFA; /* Light Sky Blue for links */
+    text-decoration: none;
+    padding: 5px 0;
+    display: block; /* Make them stack vertically */
+    text-shadow: 0 0 3px rgba(135, 206, 250, 0.4);
+}
+
+.social-link:hover {
+    color: #FFDAB9; /* Peach Puff on hover */
+    text-shadow: 0 0 6px rgba(255, 218, 185, 0.8);
+}
+
+/* Specific adjustments for the ABOUT YOU and VISITORS sections in the left column */
+.column.left .small-content {
+    height: auto; /* Let content define height */
+}
+
+.column.left .small-content-inner {
+    height: 100px; /* Maintain fixed height for these specific sections */
+    justify-content: center;
 }
