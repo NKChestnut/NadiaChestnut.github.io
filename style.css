@@ -88,7 +88,7 @@ body {
     color: #4A4A4A; /* Dark grey text for readability */
     font-family: Verdana, sans-serif;
     position: relative;
-    cursor: url(https://oceanfront.neocities.org/cursor.cur), auto; /* Custom default cursor from oceanfront */
+    cursor: url(http://www.rw-designer.com/cursor-download.php?id=35800), auto;
 }
 
 /* Main Column Structure using Flexbox */
@@ -252,6 +252,8 @@ body {
 .navbar a:hover {
     color: #87CEFA; /* Light Sky Blue on hover */
     text-shadow: 0 0 7px rgba(135, 206, 250, 0.8); /* Stronger blue glow on hover */
+    cursor: url("http://www.rw-designer.com/cursor-download.php?id=35806"), auto;
+
 }
 
 /* Main Content Window */
