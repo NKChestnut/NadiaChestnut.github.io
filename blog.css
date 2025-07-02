@@ -94,7 +94,7 @@ body {
     cursor: url(http://www.rw-designer.com/cursor-download.php?id=35800), auto;
 }
 
-/* Main Column Structure using Flexbox */
+/* Main Column Structure using Flexbox (General, for homepage) */
 .row {
     display: flex;
     flex-wrap: wrap; /* Allow columns to wrap onto the next line on smaller screens */
@@ -131,7 +131,7 @@ body {
     max-width: 100%; /* Ensure it doesn't overflow */
 }
 
-/* Responsive adjustments for stacking columns */
+/* Responsive adjustments for stacking columns (General, for homepage) */
 @media (max-width: 1024px) {
     .row {
         flex-direction: column; /* Stack columns vertically on tablets/smaller desktops */
@@ -557,7 +557,7 @@ body {
     color: #4D5C40; /* Dark olive brown text color for timecode */
 }
 
-/* New: Container for Music Player and Explore Section in Middle Column */
+/* New: Container for Music Player and Explore Section in Middle Column (Homepage specific) */
 .center-lower-section-container {
     display: flex;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -986,14 +986,10 @@ body {
     }
 }
 
-/* Blog Post Specific Styles */
-.blog-post-entry {
-    background-image: linear-gradient(90deg, rgba(253, 253, 245, 0.99) 0%, rgba(248, 245, 238, 0.99) 5%, rgba(248, 245, 238, 0.99) 95%, rgba(253, 253, 245, 0.99) 100%);
-    border: 1.5px solid #C0C8B8;
-    border-radius: 12px;
-    padding: 15px 20px;
-    margin-bottom: 25px; /* Space between blog posts */
-    box-shadow: inset 0px 0px 8px 0px rgba(211, 211, 192, 0.5), 0px 4px 7px -3px rgba(211, 211, 192, 0.4);
+/* Blog Post Specific Styles (for individual posts within the content-inner) */
+.blog-post-full {
+    /* These styles apply to the individual full blog posts */
+    /* They are contained within .content-inner */
 }
 
 .blog-post-title {
@@ -1027,7 +1023,7 @@ body {
     text-align: justify;
 }
 
-.read-more-link {
+.read-more-link { /* This link is now redundant as content is loaded directly */
     font-family: "Forced Square", sans-serif;
     font-size: 15px;
     color: #8C997A; /* Muted olive green */
@@ -1077,7 +1073,7 @@ body {
     flex-direction: column; /* Stack header and content vertically */
     align-items: center; /* Center content horizontally */
     width: 100%;
-    max-width: 900px; /* Max width for the entire blog content area */
+    max-width: 1000px; /* Increased max-width for the two-column layout */
     margin: 20px auto; /* Center the blog container */
     padding: 0 10px; /* Add some padding on smaller screens */
     box-sizing: border-box;
@@ -1116,10 +1112,97 @@ body {
     background-color: rgba(162, 178, 154, 0.1); /* Subtle background on hover */
 }
 
-.blog-main-content {
-    width: 100%; /* Make the main content take full width of its container */
-    max-width: 700px; /* Max width for the blog content itself */
-    margin: 0; /* Remove default column margin */
+.blog-content-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 20px; /* Space between columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.blog-nav-column {
+    flex-basis: 250px; /* Fixed width for navigation column */
+    min-width: 200px; /* Minimum width for responsiveness */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    padding: 0; /* Remove default column padding as small-content handles it */
+}
+
+.blog-main-content-column {
+    flex-grow: 1; /* Main content takes remaining space */
+    min-width: 450px; /* Minimum width for readability */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    padding: 0; /* Remove default column padding as content handles it */
+}
+
+/* Blog Navigation Panel Styling (Solinus inspired) */
+.blog-nav-panel {
+    margin-top: 0; /* Align with top of main content */
+    height: auto; /* Allow height to adjust to content */
+    border-radius: 18px; /* Consistent with other panels */
+    overflow: hidden; /* Ensure content respects border-radius */
+}
+
+.blog-nav-panel .small-content-toolbar {
+    background: linear-gradient(0deg, #606C59 0%, #8C997A 55%); /* Darker olive to muted olive gradient for toolbar */
+    box-shadow: inset 0 -2px 5px 0px rgba(77, 92, 64, 0.4); /* Darker earthy inset shadow */
+}
+
+.blog-nav-panel .small-content-toolbar span {
+    background: none; /* Remove text gradient for nav title */
+    color: #FDFDF5; /* Cream text color */
+    text-shadow: 0 0 6px rgba(253, 253, 245, 0.5); /* Cream glow */
+    float: left; /* Align title to left */
+    padding-left: 10px; /* Add padding */
+}
+
+.blog-nav-list {
+    margin-top: 15px; /* Adjust margin for list within inner */
+    padding: 10px 15px; /* Padding for the list items */
+}
+
+.blog-nav-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blog-nav-list li {
+    margin-bottom: 5px;
+}
+
+.blog-nav-list a {
+    display: block;
+    padding: 8px 10px;
+    font-family: "Aldrich", sans-serif; /* Aldrich for nav links */
+    font-size: 15px;
+    color: #4D5C40; /* Dark olive brown */
+    border-radius: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    position: relative; /* For the bullet point */
+    padding-left: 25px; /* Space for bullet */
+}
+
+.blog-nav-list a::before {
+    content: '▸'; /* Custom bullet point */
+    color: #8C997A; /* Muted olive green */
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+
+.blog-nav-list a:hover {
+    background-color: rgba(162, 178, 154, 0.1); /* Subtle earthy hover background */
+    color: #606C59; /* Slightly darker olive on hover */
+    text-shadow: 0 0 4px rgba(140, 153, 122, 0.5);
+}
+
+.blog-nav-list a.active-post-link {
+    background-color: #E0E6F0; /* Light, desaturated blue-green for active link */
+    color: #4D5C40; /* Dark olive brown for active text */
+    font-weight: bold;
+    box-shadow: inset 0 0 5px rgba(162, 178, 154, 0.3);
+    text-shadow: 0 0 3px rgba(77, 92, 64, 0.2);
 }
 
 /* Adjustments for smaller screens on blog page */
@@ -1140,7 +1223,12 @@ body {
         text-align: center;
     }
 
-    .blog-main-content {
-        width: 95%; /* Adjust width for smaller screens */
+    .blog-content-wrapper {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .blog-nav-column, .blog-main-content-column {
+        width: 95%; /* Full width for stacked columns */
+        min-width: unset; /* Remove min-width constraint */
     }
 }
