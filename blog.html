@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadia Chestnut - Blog</title>
+    <!-- Link to Google Fonts for Aldrich and Source Code Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blog-container">
+        <!-- Header with Home Button and Info Link -->
+        <div class="blog-header-bar">
+            <a href="index.html" class="home-button">HOME</a>
+            <a href="#" id="infoNavLink" class="info-button">INFO</a>
+        </div>
+
+        <!-- Main Content Window for Blog Posts -->
+        <div class="content blog-main-content">
+            <div class="content-toolbar">
+                <span data-text="blog-entries">BLOG ENTRIES</span>
+            </div>
+            <div class="content-inner">
+                <!-- Blog Post 1 -->
+                <div class="blog-post-entry">
+                    <h2 class="blog-post-title">My First Steps into Data Science</h2>
+                    <p class="blog-post-meta">
+                        Published on: <span class="post-date">July 1, 2025</span> | Tags: <span class="post-tags">#DataScience #Learning #AI</span>
+                    </p>
+                    <div class="blog-post-body">
+                        <p>Embarking on the journey of data science has been an exhilarating experience. From understanding the basics of Python for data manipulation to diving deep into statistical models, every day brings a new challenge and a new discovery. My current internship as an AI Business Analyst is giving me hands-on experience in applying theoretical knowledge to real-world business problems.</p>
+                        <p>One of the most fascinating aspects so far has been the power of data visualization. Transforming raw numbers into insightful graphs and charts truly brings the story of the data to life. It's not just about crunching numbers; it's about communicating complex patterns in an accessible way.</p>
+                    </div>
+                    <a href="#" class="read-more-link">Read More</a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-post-entry">
+                    <h2 class="blog-post-title">The Philosophy of AI: Ethics and Impact</h2>
+                    <p class="blog-post-meta">
+                        Published on: <span class="post-date">June 20, 2025</span> | Tags: <span class="post-tags">#AIethics #Philosophy #FutureTech</span>
+                    </p>
+                    <div class="blog-post-body">
+                        <p>Beyond the algorithms and code, the philosophical implications of artificial intelligence are profound. As AI becomes more integrated into our daily lives, questions of ethics, bias, and societal impact become increasingly critical. My philosophy minor has provided a unique lens through which to examine these complex issues.</p>
+                        <p>Discussions around accountability in autonomous systems, the potential for job displacement, and the very definition of consciousness in AI are not just academic exercises; they are essential conversations that will shape our future. It's a field where technology and humanity intertwine in fascinating ways.</p>
+                    </div>
+                    <a href="#" class="read-more-link">Read More</a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="blog-post-entry">
+                    <h2 class="blog-post-title">Retro Web Design: A Nod to the Past</h2>
+                    <p class="blog-post-meta">
+                        Published on: <span class="post-date">May 15, 2025</span> | Tags: <span class="post-tags">#WebDesign #Retro #Aesthetics</span>
+                    </p>
+                    <div class="blog-post-body">
+                        <p>In an era dominated by sleek, minimalist designs, there's a certain charm in revisiting the aesthetics of early internet. This website itself is a testament to my appreciation for retro web design. The pixel art, animated GIFs, and distinct windowed interfaces evoke a sense of nostalgia and playfulness.</p>
+                        <p>It's a deliberate choice to stand out and to remind myself of the creative freedom and experimental spirit that characterized the web's early days. It's not just about looking old; it's about celebrating a unique digital culture and finding beauty in its quirks.</p>
+                    </div>
+                    <a href="#" class="read-more-link">Read More</a>
+                </div>
+            </div>
+            <div class="content-footer"><span id="factDisplay">Stay tuned for more updates and thoughts!</span></div>
+        </div>
+    </div>
+
+    <!-- Info Modal Overlay - Reused from index.html, accessible from all pages -->
+    <div id="infoModalOverlay" class="modal-overlay">
+        <div id="infoModalContent" class="modal-content">
+            <div class="modal-toolbar">
+                <span data-text="info-title">INFO</span>
+                <img src="https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/xbutton.png" alt="Close Button" class="modal-close-button">
+            </div>
+            <div class="modal-inner-content">
+                <div class="modal-header">
+                    <img src="https://placehold.co/100x100/ADD8E6/4A4A4A?text=Your+Avatar" alt="Your Avatar" class="modal-avatar">
+                    <div class="modal-text-header">
+                        <h2 class="modal-name">Nadia Chestnut</h2>
+                        <p class="modal-tagline">Data Science Student | AI Business Analyst Intern</p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Hi! I'm Nadia Chestnut. I'm pursing a BS in Data Science with an application in Economics and minors in AI and Philosophy.</p>
+                    <ul class="modal-interests-list">
+                        <li>Creating impactful data visualizations</li>
+                        <li>Building predictive models</li>
+                        <li>Exploring ethical AI implications</li>
+                        <li>Developing user-friendly web interfaces</li>
+                        <li>Learning new programming languages (Python, R, SQL)</li>
+                        <li>Enjoying retro aesthetics and digital art</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for the Info Modal Pop-up (reused for blog.html)
+        const infoNavLink = document.getElementById('infoNavLink');
+        const infoModalOverlay = document.getElementById('infoModalOverlay');
+        const infoModalCloseButton = document.querySelector('#infoModalContent .modal-close-button');
+
+        infoNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            infoModalOverlay.style.display = 'flex'; // Use flex to center
+        });
+
+        infoModalCloseButton.addEventListener('click', () => {
+            infoModalOverlay.style.display = 'none';
+        });
+
+        // Close modal if clicking outside the content
+        infoModalOverlay.addEventListener('click', (e) => {
+            if (e.target === infoModalOverlay) {
+                infoModalOverlay.style.display = 'none';
+            }
+        });
+
+        // Optional: Close with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && infoModalOverlay.style.display === 'flex') {
+                infoModalOverlay.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
