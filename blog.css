@@ -85,9 +85,9 @@ body {
     left: 0;
     width: 100%;
     min-height: 100vh; /* Ensure body takes full viewport height */
-    background-color: #E6EBDD; /* Light sage background */
-    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23C0D0B8" fill-opacity="0.5"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle, earthy geometric pattern */
-    color: #3A4532; /* Deep forest green text for readability */
+    background-color: #2C3528; /* Deep forest green background */
+    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23505B48" fill-opacity="0.3"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle, earthy geometric pattern with darker fill */
+    color: #E6EBDD; /* Light cream text for contrast */
     font-family: Verdana, sans-serif;
     position: relative;
     /* Custom default cursor from your request */
@@ -166,11 +166,11 @@ body {
     font-family: Verdana, sans-serif;
     z-index: 0;
     position: relative;
-    border: 2px solid #A8B49E; /* Medium sage green border */
+    border: 2px solid #505B48; /* Medium forest green border */
     border-radius: 18px; /* More rounded corners */
-    box-shadow: inset 0 0 10px 0px rgba(107, 128, 91, 0.5), 0 0 18px rgba(122, 140, 108, 0.9); /* Deeper earthy shadows */
-    background-color: rgba(255, 255, 255, 0.98); /* Nearly opaque white background */
-    backdrop-filter: blur(4px); /* Stronger blur for more ethereal feel */
+    box-shadow: inset 0 0 10px 0px rgba(58, 69, 50, 0.5), 0 0 18px rgba(70, 85, 65, 0.9); /* Deeper earthy shadows */
+    background-color: rgba(70, 85, 65, 0.9); /* Translucent dark olive */
+    backdrop-filter: blur(8px); /* Stronger blur for more ethereal feel */
 }
 
 .navbar-title {
@@ -180,7 +180,7 @@ body {
     top: 0px;
     padding-left: 55px;
     font-family: "Space Age", sans-serif;
-    background: linear-gradient(0deg, #6B805B 0%, #C2A888 55%); /* Deeper muted olive to richer tan gradient */
+    background: linear-gradient(0deg, #E6EBDD 0%, #C2A888 55%); /* Light cream to richer tan gradient */
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
@@ -192,7 +192,7 @@ body {
     -moz-transform: scale(1, 0.8);
     -ms-transform: scale(1, 0.8);
     -o-transform: scale(1, 0.8);
-    text-shadow: 0 0 12px rgba(107, 128, 91, 0.6); /* Deeper earthy glow for title */
+    text-shadow: 0 0 12px rgba(230, 235, 221, 0.6); /* Light cream glow for title */
 }
 
 .navbar-title-2 {
@@ -200,7 +200,7 @@ body {
     padding-left: 54px;
     line-height: 30px;
     font-family: "Braille", sans-serif;
-    color: #8C997A; /* Muted olive */
+    color: #A8B49E; /* Muted light green */
     font-size: 24px;
     letter-spacing: 1px;
 }
@@ -241,7 +241,7 @@ body {
 .navbar a {
     position: relative;
     font-family: "Forced Square", sans-serif;
-    color: #505B48; /* Medium forest green for links */
+    color: #E6EBDD; /* Light cream for links */
     text-decoration: none;
     text-align: right;
     display: block;
@@ -263,12 +263,12 @@ body {
     left: 0;
     width: 100%;
     height: auto;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream/sage gradient for content areas */
-    border: 2px solid #A8B49E; /* Medium sage green border */
+    background-image: linear-gradient(90deg, rgba(70, 85, 65, 0.9) 0%, rgba(58, 69, 50, 0.9) 50%, rgba(70, 85, 65, 0.9) 100%); /* Translucent dark olive gradient for content areas */
+    border: 2px solid #505B48; /* Medium forest green border */
     border-radius: 18px;
     z-index: 1;
-    box-shadow: 0 0 15px rgba(122, 140, 108, 0.8), inset 0px -5px 10px -5px rgba(122, 140, 108, 0.5); /* Deeper earthy shadows */
-    backdrop-filter: blur(4px); /* Stronger blur */
+    box-shadow: 0 0 15px rgba(70, 85, 65, 0.8), inset 0px -5px 10px -5px rgba(70, 85, 65, 0.5); /* Deeper earthy shadows */
+    backdrop-filter: blur(8px); /* Stronger blur */
 }
 
 .content-toolbar {
@@ -280,9 +280,9 @@ body {
     margin-right: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #C0D0B8; /* Muted light green toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(192, 208, 184, 0.9), transparent);
-    box-shadow: inset 0 -2px 5px 0px rgba(107, 128, 91, 0.4); /* Deeper earthy inset shadow */
+    background-color: #3A4532; /* Solid deep forest green toolbar */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.2), transparent), radial-gradient(75% 50% at 50% 70%, rgba(58, 69, 50, 0.9), transparent);
+    box-shadow: inset 0 -2px 5px 0px rgba(58, 69, 50, 0.4); /* Deeper earthy inset shadow */
 }
 
 .content-toolbar::after {
@@ -294,7 +294,7 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(224, 230, 240, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
     z-index: 1 !important;
@@ -302,7 +302,7 @@ body {
 
 .content-toolbar span {
     position: relative;
-    background: linear-gradient(0deg, #6B805B 0%, #C2A888 55%); /* Deeper muted olive to richer tan gradient for title */
+    background: linear-gradient(0deg, #E6EBDD 0%, #C2A888 55%); /* Light cream to richer tan gradient for title */
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
@@ -311,7 +311,7 @@ body {
     top: -10.5px;
     padding-left: 10px;
     z-index: 10 !important;
-    text-shadow: 0 0 10px rgba(107, 128, 91, 0.7); /* Deeper earthy glow for toolbar title */
+    text-shadow: 0 0 10px rgba(230, 235, 221, 0.7); /* Light cream glow for toolbar title */
 }
 
 /* Removed #xbutton styling as it's no longer present in HTML */
@@ -321,8 +321,8 @@ body {
     height: auto;
     padding: 8px 20px 15px 20px;
     margin: 13px 7px 10px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green inner border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%); /* Richer cream inner background */
+    border: 1.5px solid #6B805B; /* Deeper muted olive inner border */
+    background-image: linear-gradient(90deg, rgba(230, 235, 221, 0.99) 0%, rgba(240, 244, 232, 0.99) 5%, rgba(240, 244, 232, 0.99) 95%, rgba(230, 235, 221, 0.99) 100%); /* Richer cream inner background */
     border-radius: 18px;
     box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15); /* More prominent earthy inner shadows/highlights */
     z-index: 1;
@@ -345,8 +345,8 @@ body {
     width: 100%;
     left: -20px;
     height: 1px;
-    background: linear-gradient(90deg, rgba(168, 180, 158, 0.3) 0%, rgba(107, 128, 91, 0.6) 25%, rgba(107, 128, 91, 0.6) 50%, rgba(107, 128, 91, 0.6) 75%, rgba(168, 180, 158, 0.3) 100%); /* Deeper earthy line */
-    box-shadow: 0px 0px 5px 1px rgba(107, 128, 91, 0.4); /* Subtle earthy glow for line */
+    background: linear-gradient(90deg, rgba(107, 128, 91, 0.3) 0%, rgba(70, 85, 65, 0.6) 25%, rgba(70, 85, 65, 0.6) 50%, rgba(70, 85, 65, 0.6) 75%, rgba(107, 128, 91, 0.3) 100%); /* Deeper earthy line */
+    box-shadow: 0px 0px 5px 1px rgba(70, 85, 65, 0.4); /* Subtle earthy glow for line */
 }
 
 .content-inner p {
@@ -363,7 +363,7 @@ body {
     position: relative;
     height: 25px;
     margin: 10px 7px 7px 7px;
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.95) 0%, rgba(230, 235, 221, 0.95) 5%, rgba(230, 235, 221, 0.95) 95%, rgba(240, 244, 232, 0.95) 100%); /* Richer cream footer background */
+    background-image: linear-gradient(90deg, rgba(230, 235, 221, 0.95) 0%, rgba(240, 244, 232, 0.95) 5%, rgba(240, 244, 232, 0.95) 95%, rgba(230, 235, 221, 0.95) 100%); /* Richer cream footer background */
     border-radius: 18px;
     box-shadow: inset 0px 3px 5px -1px rgba(168, 180, 158, 0.3), 0px -4px 5px -3px rgba(168, 180, 158, 0.2), 0px 5px 1px -3px rgba(240,244,232,0.05); /* Adjusted earthy shadows */
     z-index: 1;
@@ -371,7 +371,7 @@ body {
 
 .content-footer span {
     position: absolute;
-    color: #6B805B; /* Deeper muted olive green for footer text */
+    color: #3A4532; /* Deep forest green for footer text */
     font-family: "Forced Square", sans-serif;
     font-size: 13px;
     vertical-align: middle;
@@ -385,13 +385,13 @@ body {
     margin-top: 10px;
     width: 100%; /* Make them flexible */
     height: auto;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream/sage gradient */
-    border: 2px solid #A8B49E; /* Medium sage green border */
+    background-image: linear-gradient(90deg, rgba(70, 85, 65, 0.9) 0%, rgba(58, 69, 50, 0.9) 50%, rgba(70, 85, 65, 0.9) 100%); /* Translucent dark olive gradient */
+    border: 2px solid #505B48; /* Medium forest green border */
     border-radius: 22px;
     z-index: 1;
-    box-shadow: 0 0 15px rgba(122, 140, 108, 0.8), inset 0px -5px 10px -5px rgba(122, 140, 108, 0.5); /* Deeper earthy shadows */
+    box-shadow: 0 0 15px rgba(70, 85, 65, 0.8), inset 0px -5px 10px -5px rgba(70, 85, 65, 0.5); /* Deeper earthy shadows */
     margin-bottom: 20px; /* Add some space below each */
-    backdrop-filter: blur(4px); /* Stronger blur */
+    backdrop-filter: blur(8px); /* Stronger blur */
 }
 
 .small-content-toolbar {
@@ -400,9 +400,9 @@ body {
     margin: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #C0D0B8; /* Muted light green toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(192, 208, 184, 0.9), transparent);
-    box-shadow: inset 0 -2px 5px 0px rgba(107, 128, 91, 0.4); /* Deeper earthy inset shadow */
+    background-color: #3A4532; /* Solid deep forest green toolbar */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.2), transparent), radial-gradient(75% 50% at 50% 70%, rgba(58, 69, 50, 0.9), transparent);
+    box-shadow: inset 0 -2px 5px 0px rgba(58, 69, 50, 0.4); /* Deeper earthy inset shadow */
 }
 
 .small-content-toolbar::after {
@@ -414,14 +414,14 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(224, 230, 240, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
 }
 
 .small-content-toolbar span {
     position: relative;
-    color: #3A4532; /* Deep forest green header text */
+    color: #E6EBDD; /* Light cream header text */
     font-family: "SF Telegraphic Light", sans-serif; /* Using SF Telegraphic Light for small content headers */
     font-size: 24px;
     letter-spacing: 1px;
@@ -429,7 +429,7 @@ body {
     margin-top: -4px;
     float: right;
     z-index: 100 !important;
-    text-shadow: 0 0 6px rgba(58, 69, 50, 0.5); /* Subtle earthy glow for title */
+    text-shadow: 0 0 6px rgba(230, 235, 221, 0.5); /* Subtle light cream glow for title */
 }
 
 /* Removed #small-xbutton-right styling as it's no longer present in HTML */
@@ -439,8 +439,8 @@ body {
     height: auto !important;
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 8px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green inner border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%); /* Richer cream inner background */
+    border: 1.5px solid #6B805B; /* Deeper muted olive inner border */
+    background-image: linear-gradient(90deg, rgba(230, 235, 221, 0.99) 0%, rgba(240, 244, 232, 0.99) 5%, rgba(240, 244, 232, 0.99) 95%, rgba(230, 235, 221, 0.99) 100%); /* Richer cream inner background */
     border-radius: 18px;
     box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15); /* More prominent earthy inner shadows/highlights */
     z-index: 1;
@@ -460,8 +460,8 @@ body {
     height: 345px !important;
     padding: 0px 18px 18px 18px;
     margin: 25px 7px 7px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%); /* Richer cream background */
+    border: 1.5px solid #6B805B; /* Deeper muted olive border */
+    background-image: linear-gradient(90deg, rgba(230, 235, 221, 0.99) 0%, rgba(240, 244, 232, 0.99) 5%, rgba(240, 244, 232, 0.99) 95%, rgba(230, 235, 221, 0.99) 100%); /* Richer cream background */
     border-radius: 18px;
     box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15); /* Adjusted earthy shadows */
     z-index: 1;
@@ -484,10 +484,10 @@ body {
     font-size: 14px;
     font-family: "Source Code Pro", sans-serif;
     letter-spacing: 1px;
-    background: linear-gradient(to right, #8C997A 0%, #C0D0B8 80%, rgba(192, 208, 184, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box; /* Muted olive to muted light green gradient */
-    color: #3A4532; /* Deep forest green text */
+    background: linear-gradient(to right, #505B48 0%, #6B805B 80%, rgba(107, 128, 91, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box; /* Medium forest green to deeper muted olive gradient */
+    color: #E6EBDD; /* Light cream text */
     padding-left: 10px;
-    text-shadow: 0px 0px 3px rgba(58, 69, 50, 0.1);
+    text-shadow: 0px 0px 3px rgba(230, 235, 221, 0.1);
     z-index: 100;
 }
 
@@ -591,10 +591,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 10px; /* Adjusted padding */
-    border: 2px solid #A8B49E; /* Matches main border theme */
+    border: 2px solid #505B48; /* Matches main border theme */
     border-radius: 12px; /* Slightly more rounded */
-    box-shadow: inset 0 0 8px rgba(107, 128, 91, 0.4), 0 0 10px rgba(168, 180, 158, 0.6); /* Deeper earthy glow */
-    background-color: rgba(240, 244, 232, 0.95); /* Richer cream background */
+    box-shadow: inset 0 0 8px rgba(58, 69, 50, 0.4), 0 0 10px rgba(70, 85, 65, 0.6); /* Deeper earthy glow */
+    background-color: rgba(70, 85, 65, 0.9); /* Translucent dark olive background */
+    backdrop-filter: blur(8px); /* Stronger blur */
     box-sizing: border-box; /* Include padding/border in width */
     margin: 0 auto; /* Center the player within its inner content box if container allows */
 }
@@ -612,7 +613,7 @@ body {
     height:20px;
     width:20px;
     margin-right:5px;
-    filter: drop-shadow(0 0 3px rgba(107, 128, 91, 0.6)); /* Deeper earthy glow for icon */
+    filter: drop-shadow(0 0 3px rgba(230, 235, 221, 0.6)); /* Light cream glow for icon */
 }
 
 .track-art {
@@ -622,7 +623,7 @@ body {
     border-radius: 8px; /* Slightly rounded corners for art */
     flex-shrink: 0; /* Prevent shrinking */
     box-shadow: 0 0 5px rgba(107, 128, 91, 0.5); /* Subtle earthy shadow for art */
-    border: 1px solid #7A8C70; /* Darker olive green border */
+    border: 1px solid #6B805B; /* Deeper muted olive border */
 }
 
 .details {
@@ -636,22 +637,22 @@ body {
 
 .now-playing {
     font-size: 0.8em;
-    color: #505B48; /* Medium forest green */
+    color: #A8B49E; /* Muted light green */
     font-family: "Aldrich", sans-serif;
     margin-bottom: 3px;
 }
 
 .track-name {
     font-size: 1.1em;
-    color: #3A4532; /* Deep forest green */
+    color: #E6EBDD; /* Light cream */
     font-family: "Space Age", sans-serif;
     letter-spacing: 1px;
-    text-shadow: 0 0 2px rgba(107, 128, 91, 0.3); /* Subtle earthy glow */
+    text-shadow: 0 0 2px rgba(230, 235, 221, 0.3); /* Subtle light cream glow */
 }
 
 .track-artist {
     font-size: 0.9em;
-    color: #505B48; /* Medium forest green */
+    color: #A8B49E; /* Muted light green */
     font-family: "Aldrich", sans-serif;
     font-style: italic;
     margin-top: 2px;
@@ -665,12 +666,12 @@ body {
 }
 
 .playpause-track img, .prev-track img, .next-track img {
-    filter: drop-shadow(0 0 3px rgba(107, 128, 91, 0.6)); /* Deeper earthy glow for icons */
+    filter: drop-shadow(0 0 3px rgba(230, 235, 221, 0.6)); /* Light cream glow for icons */
     transition: filter 0.2s ease;
 }
 
 .playpause-track:hover img, .prev-track:hover img, .next-track:hover img {
-    filter: drop-shadow(0 0 5px rgba(107, 128, 91, 0.9)); /* Stronger earthy glow on hover */
+    filter: drop-shadow(0 0 5px rgba(230, 235, 221, 0.9)); /* Stronger light cream glow on hover */
 }
 
 .bottomhalf {
@@ -692,12 +693,12 @@ body {
     appearance: none;
     width: calc(100% - 60px); /* Adjust width for time/volume labels */
     height: 4px;
-    background: #A8B49E; /* Medium sage green track */
+    background: #6B805B; /* Deeper muted olive green track */
     outline: none;
     opacity: 0.9;
     transition: opacity .2s;
     border-radius: 2px;
-    filter: drop-shadow(0 0 2px rgba(107, 128, 91, 0.5)); /* Subtle earthy shadow */
+    filter: drop-shadow(0 0 2px rgba(230, 235, 221, 0.5)); /* Subtle light cream shadow */
 }
 
 .seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
@@ -706,14 +707,14 @@ body {
     appearance: none;
     width: 12px;
     height: 12px;
-    background: #6B805B; /* Deeper muted olive green thumb */
+    background: #E6EBDD; /* Light cream thumb */
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 0 0 3px rgba(107, 128, 91, 0.8);
+    box-shadow: 0 0 3px rgba(230, 235, 221, 0.8);
 }
 
 .current-time, .total-duration {
-    color: #505B48; /* Medium forest green */
+    color: #A8B49E; /* Muted light green */
     font-size: 0.75em;
     font-family: 'Source Code Pro', monospace;
     width: 30px; /* Fixed width for alignment */
@@ -745,18 +746,18 @@ body {
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 15px; /* Space between GIF and links */
     border-radius: 10px;
-    border: 1px solid #7A8C70;
+    border: 1px solid #6B805B;
     box-shadow: 0 0 8px rgba(107, 128, 91, 0.5);
 }
 
 .social-link {
     font-family: "Forced Square", sans-serif;
     font-size: 16px;
-    color: #6B805B; /* Deeper muted olive green for links */
+    color: #E6EBDD; /* Light cream for links */
     text-decoration: none;
     padding: 5px 0;
     display: block; /* Make them stack vertically */
-    text-shadow: 0 0 3px rgba(107, 128, 91, 0.4);
+    text-shadow: 0 0 3px rgba(230, 235, 221, 0.4);
 }
 
 .social-link:hover {
@@ -784,23 +785,24 @@ body {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(230, 235, 221, 0.8); /* Deeper earthy semi-transparent background */
-    backdrop-filter: blur(5px); /* Stronger blur for the overlay */
+    background-color: rgba(44, 53, 40, 0.8); /* Deeper earthy semi-transparent background */
+    backdrop-filter: blur(8px); /* Stronger blur for the overlay */
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
 }
 
 .modal-content {
     position: relative;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream, soft gradient */
-    border: 2px solid #A8B49E; /* Medium sage green border */
+    background-image: linear-gradient(90deg, rgba(70, 85, 65, 0.9) 0%, rgba(58, 69, 50, 0.9) 50%, rgba(70, 85, 65, 0.9) 100%); /* Translucent dark olive, soft gradient */
+    border: 2px solid #505B48; /* Medium forest green border */
     border-radius: 18px;
-    box-shadow: 0 0 25px rgba(107, 128, 91, 0.9), inset 0px -8px 15px -8px rgba(107, 128, 91, 0.6); /* More prominent, deeper earthy glow */
+    box-shadow: 0 0 25px rgba(70, 85, 65, 0.9), inset 0px -8px 15px -8px rgba(70, 85, 65, 0.6); /* More prominent, deeper earthy glow */
     max-width: 500px; /* Max width for the modal */
     width: 90%; /* Responsive width */
     padding-bottom: 10px; /* Space at the bottom */
     box-sizing: border-box; /* Include padding/border in width */
     animation: fadeInScale 0.3s ease-out; /* Pop-up animation */
+    backdrop-filter: blur(8px); /* Stronger blur */
 }
 
 .modal-toolbar {
@@ -810,9 +812,9 @@ body {
     margin: 3px;
     border-radius: 25px 25px 15px 15px;
     padding: 12px 16px;
-    background-color: #C0D0B8; /* Muted light green toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(192, 208, 184, 0.9), transparent);
-    box-shadow: inset 0 -2px 5px 0px rgba(107, 128, 91, 0.4); /* Deeper earthy inset shadow */
+    background-color: #3A4532; /* Solid deep forest green toolbar */
+    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.2), transparent), radial-gradient(75% 50% at 50% 70%, rgba(58, 69, 50, 0.9), transparent);
+    box-shadow: inset 0 -2px 5px 0px rgba(58, 69, 50, 0.4); /* Deeper earthy inset shadow */
 }
 
 .modal-toolbar::after {
@@ -824,7 +826,7 @@ body {
     border-radius: 100px;
     width: 101%;
     height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(224, 230, 240, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0.1) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
     background-clip: border-box;
     opacity: 1;
     z-index: 1 !important;
@@ -832,7 +834,7 @@ body {
 
 .modal-toolbar span {
     position: relative;
-    background: linear-gradient(0deg, #6B805B 0%, #C2A888 55%); /* Deeper muted olive to richer tan gradient for title */
+    background: linear-gradient(0deg, #E6EBDD 0%, #C2A888 55%); /* Light cream to richer tan gradient for title */
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -841,7 +843,7 @@ body {
     top: -10.5px;
     padding-left: 10px;
     z-index: 10 !important;
-    text-shadow: 0 0 10px rgba(107, 128, 91, 0.7);
+    text-shadow: 0 0 10px rgba(230, 235, 221, 0.7);
 }
 
 .modal-close-button {
@@ -851,21 +853,21 @@ body {
     height: 25px;
     width: 25px;
     cursor: pointer;
-    filter: drop-shadow(0 0 5px rgba(107, 128, 91, 0.6)); /* Deeper earthy glow for icon */
+    filter: drop-shadow(0 0 5px rgba(230, 235, 221, 0.6)); /* Light cream glow for icon */
     transition: filter 0.2s ease, transform 0.2s ease;
     z-index: 101; /* Ensure it's above other toolbar elements */
 }
 
 .modal-close-button:hover {
-    filter: drop-shadow(0 0 8px rgba(107, 128, 91, 0.9)); /* Stronger earthy glow on hover */
+    filter: drop-shadow(0 0 8px rgba(230, 235, 221, 0.9)); /* Stronger light cream glow on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .modal-inner-content {
     padding: 15px 25px; /* Adjust padding for inner content */
     margin: 10px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green inner border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%);
+    border: 1.5px solid #6B805B; /* Deeper muted olive inner border */
+    background-image: linear-gradient(90deg, rgba(230, 235, 221, 0.99) 0%, rgba(240, 244, 232, 0.99) 5%, rgba(240, 244, 232, 0.99) 95%, rgba(230, 235, 221, 0.99) 100%);
     border-radius: 12px;
     box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15);
     display: flex;
@@ -1005,7 +1007,7 @@ body {
     font-size: 11px;
     color: #505B48; /* Medium forest green for metadata */
     margin-bottom: 15px;
-    border-bottom: 1px dashed #7A8C70; /* Darker olive green dashed line */
+    border-bottom: 1px dashed #6B805B; /* Deeper muted olive dashed line */
     padding-bottom: 5px;
 }
 
@@ -1086,18 +1088,18 @@ body {
     align-items: center;
     margin-bottom: 20px; /* Space below the header bar */
     padding: 10px 20px;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream gradient */
-    border: 2px solid #A8B49E; /* Medium sage green border */
+    background-image: linear-gradient(90deg, rgba(70, 85, 65, 0.9) 0%, rgba(58, 69, 50, 0.9) 50%, rgba(70, 85, 65, 0.9) 100%); /* Translucent dark olive gradient */
+    border: 2px solid #505B48; /* Medium forest green border */
     border-radius: 18px;
-    box-shadow: 0 0 15px rgba(122, 140, 108, 0.8), inset 0px -5px 10px -5px rgba(122, 140, 108, 0.5); /* Deeper earthy shadows */
-    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(70, 85, 65, 0.8), inset 0px -5px 10px -5px rgba(70, 85, 65, 0.5); /* Deeper earthy shadows */
+    backdrop-filter: blur(8px);
     box-sizing: border-box;
 }
 
 .home-button, .info-button {
     font-family: "Forced Square", sans-serif;
     font-size: 18px;
-    color: #505B48; /* Medium forest green */
+    color: #E6EBDD; /* Light cream */
     text-decoration: none;
     padding: 8px 15px;
     border: 1.5px solid #8C997A; /* Muted olive border */
@@ -1107,8 +1109,8 @@ body {
 }
 
 .home-button:hover, .info-button:hover {
-    color: #6B805B; /* Deeper muted olive green on hover */
-    text-shadow: 0 0 7px rgba(107, 128, 91, 0.8);
+    color: #C2A888; /* Richer tan on hover */
+    text-shadow: 0 0 7px rgba(194, 168, 136, 0.8);
     background-color: rgba(107, 128, 91, 0.1); /* Subtle background on hover */
 }
 
@@ -1142,14 +1144,14 @@ body {
 }
 
 .blog-nav-panel .small-content-toolbar {
-    background: linear-gradient(0deg, #505B48 0%, #6B805B 55%); /* Darker forest green to deeper muted olive gradient for toolbar */
+    background: linear-gradient(0deg, #3A4532 0%, #505B48 55%); /* Deep forest green to medium forest green gradient for toolbar */
     box-shadow: inset 0 -2px 5px 0px rgba(58, 69, 50, 0.4); /* Deeper earthy inset shadow */
 }
 
 .blog-nav-panel .small-content-toolbar span {
     background: none; /* Remove text gradient for nav title */
-    color: #F0F4E8; /* Richer cream text color */
-    text-shadow: 0 0 6px rgba(240, 244, 232, 0.5); /* Richer cream glow */
+    color: #E6EBDD; /* Light cream text color */
+    text-shadow: 0 0 6px rgba(230, 235, 221, 0.5); /* Light cream glow */
     float: left; /* Align title to left */
     padding-left: 10px; /* Add padding */
 }
@@ -1174,7 +1176,7 @@ body {
     padding: 8px 10px;
     font-family: "Aldrich", sans-serif; /* Aldrich for nav links */
     font-size: 15px;
-    color: #3A4532; /* Deep forest green */
+    color: #E6EBDD; /* Light cream */
     border-radius: 5px;
     transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     position: relative; /* For the bullet point */
@@ -1183,7 +1185,7 @@ body {
 
 .blog-nav-list a::before {
     content: '▸'; /* Custom bullet point */
-    color: #6B805B; /* Deeper muted olive green */
+    color: #A8B49E; /* Muted light green */
     position: absolute;
     left: 5px;
     top: 50%;
@@ -1193,1250 +1195,16 @@ body {
 
 .blog-nav-list a:hover {
     background-color: rgba(107, 128, 91, 0.1); /* Subtle earthy hover background */
-    color: #505B48; /* Medium forest green on hover */
-    text-shadow: 0 0 4px rgba(107, 128, 91, 0.5);
+    color: #C2A888; /* Richer tan on hover */
+    text-shadow: 0 0 4px rgba(194, 168, 136, 0.5);
 }
 
 .blog-nav-list a.active-post-link {
-    background-color: #C0D0B8; /* Muted light green for active link */
-    color: #3A4532; /* Deep forest green for active text */
+    background-color: rgba(107, 128, 91, 0.2); /* Deeper muted olive for active link with transparency */
+    color: #E6EBDD; /* Light cream for active text */
     font-weight: bold;
-    box-shadow: inset 0 0 5px rgba(107, 128, 91, 0.3);
-    text-shadow: 0 0 3px rgba(58, 69, 50, 0.2);
-}
-
-/* Adjustments for smaller screens on blog page */
-@media (max-width: 768px) {
-    .blog-container {
-        margin: 10px auto;
-        padding: 0 5px;
-    }
-
-    .blog-header-bar {
-        flex-direction: column; /* Stack buttons vertically */
-        gap: 10px;
-        padding: 10px;
-    }
-
-    .home-button, .info-button {
-        width: 80%; /* Make buttons wider */
-        text-align: center;
-    }
-
-    .blog-content-wrapper {
-        flex-direction: column; /* Stack columns vertically */
-    }
-
-    .blog-nav-column, .blog-main-content-column {
-        width: 95%; /* Full width for stacked columns */
-        min-width: unset; /* Remove min-width constraint */
-    }
-}
-/* Define custom fonts - these are linked from a public GitHub repository */
-@font-face {
-    font-family: 'Forced Square';
-    src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/FORCEDSQUARE.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Space Age';
-    src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/spaceage.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Braille';
-    src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/BRAILLE1.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'SF Telegraphic Light';
-    src: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/fonts/SFTelegraphicLight.ttf') format('truetype');
-}
-
-/* Custom fonts from oceanfront.neocities.org - You will need to host these files or find CDN links */
-@font-face {
-  src: url("fonts/MSGothic.ttf"); /* Placeholder URL - provide your own hosted font path */
-  font-family: "MSGothic";
-}
-
-@font-face {
-  src: url("fonts/BlueScreen.ttf"); /* Placeholder URL - provide your own hosted font path */
-  font-family: "bluescreen";
-}
-
-
-/* Basic CSS Reset */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
-    margin: 0;
-    padding: 0;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-fieldset, img {
-    border: 0;
-}
-
-a {
-    color: #6B805B; /* Deeper muted olive green for primary links */
-    text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover */
-}
-
-a:hover {
-    color: #C2A888; /* Richer tan for hover */
-    text-shadow: 0 0 8px rgba(194, 168, 136, 0.7); /* Subtle glow on hover */
-    /* Custom hover cursor from your request */
-    cursor: url("http://www.rw-designer.com/cursor-download.php?id=35806"), auto;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
-/* Custom Scrollbar - Inspired by oceanfront.neocities.org */
-*::-webkit-scrollbar {
-  width: 8px; /* Slightly wider for visibility */
-}
-*::-webkit-scrollbar-thumb {
-  background-color: #6B805B; /* Deeper muted olive green thumb */
-  border-radius: 10px;
-  border: 1.5px solid #A8B49E; /* Matches main border theme */
-}
-*::-webkit-scrollbar-track {
-  background: #C0D0B8; /* Muted light green track */
-}
-
-body {
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh; /* Ensure body takes full viewport height */
-    background-color: #E6EBDD; /* Light sage background */
-    background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23C0D0B8" fill-opacity="0.5"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0 20v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zm0 20v-4H4v4H0v2h4v4h2v-4h4v-2H6zM36 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM6 4v-4H4v4H0v2h4v4h2v-4h4v-2H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E'); /* Subtle, earthy geometric pattern */
-    color: #3A4532; /* Deep forest green text for readability */
-    font-family: Verdana, sans-serif;
-    position: relative;
-    /* Custom default cursor from your request */
-    cursor: url(http://www.rw-designer.com/cursor-download.php?id=35800), auto;
-}
-
-/* Main Column Structure using Flexbox (General, for homepage) */
-.row {
-    display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap onto the next line on smaller screens */
-    width: 100%;
-    max-width: 1200px; /* Constrain overall width for desktop view */
-    margin: 20px auto; /* Center the entire layout and add top/bottom margin */
-    gap: 20px; /* Space between columns */
-    position: relative;
-    z-index: 10; /* Ensure content is above any potential future backgrounds */
-}
-
-.column {
-    padding: 10px;
-    box-sizing: border-box;
-    flex-grow: 1; /* Allow columns to grow and fill space */
-    flex-shrink: 0; /* Prevent columns from shrinking too much */
-}
-
-.left {
-    flex-basis: 220px; /* Preferred width for left column */
-    min-width: 220px;
-    max-width: 100%; /* Ensure it doesn't overflow */
-}
-
-.middle {
-    flex-basis: 500px; /* Preferred width for middle column */
-    min-width: 500px;
-    max-width: 100%; /* Ensure it doesn't overflow */
-}
-
-.right {
-    flex-basis: 300px; /* Preferred width for right column */
-    min-width: 285px; /* Minimum width based on original content */
-    max-width: 100%; /* Ensure it doesn't overflow */
-}
-
-/* Responsive adjustments for stacking columns (General, for homepage) */
-@media (max-width: 1024px) {
-    .row {
-        flex-direction: column; /* Stack columns vertically on tablets/smaller desktops */
-        align-items: center; /* Center stacked columns */
-        margin: 10px auto; /* Adjust margin for smaller screens */
-    }
-
-    .left, .middle, .right {
-        width: 95%; /* Full width for stacked columns, with some margin */
-        min-width: unset; /* Allow them to shrink as needed */
-        max-width: 500px; /* Constrain max width for readability */
-    }
-}
-
-@media (max-width: 768px) {
-    .row {
-        margin: 5px auto; /* Even less margin on small mobile */
-    }
-    .left, .middle, .right {
-        width: 100%; /* Full width on very small screens */
-    }
-}
-
-/* Navigation Window (Homepage specific, but keeping generic styles for consistency) */
-.navbar {
-    margin-top: 0px;
-    height: 300px; /* Fixed height for styling */
-    background-image: url('https://raw.githubusercontent.com/yokiiie/unicodeangel/main/imgs/NavTest.png'); /* Placeholder image */
-    background-size: 200px;
-    background-repeat: no-repeat;
-    color: white; /* Will be overridden by link/title colors */
-    font-family: Verdana, sans-serif;
-    z-index: 0;
-    position: relative;
-    border: 2px solid #A8B49E; /* Medium sage green border */
-    border-radius: 18px; /* More rounded corners */
-    box-shadow: inset 0 0 10px 0px rgba(107, 128, 91, 0.5), 0 0 18px rgba(122, 140, 108, 0.9); /* Deeper earthy shadows */
-    background-color: rgba(255, 255, 255, 0.98); /* Nearly opaque white background */
-    backdrop-filter: blur(4px); /* Stronger blur for more ethereal feel */
-}
-
-.navbar-title {
-    margin-top: 13px;
-    line-height: 40px;
-    margin-bottom: 0px;
-    top: 0px;
-    padding-left: 55px;
-    font-family: "Space Age", sans-serif;
-    background: linear-gradient(0deg, #6B805B 0%, #C2A888 55%); /* Deeper muted olive to richer tan gradient */
-    -webkit-background-clip: text; /* For Safari/Chrome */
-    background-clip: text;
-    color: transparent;
-    font-size: 42px;
-    letter-spacing: 3px;
-    display: inline-block;
-    transform: scale(1, 1.5);
-    -webkit-transform: scale(1, 0.8);
-    -moz-transform: scale(1, 0.8);
-    -ms-transform: scale(1, 0.8);
-    -o-transform: scale(1, 0.8);
-    text-shadow: 0 0 12px rgba(107, 128, 91, 0.6); /* Deeper earthy glow for title */
-}
-
-.navbar-title-2 {
-    margin-top: -6px;
-    padding-left: 54px;
-    line-height: 30px;
-    font-family: "Braille", sans-serif;
-    color: #8C997A; /* Muted olive */
-    font-size: 24px;
-    letter-spacing: 1px;
-}
-
-.navbar table {
-    margin-left: 50px;
-    margin-top: 1px;
-    width: 125px !important;
-    border-collapse: collapse;
-    line-height: 20px;
-}
-
-.navbar td {
-    height: 10px;
-    border-top-width: 10px;
-    border-top-style: solid;
-    border-top-color: transparent;
-    border-radius: 0px;
-    font-family: "Forced Square", sans-serif;
-    font-size: 20px;
-    padding-right: 5px;
-    padding-top: 1px;
-    padding-left: 1px;
-    padding-bottom: 1px;
-    text-align: right;
-    vertical-align: middle;
-}
-
-.navbar tr:before {
-    position: absolute;
-    content: '';
-    width: 125px;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(168, 180, 158, 0.3) 0%, rgba(107, 128, 91, 0.7) 25%, rgba(107, 128, 91, 0.7) 50%, rgba(107, 128, 91, 0.7) 75%, rgba(168, 180, 158, 0.3) 100%); /* Deeper earthy gradient for lines */
-    box-shadow: 0px 0px 4px 1px rgba(107, 128, 91, 0.5); /* Deeper earthy glow for lines */
-}
-
-.navbar a {
-    position: relative;
-    font-family: "Forced Square", sans-serif;
-    color: #505B48; /* Medium forest green for links */
-    text-decoration: none;
-    text-align: right;
-    display: block;
-    margin-top: -5px;
-    margin-bottom: -5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.navbar a:hover {
-    color: #C2A888; /* Richer tan on hover */
-    text-shadow: 0 0 7px rgba(194, 168, 136, 0.8); /* Stronger earthy glow on hover */
-}
-
-/* Main Content Window (General styles) */
-.content {
-    position: relative;
-    margin-top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream/sage gradient for content areas */
-    border: 2px solid #A8B49E; /* Medium sage green border */
-    border-radius: 18px;
-    z-index: 1;
-    box-shadow: 0 0 15px rgba(122, 140, 108, 0.8), inset 0px -5px 10px -5px rgba(122, 140, 108, 0.5); /* Deeper earthy shadows */
-    backdrop-filter: blur(4px); /* Stronger blur */
-}
-
-.content-toolbar {
-    z-index: 1 !important;
-    position: relative;
-    height: 40px;
-    line-height: 35px;
-    margin-left: 3px;
-    margin-right: 3px;
-    border-radius: 25px 25px 15px 15px;
-    padding: 12px 16px;
-    background-color: #C0D0B8; /* Muted light green toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(192, 208, 184, 0.9), transparent);
-    box-shadow: inset 0 -2px 5px 0px rgba(107, 128, 91, 0.4); /* Deeper earthy inset shadow */
-}
-
-.content-toolbar::after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 100px;
-    width: 101%;
-    height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(224, 230, 240, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
-    background-clip: border-box;
-    opacity: 1;
-    z-index: 1 !important;
-}
-
-.content-toolbar span {
-    position: relative;
-    background: linear-gradient(0deg, #6B805B 0%, #C2A888 55%); /* Deeper muted olive to richer tan gradient for title */
-    -webkit-background-clip: text; /* For Safari/Chrome */
-    background-clip: text;
-    color: transparent;
-    font-family: "Space Age", sans-serif; /* Using Space Age font for main content header */
-    font-size: 32px;
-    top: -10.5px;
-    padding-left: 10px;
-    z-index: 10 !important;
-    text-shadow: 0 0 10px rgba(107, 128, 91, 0.7); /* Deeper earthy glow for toolbar title */
-}
-
-/* Removed #xbutton styling as it's no longer present in HTML */
-
-.content-inner {
-    position: relative;
-    height: auto;
-    padding: 8px 20px 15px 20px;
-    margin: 13px 7px 10px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green inner border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%); /* Richer cream inner background */
-    border-radius: 18px;
-    box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15); /* More prominent earthy inner shadows/highlights */
-    z-index: 1;
-}
-
-.content-inner h1 {
-    position: relative;
-    color: #3A4532; /* Deep forest green H1 text */
-    font-size: 18px;
-    font-family: "Aldrich", sans-serif; /* Using Aldrich for h1 within content */
-    font-weight: 500;
-    padding-left: 20px;
-    text-shadow: 0 0 5px rgba(58, 69, 50, 0.4); /* Subtle earthy glow for H1 */
-}
-
-.content-inner h1::after {
-    position: relative;
-    display: block;
-    content: '';
-    width: 100%;
-    left: -20px;
-    height: 1px;
-    background: linear-gradient(90deg, rgba(168, 180, 158, 0.3) 0%, rgba(107, 128, 91, 0.6) 25%, rgba(107, 128, 91, 0.6) 50%, rgba(107, 128, 91, 0.6) 75%, rgba(168, 180, 158, 0.3) 100%); /* Deeper earthy line */
-    box-shadow: 0px 0px 5px 1px rgba(107, 128, 91, 0.4); /* Subtle earthy glow for line */
-}
-
-.content-inner p {
-    color: #3A4532; /* Deep forest green text color */
-    font-size: 14px;
-    font-family: "Aldrich", sans-serif; /* Using Aldrich for paragraphs within content */
-    font-weight: 400;
-    text-align: justify;
-    text-justify: inherit;
-    padding: 5px 10px 10px 10px;
-}
-
-.content-footer {
-    position: relative;
-    height: 25px;
-    margin: 10px 7px 7px 7px;
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.95) 0%, rgba(230, 235, 221, 0.95) 5%, rgba(230, 235, 221, 0.95) 95%, rgba(240, 244, 232, 0.95) 100%); /* Richer cream footer background */
-    border-radius: 18px;
-    box-shadow: inset 0px 3px 5px -1px rgba(168, 180, 158, 0.3), 0px -4px 5px -3px rgba(168, 180, 158, 0.2), 0px 5px 1px -3px rgba(240,244,232,0.05); /* Adjusted earthy shadows */
-    z-index: 1;
-}
-
-.content-footer span {
-    position: absolute;
-    color: #6B805B; /* Deeper muted olive green for footer text */
-    font-family: "Forced Square", sans-serif;
-    font-size: 13px;
-    vertical-align: middle;
-    top: 8px;
-    padding-left: 25px;
-}
-
-/* Small Content Windows (General styles, adapted for homepage) */
-.small-content {
-    position: relative;
-    margin-top: 10px;
-    width: 100%; /* Make them flexible */
-    height: auto;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream/sage gradient */
-    border: 2px solid #A8B49E; /* Medium sage green border */
-    border-radius: 22px;
-    z-index: 1;
-    box-shadow: 0 0 15px rgba(122, 140, 108, 0.8), inset 0px -5px 10px -5px rgba(122, 140, 108, 0.5); /* Deeper earthy shadows */
-    margin-bottom: 20px; /* Add some space below each */
-    backdrop-filter: blur(4px); /* Stronger blur */
-}
-
-.small-content-toolbar {
-    position: relative;
-    height: 15px;
-    margin: 3px;
-    border-radius: 25px 25px 15px 15px;
-    padding: 12px 16px;
-    background-color: #C0D0B8; /* Muted light green toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(192, 208, 184, 0.9), transparent);
-    box-shadow: inset 0 -2px 5px 0px rgba(107, 128, 91, 0.4); /* Deeper earthy inset shadow */
-}
-
-.small-content-toolbar::after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 100px;
-    width: 101%;
-    height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(224, 230, 240, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
-    background-clip: border-box;
-    opacity: 1;
-}
-
-.small-content-toolbar span {
-    position: relative;
-    color: #3A4532; /* Deep forest green header text */
-    font-family: "SF Telegraphic Light", sans-serif; /* Using SF Telegraphic Light for small content headers */
-    font-size: 24px;
-    letter-spacing: 1px;
-    line-height: 30px;
-    margin-top: -4px;
-    float: right;
-    z-index: 100 !important;
-    text-shadow: 0 0 6px rgba(58, 69, 50, 0.5); /* Subtle earthy glow for title */
-}
-
-/* Removed #small-xbutton-right styling as it's no longer present in HTML */
-
-.small-content-inner {
-    position: relative;
-    height: auto !important;
-    padding: 0px 18px 18px 18px;
-    margin: 25px 7px 8px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green inner border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%); /* Richer cream inner background */
-    border-radius: 18px;
-    box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15); /* More prominent earthy inner shadows/highlights */
-    z-index: 1;
-}
-
-.small-content-inner span {
-    position: relative;
-    display: block;
-    color: #3A4532; /* Deep forest green text color */
-    font-size: 12px;
-    font-family: "Aldrich", sans-serif; /* Consistent font for small content text */
-}
-
-/* Updates Specific Styles */
-#small-content-pictochat {
-    position: relative;
-    height: 345px !important;
-    padding: 0px 18px 18px 18px;
-    margin: 25px 7px 7px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%); /* Richer cream background */
-    border-radius: 18px;
-    box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15); /* Adjusted earthy shadows */
-    z-index: 1;
-}
-
-/* Gallery/Latest Post Window */
-#latestpost {
-    position: relative;
-    top: 10px;
-    z-index: 10;
-    margin-bottom: 5px;
-    left: 0;
-    width: 100%;
-}
-
-#latestposttitle {
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    font-size: 14px;
-    font-family: "Source Code Pro", sans-serif;
-    letter-spacing: 1px;
-    background: linear-gradient(to right, #8C997A 0%, #C0D0B8 80%, rgba(192, 208, 184, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box; /* Muted olive to muted light green gradient */
-    color: #3A4532; /* Deep forest green text */
-    padding-left: 10px;
-    text-shadow: 0px 0px 3px rgba(58, 69, 50, 0.1);
-    z-index: 100;
-}
-
-#latestpostnamebox {
-    overflow: hidden;
-    position: relative;
-    top: 10px;
-    width: 100%;
-    z-index: 10;
-}
-
-#latestpostname {
-    position: relative;
-    width: fit-content !important;
-    top: 0px;
-    left: 0px;
-    font-size: 13px;
-    font-family: "Source Code Pro", sans-serif;
-    color: #3A4532; /* Deep forest green text for blog post name */
-    padding-left: 10px;
-    white-space: nowrap;
-    animation: scroll-left 10s linear infinite;
-    -moz-animation: scroll-left 10s linear infinite;
-    -webkit-animation: scroll-left 10s linear infinite;
-}
-
-@keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-#latestpostname > a {
-    color: #6B805B; /* Deeper muted olive green for link */
-    text-decoration: none;
-}
-
-#latestpostname > a:hover {
-    color: #C2A888; /* Richer tan on hover */
-    text-decoration: none;
-}
-
-/* Stats Window */
-#timecode {
-    position: absolute;
-    top: 10px;
-    width: 95%;
-    left: 7px;
-    font-family: 'Aldrich', sans-serif;
-    font-size: 14px;
-}
-
-#timecode table {
-    top: 0px;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-}
-
-#timecode tbody {
-    top: 0px;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-}
-
-#timecode td {
-    color: #3A4532; /* Deep forest green text color for timecode */
-}
-
-/* New: Container for Music Player and Explore Section in Middle Column (Homepage specific) */
-.center-lower-section-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    gap: 20px; /* Space between the two sections */
-    margin-top: 20px; /* Space below the WELCOME section */
-    justify-content: center; /* Center items horizontally */
-    align-items: flex-start; /* Align items to the top of the container */
-    width: 100%;
-    box-sizing: border-box; /* Include padding/border in width */
-}
-
-/* Music Player specific styles (adapted from style1.css) */
-.music-player-container {
-    flex: 1; /* Allow it to grow and shrink */
-    min-width: 280px; /* Minimum width to prevent squishing */
-    max-width: 320px; /* Max width to keep it compact */
-    height: auto; /* Let content define height */
-    /* Remove redundant styling from .small-content, keep unique player styling here */
-    background-color: transparent; /* Inherit background from inner */
-    border: none;
-    box-shadow: none;
-    backdrop-filter: none;
-    margin-bottom: 0; /* No extra margin here as it's in a flex container */
-}
-
-.player {
-    width: 100%; /* Take full width of its container */
-    height: 250px; /* Fixed height for consistency */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px; /* Adjusted padding */
-    border: 2px solid #A8B49E; /* Matches main border theme */
-    border-radius: 12px; /* Slightly more rounded */
-    box-shadow: inset 0 0 8px rgba(107, 128, 91, 0.4), 0 0 10px rgba(168, 180, 158, 0.6); /* Deeper earthy glow */
-    background-color: rgba(240, 244, 232, 0.95); /* Richer cream background */
-    box-sizing: border-box; /* Include padding/border in width */
-    margin: 0 auto; /* Center the player within its inner content box if container allows */
-}
-
-.tophalf {
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin-bottom: 10px;
-    justify-content: center; /* Center items within tophalf */
-}
-
-.now-playing-icon {
-    height:20px;
-    width:20px;
-    margin-right:5px;
-    filter: drop-shadow(0 0 3px rgba(107, 128, 91, 0.6)); /* Deeper earthy glow for icon */
-}
-
-.track-art {
-    height: 60px; /* Smaller art */
-    width: 60px; /* Smaller art */
-    background-size: cover;
-    border-radius: 8px; /* Slightly rounded corners for art */
-    flex-shrink: 0; /* Prevent shrinking */
-    box-shadow: 0 0 5px rgba(107, 128, 91, 0.5); /* Subtle earthy shadow for art */
-    border: 1px solid #7A8C70; /* Darker olive green border */
-}
-
-.details {
-    flex-grow: 1; /* Allow details to take remaining space */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 10px;
-}
-
-.now-playing {
-    font-size: 0.8em;
-    color: #505B48; /* Medium forest green */
-    font-family: "Aldrich", sans-serif;
-    margin-bottom: 3px;
-}
-
-.track-name {
-    font-size: 1.1em;
-    color: #3A4532; /* Deep forest green */
-    font-family: "Space Age", sans-serif;
-    letter-spacing: 1px;
-    text-shadow: 0 0 2px rgba(107, 128, 91, 0.3); /* Subtle earthy glow */
-}
-
-.track-artist {
-    font-size: 0.9em;
-    color: #505B48; /* Medium forest green */
-    font-family: "Aldrich", sans-serif;
-    font-style: italic;
-    margin-top: 2px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.playpause-track img, .prev-track img, .next-track img {
-    filter: drop-shadow(0 0 3px rgba(107, 128, 91, 0.6)); /* Deeper earthy glow for icons */
-    transition: filter 0.2s ease;
-}
-
-.playpause-track:hover img, .prev-track:hover img, .next-track:hover img {
-    filter: drop-shadow(0 0 5px rgba(107, 128, 91, 0.9)); /* Stronger earthy glow on hover */
-}
-
-.bottomhalf {
-    width: 100%;
-    margin-top: 10px;
-}
-
-.slider_container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.seek_slider, .volume_slider {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: calc(100% - 60px); /* Adjust width for time/volume labels */
-    height: 4px;
-    background: #A8B49E; /* Medium sage green track */
-    outline: none;
-    opacity: 0.9;
-    transition: opacity .2s;
-    border-radius: 2px;
-    filter: drop-shadow(0 0 2px rgba(107, 128, 91, 0.5)); /* Subtle earthy shadow */
-}
-
-.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 12px;
-    height: 12px;
-    background: #6B805B; /* Deeper muted olive green thumb */
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 3px rgba(107, 128, 91, 0.8);
-}
-
-.current-time, .total-duration {
-    color: #505B48; /* Medium forest green */
-    font-size: 0.75em;
-    font-family: 'Source Code Pro', monospace;
-    width: 30px; /* Fixed width for alignment */
-    text-align: center;
-}
-
-/* Explore Section Styling */
-.explore-section {
-    flex: 1; /* Allows it to grow and shrink alongside music player */
-    min-width: 180px; /* Adjusted minimum width */
-    max-width: 250px; /* Max width to keep it compact */
-    height: auto;
-    /* Remove redundant styling from .small-content, keep unique styling here */
-    background-color: transparent; /* Inherit background from inner */
-    border: none;
-    box-shadow: none;
-    backdrop-filter: none;
-    margin-bottom: 0; /* No extra margin here as it's in a flex container */
-}
-
-.explore-section .small-content-inner {
-    height: auto; /* Let content define height */
-    padding-top: 15px; /* Adjust padding if needed */
-    padding-bottom: 15px; /* Adjust padding if needed */
-}
-
-.jellyfish-gif {
-    width: 120px; /* Fixed width for the GIF based on the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 15px; /* Space between GIF and links */
-    border-radius: 10px;
-    border: 1px solid #7A8C70;
-    box-shadow: 0 0 8px rgba(107, 128, 91, 0.5);
-}
-
-.social-link {
-    font-family: "Forced Square", sans-serif;
-    font-size: 16px;
-    color: #6B805B; /* Deeper muted olive green for links */
-    text-decoration: none;
-    padding: 5px 0;
-    display: block; /* Make them stack vertically */
-    text-shadow: 0 0 3px rgba(107, 128, 91, 0.4);
-}
-
-.social-link:hover {
-    color: #C2A888; /* Richer tan on hover */
-    text-shadow: 0 0 6px rgba(194, 168, 136, 0.8);
-}
-
-/* Specific adjustments for the ABOUT YOU and VISITORS sections in the left column */
-.column.left .small-content {
-    height: auto; /* Let content define height */
-}
-
-.column.left .small-content-inner {
-    height: 100px; /* Maintain fixed height for these specific sections */
-    justify-content: center;
-}
-
-/* New Modal Styles (for the Info Pop-up) */
-.modal-overlay {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 2000; /* Sit on top (higher than other elements) */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(230, 235, 221, 0.8); /* Deeper earthy semi-transparent background */
-    backdrop-filter: blur(5px); /* Stronger blur for the overlay */
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
-}
-
-.modal-content {
-    position: relative;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream, soft gradient */
-    border: 2px solid #A8B49E; /* Medium sage green border */
-    border-radius: 18px;
-    box-shadow: 0 0 25px rgba(107, 128, 91, 0.9), inset 0px -8px 15px -8px rgba(107, 128, 91, 0.6); /* More prominent, deeper earthy glow */
-    max-width: 500px; /* Max width for the modal */
-    width: 90%; /* Responsive width */
-    padding-bottom: 10px; /* Space at the bottom */
-    box-sizing: border-box; /* Include padding/border in width */
-    animation: fadeInScale 0.3s ease-out; /* Pop-up animation */
-}
-
-.modal-toolbar {
-    position: relative;
-    height: 40px;
-    line-height: 35px;
-    margin: 3px;
-    border-radius: 25px 25px 15px 15px;
-    padding: 12px 16px;
-    background-color: #C0D0B8; /* Muted light green toolbar */
-    background-image: radial-gradient(75% 50% at 50% 0%, rgba(255, 255, 255, 0.9), transparent), radial-gradient(75% 50% at 50% 70%, rgba(192, 208, 184, 0.9), transparent);
-    box-shadow: inset 0 -2px 5px 0px rgba(107, 128, 91, 0.4); /* Deeper earthy inset shadow */
-}
-
-.modal-toolbar::after {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 100px;
-    width: 101%;
-    height: 40px;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 5%, rgba(224, 230, 240, 0.4) 20%, rgba(255, 255, 255, 0.0) 80%, rgba(255, 255, 255, 0) 100%); /* Prominent reflective highlight */
-    background-clip: border-box;
-    opacity: 1;
-    z-index: 1 !important;
-}
-
-.modal-toolbar span {
-    position: relative;
-    background: linear-gradient(0deg, #6B805B 0%, #C2A888 55%); /* Deeper muted olive to richer tan gradient for title */
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-family: "Space Age", sans-serif;
-    font-size: 32px;
-    top: -10.5px;
-    padding-left: 10px;
-    z-index: 10 !important;
-    text-shadow: 0 0 10px rgba(107, 128, 91, 0.7);
-}
-
-.modal-close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    filter: drop-shadow(0 0 5px rgba(107, 128, 91, 0.6)); /* Deeper earthy glow for icon */
-    transition: filter 0.2s ease, transform 0.2s ease;
-    z-index: 101; /* Ensure it's above other toolbar elements */
-}
-
-.modal-close-button:hover {
-    filter: drop-shadow(0 0 8px rgba(107, 128, 91, 0.9)); /* Stronger earthy glow on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-}
-
-.modal-inner-content {
-    padding: 15px 25px; /* Adjust padding for inner content */
-    margin: 10px 7px;
-    border: 1.5px solid #7A8C70; /* Darker olive green inner border */
-    background-image: linear-gradient(90deg, rgba(240, 244, 232, 0.99) 0%, rgba(230, 235, 221, 0.99) 5%, rgba(230, 235, 221, 0.99) 95%, rgba(240, 244, 232, 0.99) 100%);
-    border-radius: 12px;
-    box-shadow: inset 0px 0px 8px 0px rgba(168, 180, 158, 0.5), 0px -4px 7px -3px rgba(168, 180, 158, 0.4), 0px 5px 2px -3px rgba(240,244,232,0.15);
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally for header/body */
-}
-
-.modal-header {
-    display: flex;
-    flex-direction: column; /* Stack avatar and text vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center;
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.modal-avatar {
-    width: 120px; /* Slightly larger avatar */
-    height: 120px;
-    border-radius: 50%; /* Circular */
-    object-fit: cover;
-    border: 3px solid #8C997A; /* Muted olive border */
-    box-shadow: 0 0 10px rgba(107, 128, 91, 0.7); /* Matching earthy glow */
-    margin-bottom: 15px; /* Space between avatar and text */
-}
-
-.modal-text-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.modal-name {
-    font-family: "Space Age", sans-serif;
-    font-size: 28px; /* Larger name */
-    color: #3A4532;
-    text-shadow: 0 0 5px rgba(58, 69, 50, 0.4);
-    margin-bottom: 5px;
-}
-
-.modal-tagline {
-    font-family: "Aldrich", sans-serif;
-    font-size: 16px;
-    color: #505B48;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.modal-body {
-    width: 100%;
-    max-width: 400px; /* Constrain text width for readability */
-    text-align: justify;
-    font-family: "Aldrich", sans-serif;
-    font-size: 14px;
-    color: #3A4532;
-    line-height: 1.6;
-}
-
-.modal-interests-list {
-    list-style: none; /* Remove default bullet points */
-    padding-left: 0;
-    margin-top: 15px;
-    text-align: left; /* Align list items to the left */
-    width: 100%; /* Take full width for list alignment */
-}
-
-.modal-interests-list li {
-    position: relative;
-    margin-bottom: 8px;
-    padding-left: 20px; /* Space for custom bullet */
-    font-family: "Source Code Pro", monospace; /* Techy font for list */
-    font-size: 13px;
-    color: #3A4532;
-}
-
-.modal-interests-list li::before {
-    content: '▸'; /* Custom bullet point (black triangle) */
-    color: #6B805B; /* Deeper muted olive green color for bullet */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-weight: bold;
-}
-
-/* Keyframe for pop-up animation */
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
-/* Responsive adjustments for modal */
-@media (max-width: 600px) {
-    .modal-content {
-        width: 95%;
-        margin: 10px; /* Smaller margin on very small screens */
-    }
-
-    .modal-toolbar span {
-        font-size: 28px; /* Smaller title on mobile */
-    }
-
-    .modal-name {
-        font-size: 24px; /* Smaller name on mobile */
-    }
-
-    .modal-tagline, .modal-body, .modal-interests-list li {
-        font-size: 13px; /* Smaller text on mobile */
-    }
-
-    .modal-inner-content {
-        padding: 10px 15px;
-    }
-}
-
-/* Blog Post Specific Styles (for individual posts within the content-inner) */
-.blog-post-full {
-    /* These styles apply to the individual full blog posts */
-    /* They are contained within .content-inner */
-}
-
-.blog-post-title {
-    font-family: "Space Age", sans-serif; /* Use Space Age for blog titles */
-    font-size: 22px;
-    color: #3A4532; /* Deep forest green for prominence */
-    margin-bottom: 8px;
-    text-shadow: 0 0 5px rgba(58, 69, 50, 0.3);
-}
-
-.blog-post-meta {
-    font-family: "Source Code Pro", monospace; /* Source Code Pro for meta info */
-    font-size: 11px;
-    color: #505B48; /* Medium forest green for metadata */
-    margin-bottom: 15px;
-    border-bottom: 1px dashed #7A8C70; /* Darker olive green dashed line */
-    padding-bottom: 5px;
-}
-
-.blog-post-meta .post-date,
-.blog-post-meta .post-tags {
-    color: #6B805B; /* Deeper muted olive green for dates and tags */
-}
-
-.blog-post-body {
-    font-family: "Aldrich", sans-serif; /* Aldrich for body text */
-    font-size: 14px;
-    color: #3A4532;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.read-more-link { /* This link is now redundant as content is loaded directly */
-    font-family: "Forced Square", sans-serif;
-    font-size: 15px;
-    color: #6B805B; /* Deeper muted olive green */
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px;
-    border: 1px solid #8C997A; /* Muted olive border */
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    transition: all 0.2s ease;
-}
-
-.read-more-link:hover {
-    background-color: #C0D0B8; /* Muted light green background on hover */
-    color: #3A4532; /* Deep forest green text on hover */
-    text-shadow: none;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-/* Recent Posts List (if used on blog page) */
-.recent-posts-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.recent-posts-list li {
-    margin-bottom: 8px;
-}
-
-.recent-posts-list li a {
-    font-family: "Aldrich", sans-serif;
-    font-size: 14px;
-    color: #505B48; /* Medium forest green for recent post links */
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.recent-posts-list li a:hover {
-    color: #6B805B; /* Deeper muted olive green on hover */
-    text-shadow: 0 0 5px rgba(107, 128, 91, 0.6);
-}
-
-/* New styles for blog.html specific layout */
-.blog-container {
-    display: flex;
-    flex-direction: column; /* Stack header and content vertically */
-    align-items: center; /* Center content horizontally */
-    width: 100%;
-    max-width: 1000px; /* Increased max-width for the two-column layout */
-    margin: 20px auto; /* Center the blog container */
-    padding: 0 10px; /* Add some padding on smaller screens */
-    box-sizing: border-box;
-}
-
-.blog-header-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Space out home and info buttons */
-    align-items: center;
-    margin-bottom: 20px; /* Space below the header bar */
-    padding: 10px 20px;
-    background-image: linear-gradient(90deg, #F0F4E8 0%, #E6EBDD 50%, #F0F4E8 100%); /* Richer cream gradient */
-    border: 2px solid #A8B49E; /* Medium sage green border */
-    border-radius: 18px;
-    box-shadow: 0 0 15px rgba(122, 140, 108, 0.8), inset 0px -5px 10px -5px rgba(122, 140, 108, 0.5); /* Deeper earthy shadows */
-    backdrop-filter: blur(4px);
-    box-sizing: border-box;
-}
-
-.home-button, .info-button {
-    font-family: "Forced Square", sans-serif;
-    font-size: 18px;
-    color: #505B48; /* Medium forest green */
-    text-decoration: none;
-    padding: 8px 15px;
-    border: 1.5px solid #8C997A; /* Muted olive border */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: all 0.2s ease;
-}
-
-.home-button:hover, .info-button:hover {
-    color: #6B805B; /* Deeper muted olive green on hover */
-    text-shadow: 0 0 7px rgba(107, 128, 91, 0.8);
-    background-color: rgba(107, 128, 91, 0.1); /* Subtle background on hover */
-}
-
-.blog-content-wrapper {
-    display: flex;
-    width: 100%;
-    gap: 20px; /* Space between columns */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-}
-
-.blog-nav-column {
-    flex-basis: 250px; /* Fixed width for navigation column */
-    min-width: 200px; /* Minimum width for responsiveness */
-    max-width: 100%; /* Ensure it doesn't overflow */
-    padding: 0; /* Remove default column padding as small-content handles it */
-}
-
-.blog-main-content-column {
-    flex-grow: 1; /* Main content takes remaining space */
-    min-width: 450px; /* Minimum width for readability */
-    max-width: 100%; /* Ensure it doesn't overflow */
-    padding: 0; /* Remove default column padding as content handles it */
-}
-
-/* Blog Navigation Panel Styling (Solinus inspired) */
-.blog-nav-panel {
-    margin-top: 0; /* Align with top of main content */
-    height: auto; /* Allow height to adjust to content */
-    border-radius: 18px; /* Consistent with other panels */
-    overflow: hidden; /* Ensure content respects border-radius */
-}
-
-.blog-nav-panel .small-content-toolbar {
-    background: linear-gradient(0deg, #505B48 0%, #6B805B 55%); /* Darker forest green to deeper muted olive gradient for toolbar */
-    box-shadow: inset 0 -2px 5px 0px rgba(58, 69, 50, 0.4); /* Deeper earthy inset shadow */
-}
-
-.blog-nav-panel .small-content-toolbar span {
-    background: none; /* Remove text gradient for nav title */
-    color: #F0F4E8; /* Richer cream text color */
-    text-shadow: 0 0 6px rgba(240, 244, 232, 0.5); /* Richer cream glow */
-    float: left; /* Align title to left */
-    padding-left: 10px; /* Add padding */
-}
-
-.blog-nav-list {
-    margin-top: 15px; /* Adjust margin for list within inner */
-    padding: 10px 15px; /* Padding for the list items */
-}
-
-.blog-nav-list ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.blog-nav-list li {
-    margin-bottom: 5px;
-}
-
-.blog-nav-list a {
-    display: block;
-    padding: 8px 10px;
-    font-family: "Aldrich", sans-serif; /* Aldrich for nav links */
-    font-size: 15px;
-    color: #3A4532; /* Deep forest green */
-    border-radius: 5px;
-    transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
-    position: relative; /* For the bullet point */
-    padding-left: 25px; /* Space for bullet */
-}
-
-.blog-nav-list a::before {
-    content: '▸'; /* Custom bullet point */
-    color: #6B805B; /* Deeper muted olive green */
-    position: absolute;
-    left: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-weight: bold;
-}
-
-.blog-nav-list a:hover {
-    background-color: rgba(107, 128, 91, 0.1); /* Subtle earthy hover background */
-    color: #505B48; /* Medium forest green on hover */
-    text-shadow: 0 0 4px rgba(107, 128, 91, 0.5);
-}
-
-.blog-nav-list a.active-post-link {
-    background-color: #C0D0B8; /* Muted light green for active link */
-    color: #3A4532; /* Deep forest green for active text */
-    font-weight: bold;
-    box-shadow: inset 0 0 5px rgba(107, 128, 91, 0.3);
-    text-shadow: 0 0 3px rgba(58, 69, 50, 0.2);
+    box-shadow: inset 0 0 5px rgba(230, 235, 221, 0.3);
+    text-shadow: 0 0 3px rgba(230, 235, 221, 0.2);
 }
 
 /* Adjustments for smaller screens on blog page */
