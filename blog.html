@@ -18,52 +18,106 @@
             <a href="#" id="infoNavLink" class="info-button">INFO</a>
         </div>
 
-        <!-- Main Content Window for Blog Posts -->
-        <div class="content blog-main-content">
-            <div class="content-toolbar">
-                <span data-text="blog-entries">BLOG ENTRIES</span>
-            </div>
-            <div class="content-inner">
-                <!-- Blog Post 1 -->
-                <div class="blog-post-entry">
-                    <h2 class="blog-post-title">My First Steps into Data Science</h2>
-                    <p class="blog-post-meta">
-                        Published on: <span class="post-date">July 1, 2025</span> | Tags: <span class="post-tags">#DataScience #Learning #AI</span>
-                    </p>
-                    <div class="blog-post-body">
-                        <p>Embarking on the journey of data science has been an exhilarating experience. From understanding the basics of Python for data manipulation to diving deep into statistical models, every day brings a new challenge and a new discovery. My current internship as an AI Business Analyst is giving me hands-on experience in applying theoretical knowledge to real-world business problems.</p>
-                        <p>One of the most fascinating aspects so far has been the power of data visualization. Transforming raw numbers into insightful graphs and charts truly brings the story of the data to life. It's not just about crunching numbers; it's about communicating complex patterns in an accessible way.</p>
+        <div class="blog-content-wrapper">
+            <!-- Left Column: Blog Navigation (Table of Contents) -->
+            <div class="column blog-nav-column">
+                <div class="small-content blog-nav-panel">
+                    <div class="small-content-toolbar">
+                        <span data-text="blog-nav-title">ENTRIES</span>
                     </div>
-                    <a href="#" class="read-more-link">Read More</a>
-                </div>
-
-                <!-- Blog Post 2 -->
-                <div class="blog-post-entry">
-                    <h2 class="blog-post-title">The Philosophy of AI: Ethics and Impact</h2>
-                    <p class="blog-post-meta">
-                        Published on: <span class="post-date">June 20, 2025</span> | Tags: <span class="post-tags">#AIethics #Philosophy #FutureTech</span>
-                    </p>
-                    <div class="blog-post-body">
-                        <p>Beyond the algorithms and code, the philosophical implications of artificial intelligence are profound. As AI becomes more integrated into our daily lives, questions of ethics, bias, and societal impact become increasingly critical. My philosophy minor has provided a unique lens through which to examine these complex issues.</p>
-                        <p>Discussions around accountability in autonomous systems, the potential for job displacement, and the very definition of consciousness in AI are not just academic exercises; they are essential conversations that will shape our future. It's a field where technology and humanity intertwine in fascinating ways.</p>
+                    <div class="small-content-inner blog-nav-list">
+                        <ul>
+                            <li><a href="#" data-post-id="post1" class="active-post-link">My First Steps into Data Science</a></li>
+                            <li><a href="#" data-post-id="post2">The Philosophy of AI: Ethics and Impact</a></li>
+                            <li><a href="#" data-post-id="post3">Retro Web Design: A Nod to the Past</a></li>
+                            <li><a href="#" data-post-id="post4">Upcoming Projects in Machine Learning</a></li>
+                            <li><a href="#" data-post-id="post5">A Day in the Life of an AI Intern</a></li>
+                        </ul>
                     </div>
-                    <a href="#" class="read-more-link">Read More</a>
-                </div>
-
-                <!-- Blog Post 3 -->
-                <div class="blog-post-entry">
-                    <h2 class="blog-post-title">Retro Web Design: A Nod to the Past</h2>
-                    <p class="blog-post-meta">
-                        Published on: <span class="post-date">May 15, 2025</span> | Tags: <span class="post-tags">#WebDesign #Retro #Aesthetics</span>
-                    </p>
-                    <div class="blog-post-body">
-                        <p>In an era dominated by sleek, minimalist designs, there's a certain charm in revisiting the aesthetics of early internet. This website itself is a testament to my appreciation for retro web design. The pixel art, animated GIFs, and distinct windowed interfaces evoke a sense of nostalgia and playfulness.</p>
-                        <p>It's a deliberate choice to stand out and to remind myself of the creative freedom and experimental spirit that characterized the web's early days. It's not just about looking old; it's about celebrating a unique digital culture and finding beauty in its quirks.</p>
-                    </div>
-                    <a href="#" class="read-more-link">Read More</a>
                 </div>
             </div>
-            <div class="content-footer"><span id="factDisplay">Stay tuned for more updates and thoughts!</span></div>
+
+            <!-- Middle Column: Main Blog Post Content Area -->
+            <div class="column blog-main-content-column">
+                <div class="content blog-post-display-area">
+                    <div class="content-toolbar">
+                        <span data-text="current-post-title">BLOG POST</span>
+                    </div>
+                    <div class="content-inner">
+                        <!-- Blog Post 1 Content -->
+                        <div id="post1" class="blog-post-full active-post">
+                            <h2 class="blog-post-title">My First Steps into Data Science</h2>
+                            <p class="blog-post-meta">
+                                Published on: <span class="post-date">July 1, 2025</span> | Tags: <span class="post-tags">#DataScience #Learning #AI</span>
+                            </p>
+                            <div class="blog-post-body">
+                                <p>Embarking on the journey of data science has been an exhilarating experience. From understanding the basics of Python for data manipulation to diving deep into statistical models, every day brings a new challenge and a new discovery. My current internship as an AI Business Analyst is giving me hands-on experience in applying theoretical knowledge to real-world business problems.</p>
+                                <p>One of the most fascinating aspects so far has been the power of data visualization. Transforming raw numbers into insightful graphs and charts truly brings the story of the data to life. It's not just about crunching numbers; it's about communicating complex patterns in an accessible way.</p>
+                                <p>I've been particularly interested in how data science can be applied to economic forecasting. The ability to predict market trends and understand consumer behavior through data is incredibly powerful. I'm currently exploring time-series analysis techniques and machine learning models like ARIMA and Prophet to build more accurate predictive tools.</p>
+                                <p>The learning curve is steep, but the rewards are immense. I'm constantly amazed by the insights that can be extracted from seemingly disparate datasets. It truly feels like I'm building a superpower to understand the world around me better.</p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 2 Content -->
+                        <div id="post2" class="blog-post-full" style="display:none;">
+                            <h2 class="blog-post-title">The Philosophy of AI: Ethics and Impact</h2>
+                            <p class="blog-post-meta">
+                                Published on: <span class="post-date">June 20, 2025</span> | Tags: <span class="post-tags">#AIethics #Philosophy #FutureTech</span>
+                            </p>
+                            <div class="blog-post-body">
+                                <p>Beyond the algorithms and code, the philosophical implications of artificial intelligence are profound. As AI becomes more integrated into our daily lives, questions of ethics, bias, and societal impact become increasingly critical. My philosophy minor has provided a unique lens through which to examine these complex issues.</p>
+                                <p>Discussions around accountability in autonomous systems, the potential for job displacement, and the very definition of consciousness in AI are not just academic exercises; they are essential conversations that will shape our future. It's a field where technology and humanity intertwine in fascinating ways.</p>
+                                <p>For instance, consider the ethical dilemmas in self-driving cars or AI-powered medical diagnostics. Who is responsible when an AI makes a mistake? How do we ensure fairness and prevent algorithmic bias from perpetuating existing societal inequalities? These are not easy questions, and they require a multidisciplinary approach involving technologists, philosophers, ethicists, and policymakers.</p>
+                                <p>I believe that as we continue to advance AI capabilities, it's crucial to also invest in ethical frameworks and public education to ensure that AI serves humanity's best interests. It's a balance between innovation and responsibility.</p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 3 Content -->
+                        <div id="post3" class="blog-post-full" style="display:none;">
+                            <h2 class="blog-post-title">Retro Web Design: A Nod to the Past</h2>
+                            <p class="blog-post-meta">
+                                Published on: <span class="post-date">May 15, 2025</span> | Tags: <span class="post-tags">#WebDesign #Retro #Aesthetics</span>
+                            </p>
+                            <div class="blog-post-body">
+                                <p>In an era dominated by sleek, minimalist designs, there's a certain charm in revisiting the aesthetics of early internet. This website itself is a testament to my appreciation for retro web design. The pixel art, animated GIFs, and distinct windowed interfaces evoke a sense of nostalgia and playfulness.</p>
+                                <p>It's a deliberate choice to stand out and to remind myself of the creative freedom and experimental spirit that characterized the web's early days. It's not just about looking old; it's about celebrating a unique digital culture and finding beauty in its quirks.</p>
+                                <p>I find inspiration in the raw, unpolished creativity of early web pages. They weren't bound by strict corporate branding guidelines or optimized for every single device. They were personal expressions, often quirky and experimental. Bringing some of that spirit back, even in a modern context, feels refreshing.</p>
+                                <p>Plus, there's something inherently charming about the limitations that defined that era. It forced designers to be more resourceful and imaginative. It's a fun challenge to blend that retro feel with modern responsiveness and accessibility.</p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 4 Content (Placeholder) -->
+                        <div id="post4" class="blog-post-full" style="display:none;">
+                            <h2 class="blog-post-title">Upcoming Projects in Machine Learning</h2>
+                            <p class="blog-post-meta">
+                                Published on: <span class="post-date">April 1, 2025</span> | Tags: <span class="post-tags">#MachineLearning #Projects #Innovation</span>
+                            </p>
+                            <div class="blog-post-body">
+                                <p>I'm excited about several machine learning projects I plan to tackle in the coming months. One idea involves building a sentiment analysis model for social media data to track public opinion on economic policies. This would leverage natural language processing (NLP) techniques and potentially integrate with real-time data streams.</p>
+                                <p>Another project I'm conceptualizing is a recommendation system for academic papers. Given my interest in research, I want to explore how collaborative filtering or content-based filtering could help researchers discover relevant new literature more efficiently. This would involve processing large text datasets and understanding semantic relationships between papers.</p>
+                                <p>I'm also keen on delving deeper into explainable AI (XAI). As models become more complex, understanding *why* they make certain predictions is crucial, especially in sensitive domains. I plan to experiment with techniques like LIME and SHAP to interpret model outputs and build more transparent AI systems.</p>
+                                <p>These projects are still in their early planning stages, but I'm looking forward to the challenges and learning opportunities they will present. Stay tuned for updates on my progress!</p>
+                            </div>
+                        </div>
+
+                        <!-- Blog Post 5 Content (Placeholder) -->
+                        <div id="post5" class="blog-post-full" style="display:none;">
+                            <h2 class="blog-post-title">A Day in the Life of an AI Intern</h2>
+                            <p class="blog-post-meta">
+                                Published on: <span class="post-date">March 10, 2025</span> | Tags: <span class="post-tags">#Internship #AI #WorkLife</span>
+                            </p>
+                            <div class="blog-post-body">
+                                <p>My AI Business Analyst internship in London has been an incredible learning experience. A typical day involves a mix of data cleaning, model development, and collaborating with the business team to translate technical insights into actionable strategies. It's a fast-paced environment where problem-solving skills are constantly put to the test.</p>
+                                <p>One of the most valuable aspects has been working on real-world datasets. University projects often use clean, curated data, but in a professional setting, data is messy and requires significant preprocessing. This has taught me the importance of robust data pipelines and meticulous data governance.</p>
+                                <p>I've also had the opportunity to participate in client meetings, which has been eye-opening. It's one thing to build a model, but another entirely to explain its value and limitations to non-technical stakeholders. This has significantly enhanced my communication and presentation skills.</p>
+                                <p>The team culture is fantastic, with a strong emphasis on mentorship and continuous learning. I'm constantly challenged to think critically and explore new solutions. It's been a truly enriching experience that has solidified my passion for data science and AI.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content-footer"><span id="factDisplay">Thanks for reading! More posts coming soon.</span></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -123,6 +177,51 @@
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && infoModalOverlay.style.display === 'flex') {
                 infoModalOverlay.style.display = 'none';
+            }
+        });
+
+        // JavaScript for Blog Post Navigation
+        document.addEventListener('DOMContentLoaded', () => {
+            const blogNavLinks = document.querySelectorAll('.blog-nav-list a');
+            const blogPosts = document.querySelectorAll('.blog-post-full');
+            const currentPostTitleSpan = document.querySelector('.blog-post-display-area .content-toolbar span');
+
+            // Function to show a specific blog post
+            function showBlogPost(postId) {
+                blogPosts.forEach(post => {
+                    post.style.display = 'none'; // Hide all posts
+                });
+                const selectedPost = document.getElementById(postId);
+                if (selectedPost) {
+                    selectedPost.style.display = 'block'; // Show the selected post
+                    // Update the toolbar title to match the post title
+                    const postTitle = selectedPost.querySelector('.blog-post-title').textContent;
+                    currentPostTitleSpan.textContent = postTitle.toUpperCase(); // Convert to uppercase for toolbar style
+                }
+            }
+
+            // Function to update active link styling
+            function updateActiveLink(clickedLink) {
+                blogNavLinks.forEach(link => {
+                    link.classList.remove('active-post-link');
+                });
+                clickedLink.classList.add('active-post-link');
+            }
+
+            // Add click event listeners to navigation links
+            blogNavLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevent default link behavior
+                    const postId = e.target.dataset.postId; // Get the data-post-id
+                    showBlogPost(postId);
+                    updateActiveLink(e.target);
+                });
+            });
+
+            // Show the first post by default on load
+            if (blogNavLinks.length > 0) {
+                showBlogPost(blogNavLinks[0].dataset.postId);
+                updateActiveLink(blogNavLinks[0]);
             }
         });
     </script>
