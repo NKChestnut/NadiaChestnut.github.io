@@ -3,107 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog</title>
-    <link rel="stylesheet" href="blog.css">
-    <!-- Google Fonts: Inter for general text -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Nadia Chestnut</title>
+    <!-- Link to Google Fonts for Aldrich and Source Code Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <h1 class="site-title">My Digital Garden</h1>
-            <p class="site-tagline">Exploring thoughts, creations, and everything in between.</p>
-        </header>
+    <div class="row">
+        <div class="column left">
+            <!-- Navigation Window -->
+            <div class="navbar">
+                <!-- Loader Circle (placeholder image) -->
+                <div class="navbar-title">NAV</div>
+                <div class="navbar-title-2">my<text> tabs</text></div>
+                <table id="navtable" style="overflow:auto; width:100%; background:transparent;">
+                    <tbody>
+                        <tr>
+                            <td><a href="index.html">HOME</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" id="infoNavLink">INFO</a></td> 
+                        </tr>
+                        <tr>
+                            <td><a href="cv.html">CV</a></td> <!-- Changed from RESEARCH to CV -->
+                        </tr>
+                        <tr>
+                            <td><a href="blog.html">BLOG</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><!-- Empty --></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <!-- Home Button -->
-        <div class="home-button-container">
-            <a href="https://nkchestnut.github.io/NadiaChestnut.github.io/index.html" class="home-button">
-                <i class="fas fa-arrow-left"></i> Back to Home
-            </a>
+            <!-- About You (Qualtrics Survey) Section -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">ABOUT YOU</span>
+                </div>
+                <div class="small-content-inner" style="height: 100px; padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span style="font-family: 'Aldrich', sans-serif; text-align: center;">
+                        Let me learn about you!
+                    </span>
+                    <a href="YOUR_QUALTRICS_SURVEY_URL_HERE" target="_blank" style="margin-top:15px; font-size:16px; font-family: 'Forced Square', sans-serif; display: inline-block; padding: 8px 15px; background: linear-gradient(0deg, #ADD8E6 0%, #FFDAB9 55%); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 5px rgba(173, 216, 230, 0.4); border: 1px solid #B0E0E6; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        TAKE SURVEY
+                    </a>
+                </div>
+            </div>
+
+            <!-- Visitor Counter Section -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">VISITORS</span>
+                </div>
+                <div class="small-content-inner" style="padding-left:10px; padding-right:10px; padding-bottom:10px; margin-top:40px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span style="font-family: 'Aldrich', sans-serif;">
+                        You are visitor number:
+                    </span>
+                    <!-- FC2 Counter Starts here -->
+                    <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40442680&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=40442680&main=1" alt="FC2 Counter" /></noscript>
+                    <!-- FC2 Counter Ends here -->
+                    <p style="font-size:12px; color:#696969; font-family: 'Aldrich', sans-serif; margin-top: 5px;">
+                        (This is a live counter!)
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <!-- Blog Posts Section -->
-            <section class="blog-posts">
-                <h2 class="section-title">Latest Entries</h2>
-
-                <article class="blog-post-card">
-                    <a href="blog-post-1.html" class="post-link">
-                        <h3 class="post-title">A Brief Introduction to This Page</h3>
-                    </a>
-                    <p class="post-meta">Published on <time datetime="2025-07-03">July 3, 2025</time></p>
-                    <p class="post-excerpt">Welcome to my digital journal! I tend to have a lot of thoughts about a lot of different things: geography, secret countries, interesting fonts, photos, the way in which people do and think and talk... but a lot of these end up being tabs open on my computer more than anything. What a shame... but that's what this is for. I have so many things to share, and I don't plan on yapping, but more so maybe sharing my thoughts but also facts...</p>
-                    <a href="blog-post-1.html" class="read-more-btn">Read More</a>
-                </article>
-
-                <article class="blog-post-card">
-                    <a href="blog-post-2.html" class="post-link">
-                        <h3 class="post-title">Reflections on Digital Scrapbooking</h3>
-                    </a>
-                    <p class="post-meta">Published on <time datetime="2025-06-28">June 28, 2025</time></p>
-                    <p class="post-excerpt">The concept of a "digital scrapbook" has always fascinated me. It's a space where I can document things I think about—music I like recently, countries I love, ideas I admire... but I ask myself why? Am I not just yapping about something I like, but rather why I think it's important to curate these digital memories?</p>
-                    <a href="blog-post-2.html" class="read-more-btn">Read More</a>
-                </article>
-
-                <article class="blog-post-card">
-                    <a href="blog-post-3.html" class="post-link">
-                        <h3 class="post-title">My Journey into Web Design</h3>
-                    </a>
-                    <p class="post-meta">Published on <time datetime="2025-06-20">June 20, 2025</time></p>
-                    <p class="post-excerpt">I've been interested in design ever since I started messing around with Google Slides' templates. During the start of 2021, with people hating corporate/flat design, I decided to start designing in a "skeuomorphic" style. This blog post details my learning process and inspirations.</p>
-                    <a href="blog-post-3.html" class="read-more-btn">Read More</a>
-                </article>
-            </section>
-
-            <!-- Sidebar Section -->
-            <aside class="sidebar">
-                <!-- About Me / Welcome Box -->
-                <div class="sidebar-card welcome-box">
-                    <img src="https://placehold.co/100x100/E0F2F7/2C3E50?text=Avatar" alt="My Avatar" class="avatar">
-                    <h3 class="sidebar-title">Hello! Welcome!</h3>
-                    <p>This site is my personal hobby-passion-project. It's green, botanical, and a little bit whimsical. I hope you find something interesting here!</p>
+        <div class="column middle">
+            <!-- Main Content Window -->
+            <div class="content">
+                <div class="content-toolbar">
+                    <span data-text="welcome">WELCOME</span>
                 </div>
+                <div class="content-inner">
+                    <div id="page1">
+                        <h1>Hello!!!</h1>
+                        <p>Welcome to my website! This space is both a passion project and portfolio. I wanted to make a clean looking website for professional/academic purposes but also something fun and aesthetically pleasing.</p>
+                        <p style="color: #4A4A4A; font-family: 'Aldrich', sans-serif;">
+                            This website is designed for an optimal desktop experience. Always a work in progress.
+                        </p>
 
-                <!-- Site Updates -->
-                <div class="sidebar-card site-updates">
-                    <h3 class="sidebar-title">Site Updates</h3>
-                    <ul>
-                        <li><span class="update-date">7/03/2025:</span> New blog entry & design tweaks!</li>
-                        <li><span class="update-date">6/29/2025:</span> Gallery section updated with new photos.</li>
-                        <li><span class="update-date">6/25/2025:</span> Minor layout adjustments and accessibility improvements.</li>
-                    </ul>
-                </div>
+                        <h1 style="margin-top:15px;">What's on Here?</h1>
+                        <p>
+                            Here, you can find info about me, my research, my projects, and my passions. Keep coming back to see updates!
+                        </p>
 
-                <!-- Embedded Media Example (YouTube) -->
-                <div class="sidebar-card embedded-media">
-                    <h3 class="sidebar-title">Currently Listening</h3>
-                    <div class="video-container">
-                        <iframe width="100%" height="auto" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=yv711i2g9b7F49eN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h1 style="margin-top:15px;">What Are You Up To Right Now?</h1>
+                        <p>
+                            I'm currently completing an AI Business Analyst internship in London at Project Alix. You should check them out. Once I'm back in the states I'll be working on some personal projects :D
+                        </p>
                     </div>
-                    <p class="media-caption">NewJeans (뉴진스) 'Ditto' Ending Song (Clean Version)</p>
+                </div>
+                <div class="content-footer"><span id="factDisplay">Biggest inspos for this site are unicodeangel and oceanfront. Credits to them!</span></div>
+            </div>
+
+            <!-- New Section: Music Player & Explore (Jellyfish + Social Links) -->
+            <div class="center-lower-section-container">
+                <!-- Music Player Section -->
+                <div class="small-content music-player-container">
+                    <div class="small-content-toolbar">
+                        <span data-text="toolbar text">MUSIC</span>
+                    </div>
+                    <div class="small-content-inner player">
+                        <div class="tophalf">
+                            <!-- Track art will be updated -->
+                            <div class="track-art" style="background-image: url('https://i.ytimg.com/vi/m8fKw0QMXug/sddefault.jpg');"></div>
+                            <div class="details">
+                                <div class="topdetails">
+                                    <div class="now-playing">PLAYING 1 OF 4</div>
+                                    <div class="track-name">June 2011</div>
+                                    <div class="track-artist">Nintendo</div>
+                                </div>
+                                <div class="buttons">
+                                    <div class="prev-track" onclick="prevTrack()"><img src="https://img.icons8.com/ios-glyphs/30/000000/rewind.png" alt="Previous" style="width:20px; height:20px;"></div>
+                                    <div class="playpause-track" onclick="playpauseTrack()"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Font_Awesome_5_solid_play-circle.svg/1200px-Font_Awesome_5_solid_play-circle.svg.png" alt="Play/Pause" style="width:20px; height:20px;"></div>
+                                    <div class="next-track" onclick="nextTrack()"><img src="https://img.icons8.com/ios-glyphs/30/000000/fast-forward.png" alt="Next" style="width:20px; height:20px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottomhalf">
+                            <div class="slider_container">
+                                <div class="current-time">0:00</div>
+                                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                                <div class="total-duration">0:00</div>
+                            </div>
+                            <div class="slider_container">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/volume--v1.png" alt="Volume Icon" style="width:15px; height:15px; margin-right:5px;">
+                                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/high-volume--v1.png" alt="High Volume Icon" style="width:15px; height:15px; margin-left:5px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Links/Collections -->
-                <div class="sidebar-card links-collection">
-                    <h3 class="sidebar-title">Collections</h3>
-                    <ul>
-                        <li><a href="#">Flowers I've Collected</a></li>
-                        <li><a href="#">Favorite Art Pieces</a></li>
-                        <li><a href="#">Clocks I Have</a></li>
+                <!-- Explore Section (Jellyfish GIF and Social Links) -->
+                <div class="small-content explore-section">
+                    <div class="small-content-toolbar">
+                        <span data-text="toolbar text">EXPLORE</span>
+                    </div>
+                    <div class="small-content-inner" style="padding:15px; margin-top:25px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 180px;">
+                        <!-- Jellyfish -->
+                        <img src="https://i.pinimg.com/originals/85/b8/03/85b80397cef09d0cbdc81a94686b9a01.gif" alt="Jellyfish GIF" class="jellyfish-gif" style="margin-bottom: 20px; border-radius: 10px; border: 1px solid #D3D3D3; box-shadow: 0 0 8px rgba(176, 224, 230, 0.5);">
+                        <a href="https://www.linkedin.com/in/nadiachestnut" target="_blank" class="social-link" style="margin-bottom: 10px;">LinkedIn Profile</a>
+                        <a href="https://github.com/NKChestnut" target="_blank" class="social-link">GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="column right">
+            <!-- ME! Section -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">ME!</span>
+                </div>
+                <div class="small-content-inner" style="padding: 18px; margin-top:25px; margin-bottom:7px; text-align: center;">
+                    <img src="https://www.clemson.edu/academics/programs/national-scholars/_images/scholar-photos/2024-scholars/nadia-chestnut.jpg" alt="My Headshot" style="border-radius: 8px; width: 120px; height: 150px; object-fit: cover; margin-bottom: 15px; border: 2px solid #D3D3D3;">
+                    <p style="color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px; margin-bottom:10px;">
+                        Hi! I'm Nadia. Look around the website and enjoy your time here!
+                    </p>
+                </div>
+            </div>
+
+            <!-- PORTFOLIO Section -->
+            <div class="small-content" style="margin-bottom: 25px;">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">PORTFOLIO</span>
+                </div>
+                <div class="small-content-inner" style="padding:15px; margin-top:25px;">
+                    <div id="latestpost">
+                        <div id="latestposttitle">
+                            <b>Latest projects/research</b>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Aldrich', sans-serif; font-size:14px; color:#4A4A4A; margin-top: 50px;">
+                        Check out the <a href="#" style="color: #87CEFA;">PORTFOLIO</a> for a fun display of my presentations, projects, and publications!
+                    </p>
+                </div>
+            </div>
+
+            <!-- CURRENTLY Section -->
+            <div class="small-content">
+                <div class="small-content-toolbar">
+                    <span data-text="toolbar text">CURRENTLY</span>
+                </div>
+                <div class="small-content-inner" style="height: auto; padding:15px; margin-top:40px;">
+                    <p style="margin-bottom: 10px; color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Reading:</strong> [Book Title or Article]
+                    </p>
+                    <p style="margin-bottom: 10px; color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Watching:</strong> [Show/Movie Title]
+                    </p>
+                    <p style="margin-bottom: 10px; color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Listening to:</strong> [Song/Artist/Podcast]
+                    </p>
+                    <p style="color:#4A4A4A; font-family: 'Aldrich', sans-serif; font-size:14px;">
+                        <strong style="color:#87CEFA;">Working on:</strong> [Project/Task]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Info Modal Overlay -->
+    <div id="infoModalOverlay" class="modal-overlay">
+        <!-- Info Modal Content -->
+        <div id="infoModalContent" class="modal-content">
+            <div class="modal-toolbar">
+                <span data-text="info-title">INFO</span>
+                <img src="https://www.pngmart.com/files/15/Glossy-Blue-Button-PNG-Image.png" alt="Close Button" class="modal-close-button">
+            </div>
+            <div class="modal-inner-content">
+                <div class="modal-header">
+                    <div class="modal-text-header">
+                        <h2 class="modal-name">Nadia Chestnut</h2>
+                        <p class="modal-tagline">Data Science | ML/AI | Philosophy </p>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Hi! I'm Nadia Chestnut.</p>
+                    <p>I'm pursing a BS in Data Science with an application in Economics and minors in AI and Philosophy @ Clemson University</p>
+                    <p> My research interests are data science, statistics, applied math, and whatever else I can get my hands on</p>
+                    <p> Feel free to contact me at nchestn@clemson.edu</p>
+                    <p>Besides academics, I interests include:</p>
+
+                    <ul class="modal-interests-list">
+                        <li>Playing story heavy games (Life is Strange, Deltarune, Split Fiction, etc)</li>
+                        <li>Reading</li>
+                        <li>Energy drinks</li>
+                        <li>Watching lore heavy shows (ie Adventure Time)</li>
+                        <li>Learning Russian (just started)</li>
+                        <li></li>
                     </ul>
                 </div>
-            </aside>
-        </main>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <p>&copy; 2025 My Digital Garden. All rights reserved.</p>
-            <p>Inspired by the wonderful webmasters of Neocities.</p>
-        </footer>
+            </div>
+        </div>
     </div>
+
+    <!-- Music Player JS from oceanfront.neocities.org/scripts/main.js, adapted -->
+    <script>
+        let now_playing = document.querySelector(".now-playing");
+        let track_art = document.querySelector(".track-art");
+        let track_name = document.querySelector(".track-name");
+        let track_artist = document.querySelector(".track-artist");
+
+        let playpause_btn = document.querySelector(".playpause-track");
+        let next_btn = document.querySelector(".next-track");
+        let prev_btn = document.querySelector(".prev-track");
+
+        let seek_slider = document.querySelector(".seek_slider");
+        let volume_slider = document.querySelector(".volume_slider");
+        let curr_time = document.querySelector(".current-time");
+        let total_duration = document.querySelector(".total-duration");
+
+        let track_index = 0;
+        let isPlaying = false;
+        let updateTimer;
+
+        // Create new audio element
+        let curr_track = document.createElement('audio');
+
+        // Define the tracks that have to be played
+        let track_list = [
+            {
+                name: "June 2011",
+                artist: "Nintendo",
+                image: "https://i.ytimg.com/vi/m8fKw0QMXug/sddefault.jpg",
+                path:"https://dl.dropbox.com/scl/fi/289yj7ssrp45ni6yzod6b/June_2011_3DS_-_Nintendo_eShop_Music.mp3?rlkey=g2okqfb8v2n9lhhdpj17i0qxa&st=5vgdsqgx&dl=1"
+            },
+            {
+                name: "Welcome to the Green Room",
+                artist: "Toby Fox",
+                image: "https://assets-prd.ignimgs.com/2025/04/10/nintendoswitch2-deltarune-keyart-square-1744324739449.jpg?width=300&crop=1%3A1%2Csmart&auto=webp",
+                path: "https://dl.dropbox.com/scl/fi/zs183mfwlt90namyizzw7/14._Welcome_to_the_Green_Room_DELTARUNE_Chapter_3-4_Soundtrack_-_Toby_Fox.mp3?rlkey=qu676vjfg35twute8lbm66nn7&st=h04gk5hv&dl=1"
+            },
+            {
+                name: "Somewhere Alone At Sea",
+                artist: "aivi & surasshu",
+                image: "https://i.ytimg.com/vi/LNsh1xPzIe8/maxresdefault.jpg",
+                path: "https://dl.dropbox.com/scl/fi/kgudyb9m9pw9ahrp3op0l/Steven_Universe_S3_Official_Soundtrack_Somewhere_Alone_at_Sea_-_aivi_surasshu_Cartoon_Network.mp3?rlkey=og9w6w14q2jdwzjg07nijnrnp&st=yn4wpggy&dl=1"
+            },
+            {
+                name: "Struck by the Rain",
+                artist: "Rhythm Heaven (Tsunku)",
+                image: "https://assets-prd.ignimgs.com/2022/04/10/rhythmheaven-1649608382334.jpg",
+                path: "https://dl.dropbox.com/scl/fi/oku3xlsaah6bwr14n2hwy/Struck_by_the_Rain_Full_Instrumental_AI_-_Rhythm_Heaven.mp3?rlkey=ar4apvmxui2usac59saiv8yru&st=y4gq676z&dl=1"
+            },
+        ];
+
+        function loadTrack(track_index) {
+            clearInterval(updateTimer);
+            resetValues();
+            curr_track.src = track_list[track_index].path;
+            curr_track.load();
+
+            track_art.style.backgroundImage = "url(" + track_list[track_index].image + ")";
+            track_name.textContent = track_list[track_index].name;
+            track_artist.textContent = track_list[track_index].artist;
+            now_playing.textContent = "PLAYING " + (track_index + 1) + " OF " + track_list.length;
+
+            updateTimer = setInterval(seekUpdate, 1000);
+            curr_track.addEventListener("ended", nextTrack);
+            // random_bg_color(); // Removed as it affects overall page background
+        }
+
+        function resetValues() {
+            curr_time.textContent = "0:00";
+            total_duration.textContent = "0:00"; // Initialize to 0:00
+            seek_slider.value = 0;
+        }
+
+        // Load the first track in the tracklist on window load
+        window.onload = function() {
+            loadTrack(track_index);
+            // Optionally, play on load. Browsers might block autoplay without user interaction.
+            // playTrack();
+        };
+
+        function playpauseTrack() {
+            if (!isPlaying) playTrack();
+            else pauseTrack();
+        }
+
+        function playTrack() {
+            curr_track.play();
+            isPlaying = true;
+            playpause_btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Font_Awesome_5_regular_pause-circle.svg/1200px-Font_Awesome_5_regular_pause-circle.svg.png" alt="Pause" style= width="20px" height="20px">';
+        }
+
+        function pauseTrack() {
+            curr_track.pause();
+            isPlaying = false;
+            playpause_btn.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Font_Awesome_5_solid_play-circle.svg/1200px-Font_Awesome_5_solid_play-circle.svg.png" alt="Play" style= width="20px" height="20px">';
+        }
+
+        function nextTrack() {
+            if (track_index < track_list.length - 1)
+                track_index += 1;
+            else track_index = 0;
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function prevTrack() {
+            if (track_index > 0)
+                track_index -= 1;
+            else track_index = track_list.length - 1; // Corrected to loop to the last track
+            loadTrack(track_index);
+            playTrack();
+        }
+
+        function seekTo() {
+            let seekto = curr_track.duration * (seek_slider.value / 100);
+            curr_track.currentTime = seekto;
+        }
+
+        function setVolume() {
+            curr_track.volume = volume_slider.value / 100;
+        }
+
+        function seekUpdate() {
+            let seekPosition = 0;
+
+            if (!isNaN(curr_track.duration)) {
+                seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+                seek_slider.value = seekPosition;
+
+                let currentMinutes = Math.floor(curr_track.currentTime / 60);
+                let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
+                let durationMinutes = Math.floor(curr_track.duration / 60);
+                let durationSeconds = Math.floor(curr_track.duration - durationMinutes * 60);
+
+                if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
+                if (durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
+                if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
+                if (durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+
+                curr_time.textContent = currentMinutes + ":" + currentSeconds;
+                total_duration.textContent = durationMinutes + ":" + durationSeconds;
+            }
+        }
+
+        // JavaScript for the Info Modal Pop-up
+        const infoNavLink = document.getElementById('infoNavLink');
+        const infoModalOverlay = document.getElementById('infoModalOverlay');
+        const infoModalCloseButton = document.querySelector('#infoModalContent .modal-close-button');
+
+        infoNavLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            infoModalOverlay.style.display = 'flex'; // Use flex to center
+        });
+
+        infoModalCloseButton.addEventListener('click', () => {
+            infoModalOverlay.style.display = 'none';
+        });
+
+        // Close modal if clicking outside the content
+        infoModalOverlay.addEventListener('click', (e) => {
+            if (e.target === infoModalOverlay) {
+                infoModalOverlay.style.display = 'none';
+            }
+        });
+
+        // Optional: Close with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && infoModalOverlay.style.display === 'flex') {
+                infoModalOverlay.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
