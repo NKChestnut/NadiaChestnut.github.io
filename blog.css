@@ -107,6 +107,7 @@ body {
     box-sizing: border-box; /* Include padding in width */
 
     color: #F1FFF3; /* Matching solinus.neocities.org .window.title color */
+    /* Removed placeholder image, relying on glassFx and glassColor */
     background: var(--glassFx), var(--glassColor), var(--glassBase); /* Glass effect */
     background-blend-mode: overlay, normal, normal;
     box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.7), inset 0px 1px 0px rgba(245, 245, 245, 0.2), inset 0px -1px 1px rgba(0, 0, 0, 0.2); /* Matching solinus.neocities.org .window.title box-shadow */
