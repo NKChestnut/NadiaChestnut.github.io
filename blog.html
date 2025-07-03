@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Blog</title>
+    <title>My Digital Garden Blog</title>
     <link rel="stylesheet" href="blog.css">
     <!-- Google Fonts: Inter for general text -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
@@ -31,31 +31,49 @@
             <section class="blog-posts">
                 <h2 class="section-title">Latest Entries</h2>
 
-                <article class="blog-post-card">
-                    <a href="blog-post-1.html" class="post-link">
+                <!-- Blog Post 1 -->
+                <article class="blog-post-card" data-post-id="post-1">
+                    <a href="#" class="post-link">
                         <h3 class="post-title">A Brief Introduction to This Page</h3>
                     </a>
                     <p class="post-meta">Published on <time datetime="2025-07-03">July 3, 2025</time></p>
                     <p class="post-excerpt">Welcome to my digital journal! I tend to have a lot of thoughts about a lot of different things: geography, secret countries, interesting fonts, photos, the way in which people do and think and talk... but a lot of these end up being tabs open on my computer more than anything. What a shame... but that's what this is for. I have so many things to share, and I don't plan on yapping, but more so maybe sharing my thoughts but also facts...</p>
-                    <a href="blog-post-1.html" class="read-more-btn">Read More</a>
+                    <div class="full-post-content" style="display: none;">
+                        <p>This is the full content of "A Brief Introduction to This Page".</p>
+                        <p>For example, I'd love to talk about my dear favorite island country Tuvalu... but also some ex-soviet countries like Bulgaria, and some interesting literature out there, like cleanliness by Garth Greenwell. Artists I follow on Twitter blogs I found that haven't been updated since 2000, and many more things. I hope I can update soon and I hope you will enjoy 😊</p>
+                        <p>Lastly, it will be formatted this way: an entry will be made on a topic, and if I have more to add, it will be added in the same page under a different date, if the topic is the same but I feel it needs its own entry, it will get it own. That's really it, yap!!!!</p>
+                    </div>
+                    <button class="read-more-btn" data-post-id="post-1">Read More</button>
                 </article>
 
-                <article class="blog-post-card">
-                    <a href="blog-post-2.html" class="post-link">
+                <!-- Blog Post 2 -->
+                <article class="blog-post-card" data-post-id="post-2">
+                    <a href="#" class="post-link">
                         <h3 class="post-title">Reflections on Digital Scrapbooking</h3>
                     </a>
                     <p class="post-meta">Published on <time datetime="2025-06-28">June 28, 2025</time></p>
                     <p class="post-excerpt">The concept of a "digital scrapbook" has always fascinated me. It's a space where I can document things I think about—music I like recently, countries I love, ideas I admire... but I ask myself why? Am I not just yapping about something I like, but rather why I think it's important to curate these digital memories?</p>
-                    <a href="blog-post-2.html" class="read-more-btn">Read More</a>
+                    <div class="full-post-content" style="display: none;">
+                        <p>This is the full content of "Reflections on Digital Scrapbooking".</p>
+                        <p>Digital scrapbooking offers a unique way to preserve thoughts, inspirations, and daily life without the physical clutter. It allows for easy organization, sharing, and integration of various media types, from text to images and even embedded videos. It's a personal archive that grows with you.</p>
+                        <p>It's about creating a personal space on the web that feels like a cozy corner, a digital garden where ideas can blossom and be revisited. This approach contrasts with the ephemeral nature of social media, offering a more permanent and curated reflection of one's journey.</p>
+                    </div>
+                    <button class="read-more-btn" data-post-id="post-2">Read More</button>
                 </article>
 
-                <article class="blog-post-card">
-                    <a href="blog-post-3.html" class="post-link">
+                <!-- Blog Post 3 -->
+                <article class="blog-post-card" data-post-id="post-3">
+                    <a href="#" class="post-link">
                         <h3 class="post-title">My Journey into Web Design</h3>
                     </a>
                     <p class="post-meta">Published on <time datetime="2025-06-20">June 20, 2025</time></p>
                     <p class="post-excerpt">I've been interested in design ever since I started messing around with Google Slides' templates. During the start of 2021, with people hating corporate/flat design, I decided to start designing in a "skeuomorphic" style. This blog post details my learning process and inspirations.</p>
-                    <a href="blog-post-3.html" class="read-more-btn">Read More</a>
+                    <div class="full-post-content" style="display: none;">
+                        <p>This is the full content of "My Journey into Web Design".</p>
+                        <p>My design journey began with simple tools like Google Slides, but I quickly moved to more robust platforms like Figma. The shift towards "skeuomorphic" design was a conscious choice, as I appreciate the tactile and familiar feel it brings to digital interfaces, contrasting with the often sterile flat design trends.</p>
+                        <p>Learning Inkscape and Blender has opened up new avenues for creating custom graphics and 3D elements, further enhancing the ability to craft unique and immersive web experiences. The goal is to build websites that are not just functional but also visually rich and engaging, reflecting a blend of old-web charm with modern capabilities.</p>
+                    </div>
+                    <button class="read-more-btn" data-post-id="post-3">Read More</button>
                 </article>
             </section>
 
@@ -105,5 +123,49 @@
             <p>Inspired by the wonderful webmasters of Neocities.</p>
         </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const postLinks = document.querySelectorAll('.post-link');
+            const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+            // Function to toggle full post content visibility
+            const togglePostContent = (postId) => {
+                const postCard = document.querySelector(`.blog-post-card[data-post-id="${postId}"]`);
+                if (postCard) {
+                    const fullContent = postCard.querySelector('.full-post-content');
+                    const readMoreBtn = postCard.querySelector('.read-more-btn');
+
+                    if (fullContent.style.display === 'none' || fullContent.style.display === '') {
+                        fullContent.style.display = 'block';
+                        readMoreBtn.textContent = 'Show Less';
+                        readMoreBtn.classList.add('show-less'); // Add class for styling
+                    } else {
+                        fullContent.style.display = 'none';
+                        readMoreBtn.textContent = 'Read More';
+                        readMoreBtn.classList.remove('show-less'); // Remove class
+                    }
+                }
+            };
+
+            // Add event listeners to post titles
+            postLinks.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default link behavior
+                    const postId = link.closest('.blog-post-card').dataset.postId;
+                    togglePostContent(postId);
+                });
+            });
+
+            // Add event listeners to Read More buttons
+            readMoreButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default button behavior
+                    const postId = button.dataset.postId;
+                    togglePostContent(postId);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
