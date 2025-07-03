@@ -28,8 +28,8 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d8e4d2; /* Light green-grey */
-    background-image: url('https://placehold.co/1920x1080/D8E4D2/6A8E6C?text=Subtle+Background+Texture'); /* Placeholder for a subtle background texture */
+    /* More vibrant, solarpunk-inspired background gradient */
+    background: linear-gradient(135deg, #a8b89e 0%, #d8e4d2 50%, #b5c7a8 100%);
     background-size: cover;
     background-attachment: fixed;
     color: #333;
@@ -43,9 +43,11 @@ body {
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent white for content area */
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.92); /* Increased transparency for a more "glassy" feel */
+    border-radius: 25px; /* More rounded */
+    /* Multiple shadows for depth and glow */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2), /* Main shadow */
+                0 0 30px rgba(168, 184, 158, 0.3); /* Subtle green glow */
     max-width: 1200px;
     width: 100%;
     overflow: hidden;
@@ -57,89 +59,95 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #a8b89e, #6a8e6c); /* Muted green gradient, slightly darker end */
-    background-image: url('https://placehold.co/1200x150/6A8E6C/FFFFFF?text=Subtle+Header+Texture'); /* Placeholder for subtle texture */
+    background: linear-gradient(135deg, #6a8e6c, #4a5e4b); /* Deeper, richer green gradient */
+    background-image: url('https://placehold.co/1200x150/6A8E6C/FFFFFF?text=Subtle+Header+Pattern'); /* Placeholder for subtle texture */
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 40px 20px; /* Increased padding for more presence */
+    padding: 50px 20px; /* More padding for more presence */
     text-align: center;
-    border-bottom: 5px solid #4a5e4b; /* Darker green border */
-    border-radius: 20px 20px 0 0;
-    box-shadow: inset 0 -8px 15px rgba(0, 0, 0, 0.3); /* More pronounced inner shadow */
+    border-bottom: 8px solid #3a4b3b; /* Thicker, darker green border */
+    border-radius: 25px 25px 0 0; /* Match container border-radius */
+    box-shadow: inset 0 -10px 20px rgba(0, 0, 0, 0.4), /* More pronounced inner shadow */
+                0 5px 15px rgba(0, 0, 0, 0.2); /* Outer shadow for lift */
 }
 
 .site-title {
-    font-size: 3em; /* Larger font size */
+    font-size: 3.5em; /* Even larger font size */
     margin: 0;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); /* More pronounced text shadow */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* More pronounced text shadow */
+    letter-spacing: 2px; /* Slightly spaced out for a cleaner look */
 }
 
 .site-tagline {
-    font-size: 1.2em; /* Slightly larger */
-    margin-top: 10px;
-    opacity: 0.95;
+    font-size: 1.3em; /* Slightly larger */
+    margin-top: 15px;
+    opacity: 0.98;
 }
 
 /* Home Button Container */
 .home-button-container {
-    padding: 15px 20px;
+    padding: 20px; /* More padding */
     background-color: #c0d1b5; /* Lighter muted green */
     text-align: center;
-    border-bottom: 1px solid #a8b89e;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #a8b89e; /* Thicker border */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly more pronounced shadow */
 }
 
 .home-button {
     text-decoration: none;
-    color: #4a5e4b; /* Dark green text */
+    color: #3a4b3b; /* Darker green text */
     font-weight: bold;
-    padding: 12px 25px; /* Larger padding for a more prominent button */
-    border-radius: 15px;
-    background-color: #e0e0d1; /* Cream background for button */
+    padding: 15px 30px; /* Larger padding for a more prominent button */
+    border-radius: 20px; /* More rounded */
+    /* Glossy button effect */
+    background: linear-gradient(135deg, #e0e0d1, #c0d1b5); /* Cream to light green gradient */
     transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    /* Multiple shadows for depth */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2), /* Main shadow */
+                inset 0 2px 5px rgba(255, 255, 255, 0.5); /* Inner highlight for gloss */
     display: inline-flex; /* Use inline-flex for icon alignment */
     align-items: center;
-    gap: 10px; /* Space between icon and text */
-    border: 1px solid #c0d1b5;
+    gap: 12px; /* More space between icon and text */
+    border: 1px solid #a8b89e; /* Subtle border */
 }
 
 .home-button:hover {
-    background-color: #a8b89e; /* Muted green on hover */
+    background: linear-gradient(135deg, #c0d1b5, #a8b89e); /* Darker gradient on hover */
     color: #fff;
-    transform: translateY(-3px); /* More pronounced lift effect */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transform: translateY(-5px); /* More pronounced lift effect */
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3), /* Stronger shadow on hover */
+                inset 0 1px 3px rgba(255, 255, 255, 0.6); /* Enhanced inner highlight */
 }
 
 /* Main Content Layout */
 .main-content {
     display: flex;
     flex-wrap: wrap; /* Allow columns to stack on smaller screens */
-    padding: 20px;
-    gap: 20px; /* Space between columns */
+    padding: 30px; /* More padding */
+    gap: 30px; /* More space between columns */
 }
 
 .blog-posts {
     flex: 3; /* Takes 3 parts of the available space */
-    min-width: 300px; /* Minimum width before wrapping */
+    min-width: 320px; /* Minimum width before wrapping */
 }
 
 .sidebar {
     flex: 1; /* Takes 1 part of the available space */
-    min-width: 280px; /* Minimum width before wrapping */
+    min-width: 300px; /* Minimum width before wrapping */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px; /* More space between sidebar cards */
 }
 
 .section-title {
-    font-size: 2.2em; /* Slightly larger */
+    font-size: 2.5em; /* Larger */
     color: #4a5e4b;
-    margin-bottom: 30px; /* More space below title */
+    margin-bottom: 35px; /* More space below title */
     text-align: center;
     position: relative;
-    padding-bottom: 12px;
+    padding-bottom: 15px;
 }
 
 .section-title::after {
@@ -148,21 +156,23 @@ body {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 100px; /* Longer underline */
-    height: 4px; /* Thicker underline */
+    width: 120px; /* Longer underline */
+    height: 5px; /* Thicker underline */
     background-color: #a8b89e;
     border-radius: 5px;
 }
 
 /* Blog Post Cards */
 .blog-post-card {
-    background-color: #f8f8f0; /* Off-white, paper-like background */
-    border: 2px solid #e0e0d1; /* Slightly thicker border */
-    border-radius: 18px; /* Slightly more rounded */
-    padding: 30px; /* More padding */
-    margin-bottom: 25px; /* More space between cards */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background: linear-gradient(160deg, #f8f8f0 0%, #e0e0d1 100%); /* Subtle gradient for sheen */
+    border: 2px solid #c0d1b5; /* Thicker, more distinct border */
+    border-radius: 20px; /* More rounded */
+    padding: 35px; /* More padding */
+    margin-bottom: 30px; /* More space between cards */
+    /* Multiple shadows for depth and glow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), /* Main shadow */
+                0 0 15px rgba(192, 209, 181, 0.4); /* Subtle glow from card color */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
 }
@@ -170,19 +180,20 @@ body {
 .blog-post-card::before {
     content: '';
     position: absolute;
-    top: -8px; /* Adjusted for thicker border */
-    left: -8px;
-    right: -8px;
-    bottom: -8px;
-    border: 3px dashed rgba(168, 184, 158, 0.6); /* Thicker, more visible dashed border */
-    border-radius: 22px; /* Adjusted for outer border */
+    top: -10px; /* Adjusted for thicker border */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 4px dashed rgba(168, 184, 158, 0.7); /* Thicker, more visible dashed border */
+    border-radius: 25px; /* Adjusted for outer border */
     pointer-events: none;
     z-index: 0; /* Ensure it's behind content */
 }
 
 .blog-post-card:hover {
-    transform: translateY(-8px); /* More pronounced lift */
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-10px); /* More pronounced lift */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), /* Stronger shadow on hover */
+                0 0 25px rgba(192, 209, 181, 0.6); /* Enhanced glow on hover */
 }
 
 .post-link {
@@ -192,64 +203,90 @@ body {
 }
 
 .post-link:hover .post-title {
-    color: #4a5e4b; /* Darker green on hover */
+    color: #3a4b3b; /* Darker green on hover */
     text-decoration: underline; /* Add underline on hover */
 }
 
 .post-title {
     color: #6a8e6c; /* Darker green for titles */
-    font-size: 2em; /* Larger font size */
+    font-size: 2.2em; /* Larger font size */
     margin-top: 0;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     cursor: pointer; /* Indicate clickability */
     transition: color 0.2s ease;
 }
 
 .post-meta {
-    font-size: 0.95em; /* Slightly larger */
-    color: #666; /* Slightly darker grey */
-    margin-bottom: 18px;
+    font-size: 1em; /* Slightly larger */
+    color: #555; /* Slightly darker grey */
+    margin-bottom: 20px;
 }
 
 .post-excerpt {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+}
+
+.full-post-content {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #c0d1b5; /* Separator for full content */
 }
 
 .read-more-btn {
     display: inline-block;
-    background-color: #a8b89e; /* Muted green */
+    /* Glossy button effect */
+    background: linear-gradient(135deg, #a8b89e, #8e9f80); /* Muted green gradient */
     color: #fff;
-    padding: 12px 25px; /* Larger padding */
-    border-radius: 12px; /* Slightly more rounded */
+    padding: 15px 30px; /* Larger padding */
+    border-radius: 15px; /* More rounded */
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+    transition: all 0.3s ease;
+    /* Multiple shadows for depth */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2), /* Main shadow */
+                inset 0 2px 5px rgba(255, 255, 255, 0.5); /* Inner highlight for gloss */
+    border: none; /* Remove default button border */
+    cursor: pointer;
 }
 
 .read-more-btn:hover {
-    background-color: #8e9f80; /* Darker green on hover */
+    background: linear-gradient(135deg, #8e9f80, #6a8e6c); /* Darker gradient on hover */
     transform: translateY(-3px); /* More pronounced lift */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3), /* Stronger shadow on hover */
+                inset 0 1px 3px rgba(255, 255, 255, 0.6); /* Enhanced inner highlight */
 }
+
+.read-more-btn.show-less {
+    background: linear-gradient(135deg, #e0a89e, #d18e80); /* Different color for 'Show Less' */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2), inset 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.read-more-btn.show-less:hover {
+    background: linear-gradient(135deg, #d18e80, #c06a6c);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.6);
+}
+
 
 /* Sidebar Cards */
 .sidebar-card {
-    background-color: #e0e0d1; /* Cream background */
-    border: 2px solid #c0d1b5; /* Thicker border */
-    border-radius: 18px; /* More rounded */
-    padding: 25px; /* More padding */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    background: linear-gradient(160deg, #e0e0d1 0%, #c0d1b5 100%); /* Subtle gradient for sheen */
+    border: 2px solid #a8b89e; /* Thicker border */
+    border-radius: 20px; /* More rounded */
+    padding: 30px; /* More padding */
+    /* Multiple shadows for depth and glow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15), /* Main shadow */
+                0 0 15px rgba(168, 184, 158, 0.4); /* Subtle glow from card color */
 }
 
 .sidebar-title {
-    color: #4a5e4b;
-    font-size: 1.6em; /* Larger font size */
+    color: #3a4b3b; /* Darker green */
+    font-size: 1.8em; /* Larger font size */
     margin-top: 0;
-    margin-bottom: 20px; /* More space below title */
+    margin-bottom: 25px; /* More space below title */
     text-align: center;
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 12px;
 }
 
 .sidebar-title::after {
@@ -258,9 +295,9 @@ body {
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 80px; /* Longer underline */
-    height: 3px; /* Thicker underline */
-    background-color: #c0d1b5;
+    width: 90px; /* Longer underline */
+    height: 4px; /* Thicker underline */
+    background-color: #a8b89e;
     border-radius: 5px;
 }
 
@@ -269,13 +306,13 @@ body {
 }
 
 .avatar {
-    width: 90px; /* Larger avatar */
-    height: 90px;
+    width: 100px; /* Larger avatar */
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #a8b89e; /* Thicker border */
-    box-shadow: 0 0 0 6px rgba(168, 184, 158, 0.4); /* More pronounced outer shadow */
-    margin-bottom: 20px;
+    border: 5px solid #6a8e6c; /* Thicker, darker border */
+    box-shadow: 0 0 0 8px rgba(106, 142, 108, 0.4); /* More pronounced outer shadow */
+    margin-bottom: 25px;
 }
 
 .site-updates ul,
@@ -286,10 +323,10 @@ body {
 }
 
 .site-updates li {
-    margin-bottom: 12px;
-    padding-bottom: 12px;
-    border-bottom: 1px dashed #c0d1b5;
-    font-size: 1em; /* Slightly larger font */
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #a8b89e; /* More distinct dashed line */
+    font-size: 1.05em; /* Slightly larger font */
 }
 
 .site-updates li:last-child {
@@ -300,23 +337,23 @@ body {
 
 .update-date {
     font-weight: bold;
-    color: #6a8e6c;
-    margin-right: 8px; /* More space */
+    color: #4a5e4b; /* Darker green */
+    margin-right: 10px; /* More space */
 }
 
 .links-collection li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .links-collection a {
-    color: #6a8e6c;
+    color: #4a5e4b; /* Darker green */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease, text-decoration 0.2s ease;
 }
 
 .links-collection a:hover {
-    color: #4a5e4b;
+    color: #3a4b3b; /* Even darker green */
     text-decoration: underline;
 }
 
@@ -326,8 +363,8 @@ body {
     padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
-    border-radius: 12px; /* Slightly more rounded */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    border-radius: 15px; /* More rounded */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
 }
 
 .embedded-media iframe {
@@ -337,26 +374,26 @@ body {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 12px;
+    border-radius: 15px;
 }
 
 .media-caption {
-    font-size: 0.95em; /* Slightly larger */
-    color: #555;
+    font-size: 1em; /* Slightly larger */
+    color: #444;
     text-align: center;
-    margin-top: 12px;
+    margin-top: 15px;
 }
 
 /* Footer */
 .footer {
-    background-color: #a8b89e; /* Muted green */
+    background: linear-gradient(135deg, #6a8e6c, #4a5e4b); /* Deeper, richer green gradient */
     color: #fff;
     text-align: center;
-    padding: 25px; /* More padding */
-    font-size: 0.95em; /* Slightly larger */
-    border-top: 6px solid #4a5e4b; /* Thicker, darker border */
-    border-radius: 0 0 20px 20px;
-    box-shadow: inset 0 8px 15px rgba(0, 0, 0, 0.3); /* More pronounced inner shadow */
+    padding: 30px; /* More padding */
+    font-size: 1em; /* Slightly larger */
+    border-top: 8px solid #3a4b3b; /* Thicker, darker border */
+    border-radius: 0 0 25px 25px; /* Match container border-radius */
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.4); /* More pronounced inner shadow */
 }
 
 /* Responsive Design */
@@ -364,52 +401,57 @@ body {
     .container {
         margin-top: 10px;
         margin-bottom: 10px;
-        border-radius: 10px;
+        border-radius: 15px;
     }
 
     .header {
-        padding: 25px 15px; /* Adjusted padding */
-        border-radius: 10px 10px 0 0;
+        padding: 30px 15px; /* Adjusted padding */
+        border-radius: 15px 15px 0 0;
     }
 
     .site-title {
-        font-size: 2.2em; /* Adjusted font size */
+        font-size: 2.5em; /* Adjusted font size */
     }
 
     .site-tagline {
         font-size: 1.1em; /* Adjusted font size */
     }
 
+    .home-button-container {
+        padding: 15px;
+    }
+
     .home-button {
-        padding: 10px 20px;
+        padding: 12px 25px;
         font-size: 0.95em;
+        border-radius: 15px;
     }
 
     .main-content {
         flex-direction: column;
-        padding: 15px;
-        gap: 15px;
+        padding: 20px;
+        gap: 20px;
     }
 
     .blog-posts,
     .sidebar {
-        flex: none; /* Remove flex grow */
-        width: 100%; /* Take full width */
-        min-width: unset; /* Remove min-width restriction */
+        flex: none;
+        width: 100%;
+        min-width: unset;
     }
 
     .blog-post-card,
     .sidebar-card {
-        padding: 20px;
-        border-radius: 10px;
+        padding: 25px;
+        border-radius: 15px;
     }
 
     .post-title {
-        font-size: 1.6em; /* Adjusted font size */
+        font-size: 1.8em; /* Adjusted font size */
     }
 
     .footer {
-        padding: 18px; /* Adjusted padding */
-        border-radius: 0 0 10px 10px;
+        padding: 20px; /* Adjusted padding */
+        border-radius: 0 0 15px 15px;
     }
 }
