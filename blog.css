@@ -1,23 +1,14 @@
-/* Import Google Fonts */
-/* "toyland" inspired by 'Luckiest Guy' for a playful, bold display */
-/* "Rokkitt" for Light, Regular, SemiBold */
-/* "Source Code Pro" for Code */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rokkitt:wght@300;400;600&family=Source+Code+Pro&display=swap');
+/* Import Google Fonts - Using Times New Roman for 'times', Didot for h1, and Source Code Pro for code */
+@import url('https://fonts.googleapis.com/css2?family=Didot+Decor&family=Times+New+Roman:wght@400;700&family=Source+Code+Pro&display=swap');
 
-/* Custom CSS Variables from solinus.neocities.org */
+/* Global image rendering for pixelated effect where applicable */
+html {
+    image-rendering: pixelated;
+}
+
+/* Custom CSS Variables - Removed previous glassmorphism variables */
 :root {
-    --glassFx: linear-gradient(271.63deg, rgba(255, 255, 255, 0.0210908) 7.36%,
-    rgba(255, 255, 255, 0.131943) 27.81%,
-    rgba(255, 255, 255, 0) 41.21%,
-    rgba(255, 255, 255, 0.144556) 60.31%,
-    rgba(255, 255, 255, 0) 76.52%,
-    rgba(255, 255, 255, 0.2) 99.12%);
-
-    --glassColor: linear-gradient(0deg, rgba(36, 219, 109, 0.15), rgba(36, 219, 109, 0.15));
-
-    --glassBase:linear-gradient(180deg, rgba(89, 89, 89, 0.7) 0%, rgba(33, 33, 33, 0.7) 49.99%, rgba(5, 5, 5, 0.7) 50%, rgba(38, 38, 38, 0.7) 100%);
-
-    /* Custom variable for the noise texture fallback */
+    /* Custom variable for the noise texture fallback, if still desired for subtle texture */
     --noise-texture: repeating-linear-gradient(
         45deg,
         rgba(0,0,0,0.02) 0px,
@@ -27,48 +18,132 @@
     );
 }
 
-/* Custom Scrollbar */
+/* Selection style from new inspiration */
+::selection {
+    background: #f1f5ec;
+    color: #c2d8a5;
+}
+
+/* Custom Scrollbar - Directly from new inspiration */
 ::-webkit-scrollbar {
-    width: 16px; /* Matching solinus.neocities.org */
+    width: 10px;
+    height: 16px;
 }
 
 ::-webkit-scrollbar-track {
-    /* Using a subtle pattern to simulate noise.png */
-    background: var(--noise-texture), #e5dacd;
-    background-blend-mode: overlay, normal;
-    box-shadow: inset 1px 0px 3px rgb(1 29 18 / 20%);
-    border-radius: 10px; /* Keeping rounded for modern feel */
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=");
+    image-rendering: pixelated;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(0deg, rgba(36, 219, 109, 0.25), rgba(36, 219, 109, 0.19)),
-    linear-gradient(180deg, rgba(89, 89, 89, 0.8) 0%, rgba(33, 33, 33, 0.8) 44.27%, rgba(5, 5, 5, 0.8) 51.56%, rgba(38, 38, 38, 0.8) 100%);
-    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), inset 0px -1px 1px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(3px);
-    border-radius: 4px;
-    border: 2px solid #e5dacd;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+    width: 16px;
+    height: 16px;
+    background-color: #cccccc;
+    z-index: 1;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(0deg, rgba(36, 219, 109, 0.15), rgba(36, 219, 109, 0.15)),
-    linear-gradient(180deg, rgba(89, 89, 89, 0.8) 0%, rgba(33, 33, 33, 0.8) 44.27%, rgba(5, 5, 5, 0.8) 51.56%, rgba(38, 38, 38, 0.8) 100%);
+::-webkit-scrollbar-corner {
+    background-color: #cccccc;
+}
+
+::-webkit-resizer {
+    width: 16px;
+    height: 16px;
+    background-color: #cccccc;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+}
+
+::-webkit-scrollbar-button, ::-webkit-scrollbar-button {
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #cccccc;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+::-webkit-scrollbar-button:active, ::-webkit-scrollbar-button:active {
+    background-position: 2px 2px;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement, ::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC");
+}
+
+::-webkit-scrollbar-button:horizontal:increment, ::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=");
+}
+
+::-webkit-scrollbar-button:vertical:decrement, ::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=");
+}
+
+::-webkit-scrollbar-button:vertical:increment, ::-webkit-scrollbar-button:vertical:increment {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=");
+}
+
+::-webkit-scrollbar-button:horizontal:increment:start, ::-webkit-scrollbar-button:horizontal:increment:start {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:end, ::-webkit-scrollbar-button:horizontal:decrement:end {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:increment:start, ::-webkit-scrollbar-button:vertical:increment:start {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:end, ::-webkit-scrollbar-button:vertical:decrement:end {
+    display: none;
+}
+
+::-webkit-scrollbar-button:active, ::-webkit-scrollbar-button:active {
+    border-top: 1px solid #868a8e;
+    border-left: 1px solid #868a8e;
+    border-bottom: 1px solid #868a8e;
+    border-right: 1px solid #868a8e;
+    box-shadow: none;
 }
 
 /* Base Styles */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Rokkitt', serif; /* Default font for body */
-    background: url("https://solinus.neocities.org/img/BG.jpg") no-repeat; /* Direct link to their background image */
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: #023219; /* Fallback color */
+    font-size: 13px; /* From new inspiration */
+    font-family: 'Times New Roman', Times, serif; /* "times" equivalent */
+    position: relative;
+    text-align: left; /* From new inspiration */
+    color: #49423f; /* From new inspiration */
+    background-color: #c0c0c0; /* Standard Windows 9x grey */
     display: flex;
     align-items: center; /* Center content horizontally */
     flex-direction: column; /* Stack content vertically */
     min-height: 100vh;
-    color: #000000; /* Default text color, will be overridden */
-    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Universal box-sizing */
+* {
     box-sizing: border-box;
 }
 
@@ -76,90 +151,117 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px; /* Matching solinus.neocities.org .content padding */
-    width: 60vw; /* Matching solinus.neocities.org .content width */
-    max-width: 1100px; /* Matching solinus.neocities.org .content max-width */
-    gap: 24px; /* Matching solinus.neocities.org .content gap */
+    padding: 12px; /* Adjusted for tighter retro feel */
+    width: 60vw;
+    max-width: 1100px;
+    gap: 12px; /* Adjusted gap */
 
-    /* Mimicking .window styles for the main container */
-    border-radius: 4px; /* Matching solinus.neocities.org .window border-radius */
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /* Matching solinus.neocities.org .window box-shadow */
-    overflow: hidden; /* Ensure content stays within rounded corners */
-
-    /* Glassmorphism effect for the container, similar to .window.content */
-    background: var(--noise-texture), rgb(235 227 217 / 75%); /* Using noise texture fallback */
-    background-blend-mode: overlay, normal;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Subtle border for definition */
-    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.4); /* Inner shadow for depth */
+    /* Retro window styling */
+    border-top: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    box-shadow: inset 1px 1px 0 0 #dfdfdf, inset -1px -1px 0 0 #404040;
+    background-color: #c0c0c0; /* Standard grey background */
+    overflow: hidden;
+    border-radius: 0; /* No rounded corners for retro */
+    backdrop-filter: none; /* Remove glassmorphism */
+    -webkit-backdrop-filter: none;
 }
 
-/* Header - Mimicking .window.title.big */
+/* Header - Mimicking a window title bar */
 .header {
-    border-radius: 4px; /* Matching solinus.neocities.org .window.title.big */
+    border-radius: 0; /* No rounded corners */
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 24px 16px; /* Matching solinus.neocities.org .window.title.big padding */
-    gap: 4px;
-    width: 100%; /* Ensure it takes full width of container */
-    box-sizing: border-box; /* Include padding in width */
+    padding: 4px 8px; /* Tighter padding for title bar */
+    gap: 2px;
+    width: 100%;
+    box-sizing: border-box;
 
-    color: #F1FFF3; /* Matching solinus.neocities.org .window.title color */
-    /* Removed placeholder image, relying on glassFx and glassColor */
-    background: var(--glassFx), var(--glassColor), var(--glassBase); /* Glass effect */
-    background-blend-mode: overlay, normal, normal;
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.7), inset 0px 1px 0px rgba(245, 245, 245, 0.2), inset 0px -1px 1px rgba(0, 0, 0, 0.2); /* Matching solinus.neocities.org .window.title box-shadow */
-    text-shadow: 0px -1.8px #00000040; /* Matching solinus.neocities.org text-shadow */
-    backdrop-filter: blur(3px); /* Matching solinus.neocities.org backdrop-filter */
-    position: relative; /* For the reflection effect */
+    color: #ffffff; /* White text for title bar */
+    background-color: #000080; /* Classic Windows 9x blue title bar */
+    border-bottom: 1px solid #404040; /* Darker bottom border */
+    box-shadow: none; /* Remove complex shadows */
+    text-shadow: none; /* Remove text shadow */
+    backdrop-filter: none; /* Remove glassmorphism */
+    -webkit-backdrop-filter: none;
+    position: relative;
 }
 
-/* Home Button Container - Mimicking .navbar or .button container */
+.site-title {
+    font-size: 2em; /* Adjusted for header */
+    margin: 0;
+    font-weight: normal;
+    font-family: Didot, serif; /* From new inspiration */
+    font-style: italic; /* From new inspiration */
+    line-height: 100%; /* Adjusted for header */
+    color: #ffffff; /* White text */
+    text-shadow: none;
+    letter-spacing: normal;
+}
+
+.site-tagline {
+    font-size: 0.8em; /* Smaller tagline */
+    margin-top: 2px;
+    opacity: 0.9;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+/* Home Button Container - Part of the main window content, not a separate bar */
 .home-button-container {
-    padding: 16px; /* Adjusted padding */
-    width: 100%; /* Take full width of container */
-    box-sizing: border-box; /* Include padding in width */
+    padding: 8px; /* Adjusted padding */
+    width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    /* Apply glassmorphism similar to navbar */
-    background: var(--glassFx), var(--glassColor), var(--glassBase);
-    background-blend-mode: overlay, normal, normal;
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px);
-    border-radius: 0; /* No specific border-radius, as it's a section */
-    border-top: 1px solid rgba(245, 245, 245, 0.224); /* Mimic vl/hl */
-    box-shadow: inset 0px 1px .5px rgba(255, 255, 255, 0.3), inset 0px -1.4px 0px rgba(0, 0, 0, 0.17); /* Mimic link-table-item border */
+    background-color: #c0c0c0; /* Standard grey */
+    border-top: 1px solid #ffffff; /* Bevel effect */
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    box-shadow: inset 1px 1px 0 0 #dfdfdf, inset -1px -1px 0 0 #404040; /* Bevel effect */
+    backdrop-filter: none; /* Remove glassmorphism */
+    -webkit-backdrop-filter: none;
+    border-radius: 0; /* No rounded corners */
 }
 
 .home-button {
     text-decoration: none;
-    color: #F1FFF3; /* Matching solinus.neocities.org button text color */
-    font-weight: bold;
-    padding: 6px 16px; /* Matching solinus.neocities.org .button padding */
-    border-radius: 8px; /* Matching solinus.neocities.org .button border-radius */
-    /* Apply button glassmorphism */
-    background: var(--glassFx), var(--glassColor), var(--glassBase);
-    background-blend-mode: overlay, normal, normal;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
+    color: #49423f; /* Dark text from new inspiration */
+    font-weight: normal;
+    padding: 4px 10px; /* Tighter padding for button */
+    border-radius: 0; /* No rounded corners */
+    background-color: #cccccc; /* Button grey */
+    border-top: 1px solid #ffffff; /* Bevel effect */
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e; /* Button bevel */
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Adjusted gap */
-    text-shadow: 0px -1.8px #00000040; /* Matching solinus.neocities.org text-shadow */
-    transition: all 0.3s ease;
+    gap: 4px; /* Smaller gap */
+    text-shadow: none;
+    transition: none; /* Remove smooth transitions */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
 }
 
 .home-button:hover {
-    background: linear-gradient(180deg, rgba(60, 199, 132, 0) 32.81%, rgba(104, 200, 148, 0.29) 100%), var(--glassFx), var(--glassColor), var(--glassBase); /* Matching solinus.neocities.org .button:hover */
-    background-blend-mode: overlay, normal, normal, normal; /* Adjust blend mode for multiple backgrounds */
-    transform: none; /* Remove previous transform */
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2); /* Keep original shadow */
+    background-color: #b0b0b0; /* Slightly darker grey on hover */
+    color: #49423f;
+    transform: none;
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
 }
 
 .home-button:active {
-    background: linear-gradient(180deg, rgba(67, 109, 77, 0.354819) 57.81%, rgba(105, 181, 124, 0.65) 95.31%), var(--glassFx), var(--glassColor), var(--glassBase); /* Matching solinus.neocities.org .button:active */
-    background-blend-mode: overlay, normal, normal, normal;
-    box-shadow: inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2); /* Matching solinus.neocities.org .button:active */
+    background-color: #808080; /* Darker grey on active */
+    border-top: 1px solid #868a8e; /* Inverted bevel */
+    border-left: 1px solid #868a8e;
+    border-bottom: 1px solid #868a8e;
+    border-right: 1px solid #868a8e;
+    box-shadow: none; /* Flat on active */
     transform: none;
 }
 
@@ -167,10 +269,11 @@ body {
 .main-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 24px; /* Matching solinus.neocities.org .content padding */
-    gap: 24px; /* Matching solinus.neocities.org .content gap */
-    width: 100%; /* Take full width of container */
+    padding: 12px; /* Adjusted padding */
+    gap: 12px; /* Adjusted gap */
+    width: 100%;
     box-sizing: border-box;
+    background-color: #c0c0c0; /* Consistent background */
 }
 
 .blog-posts {
@@ -183,60 +286,59 @@ body {
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 24px; /* Matching solinus.neocities.org .content gap */
+    gap: 12px; /* Adjusted gap */
 }
 
 .section-title {
-    font-size: 2em; /* Adjusted to fit the general h2/h3 scale */
-    color: #000000; /* Default for content */
-    margin-bottom: 24px;
-    text-align: center;
+    font-size: 1.5em; /* Adjusted for retro feel */
+    color: #49423f; /* Dark text from new inspiration */
+    margin-bottom: 12px;
+    text-align: left; /* Align left as per new inspiration */
     position: relative;
-    padding-bottom: 8px;
-    font-family: 'Rokkitt', serif; /* Use Rokkitt for titles */
-    font-weight: 600; /* Semibold equivalent */
+    padding-bottom: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold; /* Standard bold for titles */
 }
 
 .section-title::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0; /* Align left */
     bottom: 0;
-    transform: translateX(-50%);
+    transform: none;
     width: 100%; /* Full width horizontal line */
     height: 1px; /* Thin line */
-    background: linear-gradient(180deg, rgba(245, 245, 245, 0.224) 0%, rgba(245, 245, 245, 0.18) 35.94%, rgba(245, 245, 245, 0.27) 100%); /* Matching solinus.neocities.org .hl */
-    box-shadow: -1px 0px 1px rgba(0, 0, 0, 0.4); /* Matching solinus.neocities.org .hl */
-    border-radius: 0; /* No radius for straight line */
+    background-color: #808080; /* Darker line */
+    box-shadow: none; /* Remove complex shadows */
+    border-radius: 0;
 }
 
-/* Blog Post Cards - Mimicking .window.content */
+/* Blog Post Cards - Mimicking a standard window content area */
 .blog-post-card {
-    border-radius: 4px; /* Matching solinus.neocities.org .window border-radius */
-    padding: 16px; /* Matching solinus.neocities.org .window.content padding */
+    border-radius: 0; /* No rounded corners */
+    padding: 12px; /* Adjusted padding */
     gap: 4px;
-    height: 100%; /* Ensure consistent height */
-    width: 100%; /* Ensure it takes full width */
-    box-sizing: border-box; /* Include padding in width */
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 
-    color: #000000; /* Matching solinus.neocities.org .window.content color */
-    background: var(--noise-texture), rgb(235 227 217 / 75%); /* Using noise texture fallback */
-    background-blend-mode: overlay, normal;
-    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.4); /* Matching solinus.neocities.org .window.content box-shadow */
-    backdrop-filter: blur(3px); /* Matching solinus.neocities.org backdrop-filter */
+    color: #49423f; /* Dark text from new inspiration */
+    background-color: #dfdfdf; /* Lighter grey for content area */
+    border-top: 1px solid #808080; /* Inner bevel */
+    border-left: 1px solid #808080;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: inset 1px 1px 0 0 #404040, inset -1px -1px 0 0 #dfdfdf; /* Inverted bevel for sunken look */
+    backdrop-filter: none; /* Remove glassmorphism */
+    -webkit-backdrop-filter: none;
     position: relative;
-    overflow: hidden; /* For the subtle paper tear effect */
-    transition: none; /* Remove previous transitions for now */
-}
-
-/* Remove the ::before dashed border as it conflicts with the new aesthetic */
-.blog-post-card::before {
-    content: none;
+    overflow: hidden;
+    transition: none; /* Remove transitions */
 }
 
 .blog-post-card:hover {
-    transform: none; /* Remove previous transform */
-    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.4); /* Keep original shadow */
+    transform: none;
+    box-shadow: inset 1px 1px 0 0 #404040, inset -1px -1px 0 0 #dfdfdf;
 }
 
 .post-link {
@@ -246,132 +348,134 @@ body {
 }
 
 .post-link:hover .post-title {
-    color: #086f3d; /* Matching solinus.neocities.org link hover color */
+    color: #6d7760; /* Link hover color from new inspiration */
     text-decoration: underline;
 }
 
 .post-title {
-    color: #000000; /* Default text color, will be overridden by link */
-    font-size: 1.5em; /* Matching solinus.neocities.org h3 */
-    font-family: 'Rokkitt', serif; /* Use Rokkitt for titles */
-    font-weight: 600; /* Semibold equivalent */
+    color: #6d7760; /* Link color from new inspiration */
+    font-size: 1.2em; /* Adjusted for retro feel */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: none; /* Remove transitions */
 }
 
 .post-meta {
-    font-size: 1.05em; /* Matching solinus.neocities.org p/li/a font-size */
-    font-family: 'Rokkitt', serif; /* Use Rokkitt for meta */
-    color: #555;
-    margin-bottom: 12px;
+    font-size: 0.9em; /* Smaller meta text */
+    font-family: 'Times New Roman', Times, serif;
+    color: #49423f;
+    margin-bottom: 8px;
 }
 
 .post-excerpt {
-    font-size: 1.05em; /* Matching solinus.neocities.org p/li/a font-size */
-    font-family: 'Rokkitt', serif; /* Use Rokkitt for excerpt */
-    margin-bottom: 16px;
+    font-size: 1em; /* Standard text size */
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 12px;
 }
 
 .full-post-content {
-    margin-top: 16px;
-    padding-top: 16px;
-    border-top: 1px solid rgba(0, 0, 0, 0.05); /* Subtle separator */
-    box-shadow: inset 0px -1.2px 0px rgba(255, 255, 255, 0.15), inset 0px 1px .5px rgba(0, 0, 0, 0.17); /* Matching solinus.neocities.org code/scrollable border */
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #808080; /* Simple separator */
+    box-shadow: none; /* Remove complex shadows */
 }
 
 .read-more-btn {
     display: inline-block;
-    color: #F1FFF3; /* Matching solinus.neocities.org button text color */
-    padding: 6px 16px; /* Matching solinus.neocities.org .button padding */
-    border-radius: 8px; /* Matching solinus.neocities.org .button border-radius */
-    /* Apply button glassmorphism */
-    background: var(--glassFx), var(--glassColor), var(--glassBase);
-    background-blend-mode: overlay, normal, normal;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
+    color: #49423f; /* Dark text from new inspiration */
+    padding: 4px 10px; /* Tighter padding */
+    border-radius: 0; /* No rounded corners */
+    background-color: #cccccc; /* Button grey */
+    border-top: 1px solid #ffffff; /* Bevel effect */
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e; /* Button bevel */
     border: none;
     cursor: pointer;
-    text-shadow: 0px -1.8px #00000040; /* Matching solinus.neocities.org text-shadow */
-    transition: all 0.3s ease;
-    font-family: 'Rokkitt', serif; /* Use Rokkitt for button text */
-    font-size: 1.05em;
+    text-shadow: none;
+    transition: none; /* Remove transitions */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
 }
 
 .read-more-btn:hover {
-    background: linear-gradient(180deg, rgba(60, 199, 132, 0) 32.81%, rgba(104, 200, 148, 0.29) 100%), var(--glassFx), var(--glassColor), var(--glassBase);
-    background-blend-mode: overlay, normal, normal, normal;
+    background-color: #b0b0b0;
     transform: none;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
 }
 
 .read-more-btn.show-less {
-    /* Keeping a distinct color for show-less, but adapting to new style */
-    background: linear-gradient(135deg, rgba(224, 168, 158, 0.8), rgba(209, 142, 128, 0.8));
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
-    background-blend-mode: overlay, normal, normal, normal;
+    background-color: #cccccc; /* Consistent grey */
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
 }
 
 .read-more-btn.show-less:hover {
-    background: linear-gradient(135deg, rgba(209, 142, 128, 0.9), rgba(192, 106, 108, 0.9));
+    background-color: #b0b0b0;
     transform: none;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
 }
 
-
-/* Sidebar Cards - Mimicking .window.content */
+/* Sidebar Cards - Mimicking a standard window content area */
 .sidebar-card {
-    border-radius: 4px; /* Matching solinus.neocities.org .window border-radius */
-    padding: 16px; /* Matching solinus.neocities.org .window.content padding */
+    border-radius: 0; /* No rounded corners */
+    padding: 12px; /* Adjusted padding */
     gap: 4px;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 
-    color: #000000; /* Matching solinus.neocities.org .window.content color */
-    background: var(--noise-texture), rgb(235 227 217 / 75%); /* Using noise texture fallback */
-    background-blend-mode: overlay, normal;
-    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
+    color: #49423f; /* Dark text */
+    background-color: #dfdfdf; /* Lighter grey */
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: inset 1px 1px 0 0 #404040, inset -1px -1px 0 0 #dfdfdf;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
 }
 
 .sidebar-title {
-    color: #000000;
-    font-size: 1.5em; /* Matching solinus.neocities.org h3 */
-    font-family: 'Rokkitt', serif; /* Use Rokkitt for sidebar titles */
-    font-weight: 600; /* Semibold equivalent */
+    color: #49423f;
+    font-size: 1.2em; /* Adjusted for retro feel */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
     margin-top: 0;
-    margin-bottom: 16px;
-    text-align: center;
+    margin-bottom: 8px;
+    text-align: left; /* Align left */
     position: relative;
-    padding-bottom: 8px;
+    padding-bottom: 4px;
 }
 
 .sidebar-title::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 0;
     bottom: 0;
-    transform: translateX(-50%);
-    width: 100%; /* Full width horizontal line */
-    height: 1px; /* Thin line */
-    background: linear-gradient(180deg, rgba(245, 245, 245, 0.224) 0%, rgba(245, 245, 245, 0.18) 35.94%, rgba(245, 245, 245, 0.27) 100%); /* Matching solinus.neocities.org .hl */
-    box-shadow: -1px 0px 1px rgba(0, 0, 0, 0.4); /* Matching solinus.neocities.org .hl */
+    transform: none;
+    width: 100%;
+    height: 1px;
+    background-color: #808080;
+    box-shadow: none;
     border-radius: 0;
 }
 
 .welcome-box {
-    text-align: center;
+    text-align: left; /* Align left */
 }
 
 .avatar {
-    width: 100px; /* Adjusted size */
-    height: 100px;
-    border-radius: 50%;
+    width: 80px; /* Adjusted size */
+    height: 80px;
+    border-radius: 0; /* Square for retro */
     object-fit: cover;
-    border: 3px solid #086f3d; /* Matching link color */
-    box-shadow: 0 0 0 5px rgba(8, 111, 61, 0.3); /* Subtle glow */
-    margin-bottom: 16px;
+    border: 1px solid #808080; /* Simple border */
+    box-shadow: none; /* Remove complex shadows */
+    margin-bottom: 12px;
 }
 
 .site-updates ul,
@@ -382,11 +486,11 @@ body {
 }
 
 .site-updates li {
-    margin-bottom: 8px;
-    padding-bottom: 8px;
-    border-bottom: 1px dashed rgba(0, 0, 0, 0.1); /* Subtle dashed line */
-    font-size: 1.05em; /* Matching p/li/a font-size */
-    font-family: 'Rokkitt', serif;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #c0c0c0; /* Simple separator */
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .site-updates li:last-child {
@@ -397,25 +501,25 @@ body {
 
 .update-date {
     font-weight: bold;
-    color: #086f3d; /* Matching link color */
-    margin-right: 5px;
+    color: #49423f;
+    margin-right: 4px;
 }
 
 .links-collection li {
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .links-collection a {
-    color: #086f3d; /* Matching solinus.neocities.org a color */
+    color: #6d7760; /* Link color */
     text-decoration: none;
     font-weight: normal;
-    font-family: 'Rokkitt', serif;
-    font-size: 1.05em;
-    transition: color 0.2s ease, text-decoration 0.2s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    transition: none;
 }
 
 .links-collection a:hover {
-    color: #054a28; /* Darker green on hover */
+    color: #7e8f6d; /* Link hover color */
     text-decoration: underline;
 }
 
@@ -425,8 +529,9 @@ body {
     padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
-    border-radius: 4px; /* Matching window border-radius */
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5); /* Matching window box-shadow */
+    border-radius: 0; /* No rounded corners */
+    box-shadow: none; /* Remove complex shadows */
+    border: 1px solid #808080; /* Simple border */
 }
 
 .embedded-media iframe {
@@ -436,169 +541,170 @@ body {
     width: 100%;
     height: 100%;
     border: none;
-    border-radius: 4px;
+    border-radius: 0;
 }
 
 .media-caption {
-    font-size: 1.05em;
-    color: #333;
-    text-align: center;
-    margin-top: 10px;
-    font-family: 'Rokkitt', serif;
+    font-size: 0.9em;
+    color: #49423f;
+    text-align: left; /* Align left */
+    margin-top: 8px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Footer - Mimicking .navbar or .button container */
+/* Footer - Simple, flat bar */
 .footer {
-    width: 100%; /* Take full width of container */
+    width: 100%;
     box-sizing: border-box;
     text-align: center;
-    padding: 16px; /* Adjusted padding */
-    font-size: 1.05em;
-    font-family: 'Rokkitt', serif;
-    color: #F1FFF3; /* Matching solinus.neocities.org text color */
-    /* Apply glassmorphism similar to navbar */
-    background: var(--glassFx), var(--glassColor), var(--glassBase);
-    background-blend-mode: overlay, normal, normal;
-    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.3), inset 0px 1px 0px rgba(245, 245, 245, 0.3), inset 0px -1px 1px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(3px);
-    border-radius: 0 0 4px 4px; /* Match container bottom radius */
-    border-top: 1px solid rgba(245, 245, 245, 0.224); /* Mimic vl/hl */
-    box-shadow: inset 0px 1px .5px rgba(255, 255, 255, 0.3), inset 0px -1.4px 0px rgba(0, 0, 0, 0.17); /* Mimic link-table-item border */
+    padding: 8px; /* Tighter padding */
+    font-size: 0.9em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #49423f; /* Dark text */
+    background-color: #c0c0c0; /* Standard grey */
+    border-top: 1px solid #ffffff; /* Bevel effect */
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    box-shadow: inset 1px 1px 0 0 #dfdfdf, inset -1px -1px 0 0 #404040; /* Bevel effect */
+    backdrop-filter: none;
+    border-radius: 0; /* No rounded corners */
 }
 
-/* Fonts from solinus.neocities.org */
+/* Font styles from new inspiration */
 h1 {
-    margin: 0;
-    font-weight: normal;
-    font-family: "Luckiest Guy", cursive; /* "toyland" equivalent */
-    font-style: normal;
-    font-size: 3.5em;
-    line-height: 110%;
-    color: #F1FFF3; /* Matching solinus.neocities.org title color */
-    text-shadow: 0px -1.8px #00000040;
+    line-height: 0%; /* From new inspiration */
+    color: #6d7760; /* From new inspiration */
+    font-style: italic; /* From new inspiration */
+    font-family: Didot, serif; /* From new inspiration */
+    margin: 0; /* Ensure no extra margin */
+    font-weight: normal; /* Override default bold */
+    font-size: 3.5em; /* Keep large size */
 }
 
 h2 {
     margin: 0;
     margin-top: 8px;
     font-weight: normal;
-    font-family: "Rokkitt", serif; /* "Light" equivalent */
+    font-family: 'Times New Roman', Times, serif; /* Using Times for general headings */
     font-style: normal;
     font-size: 2em;
     line-height: 100%;
+    color: #49423f; /* Dark text */
 }
 
 h3 {
     margin: 0;
     font-weight: normal;
-    font-family: "Rokkitt", serif; /* "SemiBold" equivalent */
+    font-family: 'Times New Roman', Times, serif; /* Using Times for general headings */
     font-style: normal;
     font-size: 1.5em;
     line-height: 124%;
+    color: #49423f; /* Dark text */
 }
 
 h4 {
     margin: 0;
     font-weight: normal;
-    font-family: "Rokkitt", serif; /* "Light" equivalent */
+    font-family: 'Times New Roman', Times, serif; /* Using Times for general headings */
     font-style: normal;
     font-size: 1.5em;
     line-height: 124%;
+    color: #49423f; /* Dark text */
 }
 
 p, li, a {
-    font-family: "Rokkitt", serif; /* "Regular" equivalent */
-    font-size: 1.05em;
+    font-family: 'Times New Roman', Times, serif; /* Using Times for body text */
+    font-size: 13px; /* From new inspiration */
     margin: 0;
     line-height: 1.2;
 }
 
 a {
-    color: #086f3d; /* Matching solinus.neocities.org a color */
+    color: #6d7760; /* From new inspiration */
 }
 
-a:visited {
-    color: #086f3d; /* Matching solinus.neocities.org a:visited color */
-}
-
-/* Specific link styling for buttons/navlinks */
-a.post-link {
-    text-decoration: none;
-    color: inherit; /* Inherit from parent */
-}
-
-a.post-link:hover {
-    text-decoration: underline;
+a:hover {
+    text-decoration: none; /* From new inspiration */
+    color: #7e8f6d; /* From new inspiration */
 }
 
 /* Code block styling */
-code{
+code {
     padding: 4px;
     box-sizing: border-box;
     width: 100%;
     word-wrap: break-word;
 
-    background: rgba(19, 18, 16, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    box-shadow: inset 0px -1.2px 0px rgba(255, 255, 255, 0.15), inset 0px 1px .5px rgba(0, 0, 0, 0.17);
+    background-color: #e0e0e0; /* Lighter grey for code blocks */
+    border: 1px solid #808080; /* Simple border */
+    border-radius: 0;
+    box-shadow: none;
 
-    font-family: "Source Code Pro", monospace; /* "Code" equivalent */
+    font-family: "Source Code Pro", monospace;
     font-size: 14px;
+    color: #49423f;
 }
 
 /* Responsive Design */
 @media only screen and (max-width: 1200px) {
     body {
-        background-size: 240vh; /* Matching solinus.neocities.org */
+        background-size: cover; /* Reverted to cover for better general fit */
     }
     .container {
-        padding: 16px; /* Matching solinus.neocities.org .content */
+        padding: 8px; /* Tighter padding */
         max-width: 100%;
-        width: 75vw; /* Matching solinus.neocities.org .content */
+        width: 85vw; /* Wider on smaller screens */
+    }
+    .main-content {
+        padding: 8px;
+        gap: 8px;
+    }
+    .blog-posts,
+    .sidebar {
+        min-width: unset; /* Allow shrinking */
     }
 }
 
 @media only screen and (max-width: 800px) {
     .container {
-        padding: 16px;
-        width: 100%;
+        padding: 8px;
+        width: 95vw; /* Even wider on mobile */
     }
     .main-content {
         flex-direction: column;
-        padding: 16px;
-        gap: 16px;
+        padding: 8px;
+        gap: 8px;
     }
     .blog-posts,
     .sidebar {
         flex: none;
         width: 100%;
-        min-width: unset;
     }
     .header {
-        padding: 16px;
+        padding: 4px 8px;
     }
     .site-title {
-        font-size: 2.5em;
+        font-size: 1.8em;
     }
     .site-tagline {
-        font-size: 1.1em;
+        font-size: 0.7em;
     }
     .home-button-container {
-        padding: 16px;
+        padding: 8px;
     }
     .home-button {
-        padding: 6px 16px;
-        font-size: 1em;
+        padding: 3px 8px;
+        font-size: 12px;
     }
     .blog-post-card,
     .sidebar-card {
-        padding: 16px;
+        padding: 8px;
     }
     .post-title {
-        font-size: 1.5em;
+        font-size: 1.1em;
     }
     .footer {
-        padding: 16px;
+        padding: 8px;
     }
 }
